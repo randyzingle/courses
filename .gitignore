@@ -1,0 +1,7 @@
+node_modules
+.classpath
+.project
+*.jar
+*.class
+*~
+.DS_Store
