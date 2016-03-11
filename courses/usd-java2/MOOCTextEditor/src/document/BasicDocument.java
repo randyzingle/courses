@@ -28,9 +28,10 @@ public class BasicDocument extends Document
 	@Override
 	public int getNumWords()
 	{
-		//TODO: Implement this method.  See the Module 1 support videos 
-	    // if you need help.
-	    return 0;
+		String regex = "[a-zA-Z]+";
+		List<String> tokens = this.getTokens(regex);
+		System.out.println("found " + tokens.size() + " words");
+	    return tokens.size();
 	}
 	
 	/**
@@ -44,9 +45,10 @@ public class BasicDocument extends Document
 	@Override
 	public int getNumSentences()
 	{
-	    //TODO: Implement this method.  See the Module 1 support videos 
-        // if you need help.
-        return 0;
+	    String regex = "[.!?]+";
+	    List<String> tokens = this.getTokens(regex);
+	    System.out.println("Found " + tokens.size() + " sentences");
+        return tokens.size();
 	}
 	
 	/**
@@ -60,9 +62,17 @@ public class BasicDocument extends Document
 	@Override
 	public int getNumSyllables()
 	{
-	    //TODO: Implement this method.  See the Module 1 support videos 
-        // if you need help.
-        return 0;
+		int total = 0;
+	    // find each word and pass it to super class countSyllables(String word) to get syllable count
+		// get the words
+		String regex = "[a-zA-Z]+";
+		List<String> tokens = this.getTokens(regex);
+		for (String s: tokens) {
+			int wordsyl = 0;
+			wordsyl = this.countSyllables(s);
+			total += wordsyl;
+		}
+        return total;
 	}
 	
 	

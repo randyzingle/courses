@@ -50,9 +50,19 @@ public abstract class Document {
 	// next week when we implement the EfficientDocument class.
 	protected int countSyllables(String word)
 	{
-		// TODO: Implement this method so that you can call it from the 
-	    // getNumSyllables method in BasicDocument (module 1) and 
-	    // EfficientDocument (module 2).
+		int numsyl = 0;
+		String regex = "[aeiouy]+";
+		ArrayList<String> tokens = new ArrayList<String>();
+		Pattern tokSplitter = Pattern.compile(regex);
+		Matcher m = tokSplitter.matcher(word);
+		while (m.find()) {
+			tokens.add(m.group());
+		}
+		// a lone "e" at the end of a word is not a syllable unless the word has no other syllables
+		if (tokens.size() > 1) {
+			String s = tokens.get(tokens.size()-1);
+			System.out.println(s);
+		}
 	    return 0;
 	}
 	
