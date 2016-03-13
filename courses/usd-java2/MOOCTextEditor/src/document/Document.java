@@ -59,11 +59,15 @@ public abstract class Document {
 			tokens.add(m.group());
 		}
 		// a lone "e" at the end of a word is not a syllable unless the word has no other syllables
-		if (tokens.size() > 1) {
-			String s = tokens.get(tokens.size()-1);
-			System.out.println(s);
+		int size = tokens.size();
+		if (size > 1) {
+		    // we have more than one syllable, do we have a lone trailing 'e'?
+		    if(word.endsWith("e") && tokens.get(size-1).length()==1){
+		        tokens.remove(size-1);
+		    }
 		}
-	    return 0;
+		numsyl = tokens.size();
+	    return numsyl;
 	}
 	
 	/** A method for testing
