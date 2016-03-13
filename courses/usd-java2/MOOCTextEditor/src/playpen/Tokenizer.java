@@ -10,12 +10,14 @@ public class Tokenizer {
 
 	public static void main(String[] args) {
 	    String s = "It was the best of times, it was ardvaarke worst of times.";
+	    s = "sentence, with, lots, of, commas.!  "
+		        + "(And some poaren)).  The output is: 7.5.";
 	    String r = "[a-zA-Z]+";
 	    List<String> wlist = countWords(r, s);
 	    System.out.println(wlist);
 	    
 	    for (String w: wlist) {
-	        r = "[aeiouy]+";
+	        r = "[aeiouyAEIOUY]+";
 	        List<String> slist = countSyllables(r,w);
 	        System.out.println(w + ": " + slist.toString() + " " + slist.size());
 	    }

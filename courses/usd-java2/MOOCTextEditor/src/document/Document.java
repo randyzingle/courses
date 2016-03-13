@@ -51,7 +51,7 @@ public abstract class Document {
 	protected int countSyllables(String word)
 	{
 		int numsyl = 0;
-		String regex = "[aeiouy]+";
+		String regex = "[aeiouyAEIOUY]+";
 		ArrayList<String> tokens = new ArrayList<String>();
 		Pattern tokSplitter = Pattern.compile(regex);
 		Matcher m = tokSplitter.matcher(word);

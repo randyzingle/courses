@@ -45,9 +45,10 @@ public class BasicDocument extends Document
 	@Override
 	public int getNumSentences()
 	{
-	    String regex = "[.!?]+";
+	    String regex = "[.!?]+|(\\w$)";
 	    List<String> tokens = this.getTokens(regex);
 	    System.out.println("Found " + tokens.size() + " sentences");
+	    
         return tokens.size();
 	}
 	

@@ -1,6 +1,4 @@
 node_modules
-.classpath
-.project
 *.jar
 *.class
 *~
