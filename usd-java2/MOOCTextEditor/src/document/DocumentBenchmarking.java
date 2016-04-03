@@ -37,6 +37,8 @@ public class DocumentBenchmarking {
 		// TODO: Fill in the rest of this method so that it runs two loops
 		// and prints out timing results as described in the assignment 
 		// instructions.
+		// Print out the Table Header
+		System.out.println("NumberOfChars\tBasicTime\tEfficientTime");
 		for (int numToCheck = start; numToCheck < numSteps*increment + start; 
 				numToCheck += increment)
 		{
@@ -58,7 +60,31 @@ public class DocumentBenchmarking {
 			 * 6. Print out the time it took to complete the loop in step 5 
 			 *      (on the same line as the first print statement) followed by a newline (\n) 
 			 */  
+			 // Read the sample character set
+			 String sample = getStringFromFile(textfile, numToCheck);
 			 
+			 // print out the sample size
+			 System.out.print(numToCheck + "\t");
+			 
+			 // calculate time for BasicDocument
+			 long startTime = System.currentTimeMillis();
+			 for (int i=0; i<trials; i++) {
+				 Document doc = new BasicDocument(sample);
+				 double fs = doc.getFleschScore();
+			 }
+			 long endTime = System.currentTimeMillis();
+			 long totalTime = endTime - startTime;
+			 System.out.print(totalTime + "\t");
+			 
+			 // calculate time for EfficientDocument
+			 startTime = System.currentTimeMillis();
+			 for (int i=0; i<trials; i++) {
+				 Document doc = new EfficientDocument(sample);
+				 double fs = doc.getFleschScore();
+			 }
+			 endTime = System.currentTimeMillis();
+			 totalTime = endTime - startTime;
+			 System.out.print(totalTime + "\n");
 		}
 	
 	}

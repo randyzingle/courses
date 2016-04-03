@@ -1,5 +1,6 @@
 package document;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /** 
@@ -41,10 +42,29 @@ public class EfficientDocument extends Document {
 	{
 		// Provide this first line in the starter code.  
 		// Words are only strings of letters.  No numbers.
+		// O(n) - getTokens, where n=number of words in the document
 		List<String> tokens = getTokens("[!?.]+|[a-zA-Z]+");
 		
 		// TODO: Finish this method.  Remember the countSyllables method from 
 		// Document.  That will come in handy here.
+		// O(n) counting words, sentences, and syllables 
+		for (String word: tokens) {
+			int nsyl = super.countSyllables(word);
+			if (!this.isWord(word)) {
+				numSentences += 1;
+			} else {
+				numWords += 1;
+			}
+			
+			numSyllables += nsyl;
+		}
+		// look for punctuation at the end of the document - if not there add sentence
+		// first make sure we have something in the document
+		if (tokens.size()>0) {
+			String end = tokens.get(tokens.size()-1);
+			if (this.isWord(end)) numSentences += 1;
+		}
+
 	}
 	
 	
@@ -58,7 +78,7 @@ public class EfficientDocument extends Document {
 	@Override
 	public int getNumWords() {
 		//TODO: write this method.  Hint: It's simple
-	    return 0;
+	    return this.numWords;
 	}
 
 	/**
@@ -72,7 +92,7 @@ public class EfficientDocument extends Document {
 	@Override
 	public int getNumSentences() {
         //TODO: write this method.  Hint: It's simple
-        return 0;
+        return this.numSentences;
 	}
 
 	/**
@@ -86,7 +106,7 @@ public class EfficientDocument extends Document {
 	@Override
 	public int getNumSyllables() {
         //TODO: write this method.  Hint: It's simple
-        return 0;
+        return this.numSyllables;
 	}
 	
 	// Can be used for testing

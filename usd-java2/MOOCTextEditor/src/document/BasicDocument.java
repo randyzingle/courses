@@ -30,7 +30,7 @@ public class BasicDocument extends Document
 	{
 		String regex = "[a-zA-Z]+";
 		List<String> tokens = this.getTokens(regex);
-		System.out.println("found " + tokens.size() + " words");
+//		System.out.println("found " + tokens.size() + " words");
 	    return tokens.size();
 	}
 	
@@ -47,7 +47,7 @@ public class BasicDocument extends Document
 	{
 	    String regex = "[.!?]+|(\\w$)";
 	    List<String> tokens = this.getTokens(regex);
-	    System.out.println("Found " + tokens.size() + " sentences");
+//	    System.out.println("Found " + tokens.size() + " sentences");
 	    
         return tokens.size();
 	}
