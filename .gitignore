@@ -1,7 +1,8 @@
-node_modules
+node_modules/
 *.jar
 *.class
 *~
 .DS_Store
 .metadata/
 .settings/
+RemoteSystemsTempFiles/
