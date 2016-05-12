@@ -6,3 +6,6 @@ node_modules/
 .settings/
 RemoteSystemsTempFiles/
 .gradle/
+build/
+gradle/
+libs/
