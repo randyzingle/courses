@@ -1,9 +1,4 @@
-<<<<<<< HEAD
 node_modules/
-*.jar
-=======
-node_modules
->>>>>>> a31e4577c0fbf80e62e6bcd68776641d8c8d7b60
 *.class
 *~
 .DS_Store
