@@ -1,8 +1,8 @@
 package textgen;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.ListIterator;
 import java.util.Random;
 
 /** 
@@ -32,7 +32,21 @@ public class MarkovTextGeneratorLoL implements MarkovTextGenerator {
 	@Override
 	public void train(String sourceText)
 	{
-		// TODO: Implement this method
+		if (sourceText == null) return;
+		sourceText = sourceText.toLowerCase();
+		String[] s = sourceText.split("\\s+");
+		if (s == null || s.length == 0) return;
+		starter = s[0];
+		// set up the first node in our list
+		ListNode node = new ListNode(starter);
+		ListNode prev = node;
+		wordList.add(node);
+		for (int i=1; i<s.length; i++) {
+			String w1 = s[i];
+			String w2 = s[i-1];
+			ListNode testNode = getNode(w1);
+			testNode.addNextWord(w2);
+		}
 	}
 	
 	/** 
@@ -64,7 +78,13 @@ public class MarkovTextGeneratorLoL implements MarkovTextGenerator {
 		// TODO: Implement this method.
 	}
 	
-	// TODO: Add any private helper methods you need here.
+	// check to see if a word is already a ListNode word
+	private ListNode getNode(String word) {
+		for (ListNode node: wordList) {
+			if (node.getWord().equals(word)) return node;
+		}
+		return null;
+	}
 	
 	
 	/**
