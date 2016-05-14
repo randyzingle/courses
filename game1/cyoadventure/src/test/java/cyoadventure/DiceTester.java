@@ -29,8 +29,7 @@ public class DiceTester {
 			if (roll > max) max = roll;
 			assertTrue(roll >= 3 && roll <= 18);
 		}
-//		System.out.println("max " + max + ", min" + min);
-		logger.error("maximus " + max + ", minimus" + min);
+		logger.info("maximus: " + max + ", minimus: " + min);
 	}
 	
 	@Test 
