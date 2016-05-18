@@ -5,8 +5,6 @@ package textgen;
 
 import static org.junit.Assert.*;
 
-import java.util.LinkedList;
-
 import org.junit.Before;
 import org.junit.Test;
 
@@ -22,6 +20,7 @@ public class MyLinkedListTester {
 	MyLinkedList<Integer> emptyList;
 	MyLinkedList<Integer> longerList;
 	MyLinkedList<Integer> list1;
+	MyLinkedList<Integer> myList;
 	
 	/**
 	 * @throws java.lang.Exception
@@ -34,6 +33,9 @@ public class MyLinkedListTester {
 		shortList.add("B");
 		emptyList = new MyLinkedList<Integer>();
 		longerList = new MyLinkedList<Integer>();
+		myList = new MyLinkedList<Integer>();
+		myList.add(1);
+		myList.add(2);
 		for (int i = 0; i < LONG_LIST_LENGTH; i++)
 		{
 			longerList.add(i);
@@ -123,8 +125,16 @@ public class MyLinkedListTester {
 	@Test
 	public void testAddEnd()
 	{
-        // TODO: implement this test
-		
+        // myList has 1,2 as entries
+		try {
+			myList.add(null);
+			fail("Check null pointer");
+		}
+		catch (NullPointerException e) {
+		}
+		myList.add(3);
+		assertEquals("Last element is 3", (Integer)3, myList.get(myList.size-1));
+		assertEquals("Size has increased by 1", myList.size, 3);
 	}
 
 	
@@ -132,7 +142,28 @@ public class MyLinkedListTester {
 	@Test
 	public void testSize()
 	{
-		// TODO: implement this test
+		int bigsize = 50000;
+		MyLinkedList<Integer> bigList = new MyLinkedList<Integer>();
+		for (int i=0; i<bigsize; i++) {
+			bigList.add(i);
+		}
+		try {
+			bigList.remove(-1);
+			fail("Check out of bounds");
+		}
+		catch (IndexOutOfBoundsException e) {
+		
+		}
+		try {
+			bigList.remove(bigList.size);
+			fail("Check out of bounds");
+		}
+		catch (IndexOutOfBoundsException e) {
+		}
+		assertEquals("Testing list size after adding elements", bigsize, bigList.size);
+		bigList.remove(0);
+		assertEquals("Testing list size after removing an element", bigsize-1, bigList.size);
+		
 	}
 
 	
@@ -144,16 +175,57 @@ public class MyLinkedListTester {
 	@Test
 	public void testAddAtIndex()
 	{
-        // TODO: implement this test
+		// myList has 1,2
+		try {
+			myList.add(-1, null);
+			fail("Check out of bounds");
+		}
+		catch (IndexOutOfBoundsException e) {
 		
+		}
+		try {
+			myList.add(myList.size, null);
+			fail("Check out of bounds");
+		}
+		catch (IndexOutOfBoundsException e) {
+		}
+		try {
+			myList.add(0, null);
+			fail("Check null pointer");
+		}
+		catch (NullPointerException e) {
+		}
+		int index = 1;
+        myList.add(index,99);
+		assertEquals("Add at index should push old node forward", (Integer)99, myList.get(1));
+		assertEquals("The size should be 3", 3, myList.size);
 	}
 	
 	/** Test setting an element in the list */
 	@Test
 	public void testSet()
 	{
-	    // TODO: implement this test
-	    
+		try {
+			myList.set(-1, null);
+			fail("Check out of bounds");
+		}
+		catch (IndexOutOfBoundsException e) {
+		
+		}
+		try {
+			myList.set(myList.size, null);
+			fail("Check out of bounds");
+		}
+		catch (IndexOutOfBoundsException e) {
+		}
+		try {
+			myList.set(0, null);
+			fail("Check null pointer");
+		}
+		catch (NullPointerException e) {
+		}
+	    myList.set(0, 99);
+	    assertEquals("set first element to 99", (Integer)99, myList.get(0));
 	}
 	
 	
