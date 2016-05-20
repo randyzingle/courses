@@ -28,8 +28,10 @@ public class AutoCompleteDictionaryTrie implements  Dictionary, AutoComplete {
 	 * That is, you should convert the string to all lower case as you insert it. */
 	public boolean addWord(String word)
 	{
-	    //TODO: Implement this method.
-	    return false;
+		boolean wordFound = false;
+	    char[] c = word.toLowerCase().toCharArray();
+	    Set<Character> cset = root.getValidNextCharacters();
+	    return wordFound;
 	}
 	
 	/** 
