@@ -9,3 +9,4 @@ RemoteSystemsTempFiles/
 build/
 gradle/
 libs/
+.recommenders
