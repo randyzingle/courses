@@ -18,9 +18,8 @@ public class GraphAdjList extends BaseGraph {
 	public void removeVertex(int v) {
 		adjListMap.remove(v);
 		for (Integer vert: adjListMap.keySet()) {
-			for (Integer edge: adjListMap.get(vert)) {
-				// TODO if edge = v delete safely 
-			}
+			ArrayList<Integer> edges = adjListMap.get(vert);
+			edges.remove(new Integer(v));
 		}
 		nvert--;
 	}
