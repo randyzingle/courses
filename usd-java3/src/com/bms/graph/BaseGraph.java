@@ -15,6 +15,10 @@ public abstract class BaseGraph {
 	
 	public abstract void addVertex();
 	
-	public abstract void addEdge();
+	public abstract void removeVertex(int v);
+	
+	public abstract void addEdge(int v, int w);
+	
+	public abstract void removeEdge(int v, int w);
 
 }
