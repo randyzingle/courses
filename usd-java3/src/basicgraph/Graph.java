@@ -1,6 +1,7 @@
 package basicgraph;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
@@ -121,8 +122,18 @@ public abstract class Graph {
 	 * @return The degree sequence of this graph.
 	 */
 	public List<Integer> degreeSequence() {
-		// XXX: Implement in part 1 of week 1
-		return null;
+		List<Integer> dlist = new ArrayList<Integer>(getNumVertices());
+		int[] ilist = new int[getNumVertices()];
+		for (int i=0; i<getNumVertices(); i++) {
+			int overt = getNeighbors(i).size();
+			int ivert = getInNeighbors(i).size();
+			ilist[i] = overt + ivert;
+		}
+		Arrays.sort(ilist);
+		for (int j=ilist.length-1; j>=0; j--) {
+			dlist.add(ilist[j]);
+		}
+		return dlist;
 	}
 	
 	/**
@@ -241,7 +252,8 @@ public abstract class Graph {
 		System.out.println("****");
 		System.out.println("Roads / intersections:");
 		GraphAdjList graphFromFile = new GraphAdjList();
-		GraphLoader.loadRoadMap("data/testdata/simpletest.map", graphFromFile);
+//		GraphLoader.loadRoadMap("data/testdata/simpletest.map", graphFromFile);
+		GraphLoader.loadRoadMap("data/maps/ucsd.map", graphFromFile);
 		System.out.println(graphFromFile);
 		
 		System.out.println("Observe all degrees are <= 12.");
