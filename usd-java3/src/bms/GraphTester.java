@@ -58,10 +58,12 @@ public class GraphTester {
 		// Degree sequence -> number of neighbors for each vertex in decreasing order
 		System.out.println("Degree Sequence:");
 		System.out.println(myg.degreeSequence());
-		int v = 1;
+		int v = 4;
 		System.out.println("vertex: " + v);
 		System.out.println("neigbors: " + myg.getNeighbors(v));
 		System.out.println("in neigbors: " + myg.getInNeighbors(v));
+		System.out.println("two hop vertices for " + v + ": ");
+		System.out.println(myg.getDistance2(v));
 	}
 
 }

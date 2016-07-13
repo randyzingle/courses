@@ -104,7 +104,10 @@ public class GraphAdjMatrix extends Graph {
 	 * @return List<Integer> a list of indices of vertices.  
 	 */	
 	public List<Integer> getDistance2(int v) {
-		// XXX Implement this method in week 1
+		int n = this.getNumVertices();
+		if (v >= n) throw new IndexOutOfBoundsException();
+		
+		// One hop neighbors
 		return null;
 	}
 	
