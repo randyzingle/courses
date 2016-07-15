@@ -7,6 +7,7 @@ import java.io.IOException;
 
 import basicgraph.Graph;
 import basicgraph.GraphAdjList;
+import basicgraph.GraphAdjMatrix;
 
 public class GraphTester {
 // simple.data file
@@ -28,7 +29,8 @@ public class GraphTester {
 
 	private static void simpleTest() throws FileNotFoundException, IOException {
 		// lets start with an adjacency list type graph
-		Graph myg = new GraphAdjList();
+		Graph grlist = new GraphAdjList();
+		Graph grmatr = new GraphAdjMatrix();
 		
 		// load the data in data/mystuff/simple.data (5 vertex graph)
 		String file = "data/mystuff/simple.data";
@@ -38,7 +40,8 @@ public class GraphTester {
 		System.out.println(nvert);
 		// add the vertices
 		for (int i=0; i<nvert; i++) {
-			myg.addVertex();
+			grlist.addVertex();
+			grmatr.addVertex();
 		}
 		
 		// read the edges and add them to the graph
@@ -48,22 +51,27 @@ public class GraphTester {
 			String[] svert = line.split("\\s+");
 			int v = Integer.parseInt(svert[0]);
 			int w = Integer.parseInt(svert[1]);
-			myg.addEdge(v, w);
+			grlist.addEdge(v, w);
+			grmatr.addEdge(v, w);
 		}
 		br.close();
 		
 		// print out the graph
-		System.out.println("Simple graph:");
-		System.out.println(myg.adjacencyString());
+		System.out.println("Simple graph as list:");
+		System.out.println(grlist.adjacencyString());
+		System.out.println("Simple graph as matrix:");
+		System.out.println(grmatr.adjacencyString());
 		// Degree sequence -> number of neighbors for each vertex in decreasing order
 		System.out.println("Degree Sequence:");
-		System.out.println(myg.degreeSequence());
-		int v = 4;
+		System.out.println(grlist.degreeSequence());
+		System.out.println(grmatr.degreeSequence());
+		int v = 0;
 		System.out.println("vertex: " + v);
-		System.out.println("neigbors: " + myg.getNeighbors(v));
-		System.out.println("in neigbors: " + myg.getInNeighbors(v));
+		System.out.println("neigbors: " + grlist.getNeighbors(v));
+		System.out.println("in neigbors: " + grlist.getInNeighbors(v));
 		System.out.println("two hop vertices for " + v + ": ");
-		System.out.println(myg.getDistance2(v));
+		System.out.println(grlist.getDistance2(v));
+		System.out.println(grmatr.getDistance2(v));
 	}
 
 }
