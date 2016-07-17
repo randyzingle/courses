@@ -21,6 +21,10 @@ public class TestApp extends Application
 					 implements MapComponentInitializedListener {
 	protected GoogleMapView mapComponent;
 	protected GoogleMap map;
+	
+	public static void main(String[] args){
+		launch(args);
+	}
 
 	@Override
 	public void start(Stage primaryStage) throws Exception {
