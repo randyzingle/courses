@@ -8,6 +8,8 @@
 package roadgraph;
 
 
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Set;
 import java.util.function.Consumer;
@@ -23,7 +25,9 @@ import util.GraphLoader;
  *
  */
 public class MapGraph {
-	//TODO: Add your member variables here in WEEK 2
+	private int nvert;
+	private int nedge;
+	private HashMap<GeographicPoint, ArrayList<EdgeNode>> adjList;
 	
 	
 	/** 
@@ -31,7 +35,9 @@ public class MapGraph {
 	 */
 	public MapGraph()
 	{
-		// TODO: Implement in this constructor in WEEK 2
+		nvert = 0;
+		nedge = 0;
+		adjList = new HashMap<>();
 	}
 	
 	/**
@@ -40,8 +46,7 @@ public class MapGraph {
 	 */
 	public int getNumVertices()
 	{
-		//TODO: Implement this method in WEEK 2
-		return 0;
+		return nvert;
 	}
 	
 	/**
@@ -50,8 +55,8 @@ public class MapGraph {
 	 */
 	public Set<GeographicPoint> getVertices()
 	{
-		//TODO: Implement this method in WEEK 2
-		return null;
+		Set<GeographicPoint> gps = adjList.keySet();
+		return gps;
 	}
 	
 	/**
@@ -60,8 +65,7 @@ public class MapGraph {
 	 */
 	public int getNumEdges()
 	{
-		//TODO: Implement this method in WEEK 2
-		return 0;
+		return nedge;
 	}
 
 	
@@ -75,8 +79,9 @@ public class MapGraph {
 	 */
 	public boolean addVertex(GeographicPoint location)
 	{
-		// TODO: Implement this method in WEEK 2
-		return false;
+		if (location == null || adjList.containsKey(location)) return false;
+		adjList.put(location, new ArrayList<EdgeNode>());
+		return true;
 	}
 	
 	/**
@@ -94,8 +99,15 @@ public class MapGraph {
 	public void addEdge(GeographicPoint from, GeographicPoint to, String roadName,
 			String roadType, double length) throws IllegalArgumentException {
 
-		//TODO: Implement this method in WEEK 2
-		
+		if (from == null || to == null || roadName == null || roadType == null || length < 0) {
+			throw new IllegalArgumentException("Must not have null values for arguments to addEdge");
+		}
+		if (!adjList.containsKey(from) || !adjList.containsKey(to)) {
+			throw new IllegalArgumentException("One of the nodes input to addEdge not found in graph");
+		}
+		// input data looks fine, let's make the Edge and add it to the adjecency list
+		EdgeNode edgeNode = new EdgeNode(to, roadName, roadType, length);
+		adjList.get(from).add(edgeNode);
 	}
 	
 
