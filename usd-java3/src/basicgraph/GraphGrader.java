@@ -2,9 +2,9 @@ package basicgraph;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
-import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
+
 import util.GraphLoader;
 
 /**
@@ -154,6 +154,7 @@ public class GraphGrader {
             while ((next = br.readLine()) != null) {
                 ret.add(Integer.parseInt(next));
             }
+            br.close();
         } catch (Exception e) {
             // shouldn't happen
             feedback += "\nCould not open answer file! Please submit a bug report.";

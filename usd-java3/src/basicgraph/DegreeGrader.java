@@ -1,12 +1,10 @@
 package basicgraph;
 
-import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileReader;
-import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+
 import util.GraphLoader;
 
 /**
@@ -158,6 +156,7 @@ public class DegreeGrader {
             while(s.hasNextInt()) { 
                 ret.add(s.nextInt());
             }
+            s.close();
         } catch (Exception e) {
             feedback += "\nCould not open answer file! Please submit a bug report.";
         }
