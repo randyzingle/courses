@@ -4,6 +4,7 @@ import geography.GeographicPoint;
 
 public class EdgeNode {
 	
+	private GeographicPoint startPoint;
 	private GeographicPoint endPoint;
 	private String roadName;
 	private String roadType;
@@ -11,12 +12,22 @@ public class EdgeNode {
 	
 	public EdgeNode(){}
 	
-	public EdgeNode(GeographicPoint endPoint, String roadName, String roadType, double length) {
+	public EdgeNode(GeographicPoint startPoint, GeographicPoint endPoint, 
+			String roadName, String roadType, double length) {
 		super();
+		this.startPoint = startPoint;
 		this.endPoint = endPoint;
 		this.roadName = roadName;
 		this.roadType = roadType;
 		this.length = length;
+	}
+	
+	public GeographicPoint getStartPoint() {
+		return startPoint;
+	}
+
+	public void setStartPoint(GeographicPoint startPoint) {
+		this.startPoint = startPoint;
 	}
 
 	public GeographicPoint getEndPoint() {
@@ -56,6 +67,5 @@ public class EdgeNode {
 		return "EdgeNode [endPoint=" + endPoint + ", roadName=" + roadName + ", roadType=" + roadType + ", length="
 				+ length + "]";
 	}
-
 
 }

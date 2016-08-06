@@ -9,8 +9,12 @@ package roadgraph;
 
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
+import java.util.HashSet;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Queue;
 import java.util.Set;
 import java.util.function.Consumer;
 
@@ -105,9 +109,9 @@ public class MapGraph {
 		if (!adjList.containsKey(from) || !adjList.containsKey(to)) {
 			throw new IllegalArgumentException("One of the nodes input to addEdge not found in graph");
 		}
-		// input data looks fine, let's make the Edge and add it to the adjecency list
-		EdgeNode edgeNode = new EdgeNode(to, roadName, roadType, length);
-		adjList.get(from).add(edgeNode);
+		// input data looks fine, let's make the Edge and add it to the adjacency list
+		EdgeNode roadSeg = new EdgeNode(from, to, roadName, roadType, length);
+		adjList.get(from).add(roadSeg);
 	}
 	
 
@@ -135,7 +139,49 @@ public class MapGraph {
 	public List<GeographicPoint> bfs(GeographicPoint start, 
 			 					     GeographicPoint goal, Consumer<GeographicPoint> nodeSearched)
 	{
-		// TODO: Implement this method in WEEK 2
+		if (start==null || goal==null) return null;
+		
+		HashSet<GeographicPoint> visited = new HashSet<>();
+		HashMap<GeographicPoint, GeographicPoint> pathTree = new HashMap<>();
+		List<GeographicPoint> path = new ArrayList<>();
+		Queue<GeographicPoint> candidate = new LinkedList<>();
+		
+		// If the starting point is the ending point return a list with the start point
+		if (start == goal) {
+			path.add(start);
+			return path;
+		}
+		
+		GeographicPoint curr = null;
+		visited.add(start);
+		candidate.add(start);
+		
+		// do we have nodes to process
+		while(!candidate.isEmpty()) {
+			curr = candidate.remove();
+			// for visualization
+			nodeSearched.accept(curr);
+			// end for visualization
+			
+			ArrayList<EdgeNode> edges = this.adjList.get(curr);
+			for (EdgeNode en: edges) {
+				GeographicPoint pt = en.getEndPoint();
+				// drop this edge if we've already looked at it
+				if(visited.contains(pt)) continue;
+				visited.add(pt);
+				
+				// setup the tree that contain the path
+				pathTree.put(pt, curr);
+				if (pt == goal) {
+					// return the list of GeographicPoints (intersections) that make up the path
+					path = getPath(pathTree, goal, start);
+					return path;
+				}
+
+				// add to the queue of candidate nodes
+				candidate.add(pt);
+			}
+		}
 		
 		// Hook for visualization.  See writeup.
 		//nodeSearched.accept(next.getLocation());
@@ -143,6 +189,25 @@ public class MapGraph {
 		return null;
 	}
 	
+	private List<GeographicPoint> getPath(HashMap<GeographicPoint, GeographicPoint> path,
+			GeographicPoint goal, GeographicPoint start) {
+		List<GeographicPoint> plist = new ArrayList<GeographicPoint>();
+		// key = child node, value = parent node
+		GeographicPoint pt = goal;
+		plist.add(pt);
+		while(pt != start) {
+			pt = path.get(pt);
+			plist.add(pt);
+		}
+		Collections.reverse(plist);
+		return plist;
+	}
+	
+	private void printPath(List<GeographicPoint> plist) {
+		for (GeographicPoint pt: plist) {
+			System.out.println(pt);
+		}
+	}
 
 	/** Find the path from start to goal using Dijkstra's algorithm
 	 * 
@@ -218,6 +283,8 @@ public class MapGraph {
 		System.out.print("DONE. \nLoading the map...");
 		GraphLoader.loadRoadMap("data/testdata/simpletest.map", firstMap);
 		System.out.println("DONE.");
+		
+		System.out.println(firstMap);
 		
 		// You can use this method for testing.  
 		
