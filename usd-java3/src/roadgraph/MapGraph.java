@@ -8,13 +8,12 @@
 package roadgraph;
 
 
+import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
-import java.util.LinkedList;
 import java.util.List;
-import java.util.Queue;
 import java.util.Set;
 import java.util.function.Consumer;
 
@@ -29,9 +28,11 @@ import util.GraphLoader;
  *
  */
 public class MapGraph {
+	private static boolean DEBUG = true;
 	private int nvert;
 	private int nedge;
-	private HashMap<GeographicPoint, ArrayList<EdgeNode>> adjList;
+	private HashMap<GeographicPoint, ArrayList<GeographicPoint>> adjList;
+	private double TINY = 0.001;
 	
 	
 	/** 
@@ -84,7 +85,8 @@ public class MapGraph {
 	public boolean addVertex(GeographicPoint location)
 	{
 		if (location == null || adjList.containsKey(location)) return false;
-		adjList.put(location, new ArrayList<EdgeNode>());
+		nvert++;
+		adjList.put(location, new ArrayList<GeographicPoint>());
 		return true;
 	}
 	
@@ -110,8 +112,9 @@ public class MapGraph {
 			throw new IllegalArgumentException("One of the nodes input to addEdge not found in graph");
 		}
 		// input data looks fine, let's make the Edge and add it to the adjacency list
-		EdgeNode roadSeg = new EdgeNode(from, to, roadName, roadType, length);
-		adjList.get(from).add(roadSeg);
+		nedge++;
+		
+		adjList.get(from).add(to);
 	}
 	
 
@@ -144,7 +147,7 @@ public class MapGraph {
 		HashSet<GeographicPoint> visited = new HashSet<>();
 		HashMap<GeographicPoint, GeographicPoint> pathTree = new HashMap<>();
 		List<GeographicPoint> path = new ArrayList<>();
-		Queue<GeographicPoint> candidate = new LinkedList<>();
+		ArrayDeque<GeographicPoint> candidate = new ArrayDeque<>();
 		
 		// If the starting point is the ending point return a list with the start point
 		if (start == goal) {
@@ -158,26 +161,29 @@ public class MapGraph {
 		
 		// do we have nodes to process
 		while(!candidate.isEmpty()) {
-			curr = candidate.remove();
-			// for visualization
-			nodeSearched.accept(curr);
-			// end for visualization
 			
-			ArrayList<EdgeNode> edges = this.adjList.get(curr);
-			for (EdgeNode en: edges) {
-				GeographicPoint pt = en.getEndPoint();
-				// drop this edge if we've already looked at it
-				if(visited.contains(pt)) continue;
-				visited.add(pt);
+			curr = candidate.remove();	
+			nodeSearched.accept(curr); // for visualization
+						
+			// Are we done yet? Is this our goal node?
+			if (curr.distance(goal) < TINY) {
+				// return the list of GeographicPoints (intersections) that make up the path
+				path = getPath(pathTree, goal, start);
+				if (DEBUG) printPath(path);
+				return path;
+			}
+			
+			ArrayList<GeographicPoint> edges = this.adjList.get(curr);
+			for (GeographicPoint edgePoint: edges) {
+				GeographicPoint pt = edgePoint;
 				
-				// setup the tree that contain the path
+				// we've already worked with this edge
+				if(visited.contains(pt)) continue;
+				
+				// set up the parent/child tree back to the start node
 				pathTree.put(pt, curr);
-				if (pt == goal) {
-					// return the list of GeographicPoints (intersections) that make up the path
-					path = getPath(pathTree, goal, start);
-					return path;
-				}
-
+				// we've seen this node
+				visited.add(pt);
 				// add to the queue of candidate nodes
 				candidate.add(pt);
 			}
@@ -204,9 +210,13 @@ public class MapGraph {
 	}
 	
 	private void printPath(List<GeographicPoint> plist) {
+		System.out.print("PathMG: ");
+		StringBuilder buf = new StringBuilder();
+		buf.append("\t");
 		for (GeographicPoint pt: plist) {
-			System.out.println(pt);
+			buf.append("("+pt+") ");
 		}
+		System.out.println(buf.toString());
 	}
 
 	/** Find the path from start to goal using Dijkstra's algorithm
@@ -274,7 +284,19 @@ public class MapGraph {
 		return null;
 	}
 
-	
+	@Override
+	public String toString() {
+		StringBuilder buf = new StringBuilder();
+		for (GeographicPoint key: adjList.keySet()) {
+			buf.append("NODE: {" + key + "} EDGES: ");
+			ArrayList<GeographicPoint> ptList = adjList.get(key);
+			for (GeographicPoint pt: ptList) {
+				buf.append("("+pt+") ");
+			}
+			buf.append("\n");
+		}
+		return buf.toString();
+	}
 	
 	public static void main(String[] args)
 	{

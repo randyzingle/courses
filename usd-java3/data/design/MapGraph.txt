@@ -1,0 +1,41 @@
+Class: MapGraph
+
+Modifications made to MapGraph (what and why):
+
+For BFS I just modified MapGraph and didn't create any supporting classes. 
+I did this because we only needed to get the path with the least number of GraphNodes without regard to distance so I didn't 
+need to store any other data. 
+
+When comparing the currently examined node to the goal to see if they were the same I tested to see if the distance between them
+was less  than a TINY amount (where TINY = 0.001, which would put the two nodes/intersections at less than 1 meter apart).  
+
+I also created a printPath method that takes the list of GeographicPoint(s) and prints them out 
+to support debugging. 
+
+Finally I overrode toString in MapGraph such that it formats and prints out the Adjacency Matrix in MapGraph, again to aid in debugging.
+
+Class name: MapGraphTesterBFS
+
+Purpose and description of class:
+It loads the sample map, data/testdata/simpletest.map, and has two methods. 
+
+One has a loop that runs NTEST times and randomly picks two nodes for the start and goal and calculates and prints out the BFS path
+for them. 
+
+The other lets you create two GeographicPoints and uses them and the start and goal nodes. 
+
+Overall Design Justification (4-6 sentences):
+
+I just modified MapGraph and worked with GraphNodes directly since we don't need any supporting information, such as road length 
+or speed for simple BFS. This lets the code run the quickest and uses the least amount of memory. I used classes from java.util for 
+all of my data structures that stored the BFS information, versus creating my own since they are well tested and performant.
+
+I used:
+HashSet to store the visited points since these need to be a list of unique items
+HashMap to store the parent child relationship between the nodes
+ArrayDeque as the queue which stores the candidate nodes in the FIFO order they need to be examined in. 
+
+To compare a candidate node to the goal I checked to see if the distance between the two nodes was less than 1 meter since these
+are road intersections and being within that distance makes them the same intersection. I didn't compare the lat/lons for the two
+points directly for equality because equality between floating point numbers is always tricky due to rounding and floating point 
+precision. 
