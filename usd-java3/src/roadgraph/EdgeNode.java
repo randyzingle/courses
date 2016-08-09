@@ -2,70 +2,80 @@ package roadgraph;
 
 import geography.GeographicPoint;
 
-public class EdgeNode {
+public class EdgeNode implements Comparable<EdgeNode> {
 	
-	private GeographicPoint startPoint;
-	private GeographicPoint endPoint;
+	private GeographicPoint location;
 	private String roadName;
 	private String roadType;
 	private double length;
+	private double distanceFromStart = Double.MAX_VALUE;
+	private static double TINY = 0.0001;
 	
 	public EdgeNode(){}
 	
-	public EdgeNode(GeographicPoint startPoint, GeographicPoint endPoint, 
-			String roadName, String roadType, double length) {
-		super();
-		this.startPoint = startPoint;
-		this.endPoint = endPoint;
+	public EdgeNode(GeographicPoint location, String roadName, String roadType, double length) {
+		this.location = location;
 		this.roadName = roadName;
 		this.roadType = roadType;
 		this.length = length;
 	}
-	
-	public GeographicPoint getStartPoint() {
-		return startPoint;
+
+	public double getDistanceFromStart() {
+		return distanceFromStart;
 	}
 
-	public void setStartPoint(GeographicPoint startPoint) {
-		this.startPoint = startPoint;
+	public void setDistanceFromStart(double distanceFromStart) {
+		this.distanceFromStart = distanceFromStart;
 	}
 
-	public GeographicPoint getEndPoint() {
-		return endPoint;
-	}
-
-	public void setEndPoint(GeographicPoint endPoint) {
-		this.endPoint = endPoint;
+	public GeographicPoint getLocation() {
+		return location;
 	}
 
 	public String getRoadName() {
 		return roadName;
 	}
 
-	public void setRoadName(String roadName) {
-		this.roadName = roadName;
-	}
-
 	public String getRoadType() {
 		return roadType;
-	}
-
-	public void setRoadType(String roadType) {
-		this.roadType = roadType;
 	}
 
 	public double getLength() {
 		return length;
 	}
 
-	public void setLength(double length) {
-		this.length = length;
+	@Override
+	public String toString() {
+		return "EdgeNode [endPoint=" + location + ", roadName=" + roadName + ", roadType=" + roadType + ", length="
+				+ length + ", distanceFromStart=" + distanceFromStart + "]";
 	}
 
 	@Override
-	public String toString() {
-		return "EdgeNode [endPoint=" + endPoint + ", roadName=" + roadName + ", roadType=" + roadType + ", length="
-				+ length + "]";
+	public int compareTo(EdgeNode otherNode) {
+		if (otherNode == null) throw new NullPointerException("Trying to compare EdgeNode to null");
+ 
+		if (this.distanceFromStart > otherNode.getDistanceFromStart()) {
+			return 1;
+		} else if (this.distanceFromStart < otherNode.getDistanceFromStart()) {
+			return -1;
+		}
+		return 0;
 	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		EdgeNode other = (EdgeNode) obj;
+		double distance = this.getLocation().distance(other.getLocation());
+		if (distance < TINY) return true;
+		return false;
+	}
+	
+	
 
 }
