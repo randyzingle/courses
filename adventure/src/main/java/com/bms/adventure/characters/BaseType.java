@@ -2,7 +2,8 @@ package com.bms.adventure.characters;
 
 import java.util.HashMap;
 
-public class Race {
+public class BaseType {
+
 	private HashMap<AbilitiesEnum, Integer> abilityModifier = new HashMap<>();
 	private RaceEnum racialType;
 	private CharacterClassEnum characterClass;
@@ -10,7 +11,7 @@ public class Race {
 	private AbilitiesEnum secondary;
 	private AbilitiesEnum tertiary;
 	
-	public Race(RaceEnum racialType, CharacterClassEnum characterClass) {
+	public BaseType(RaceEnum racialType, CharacterClassEnum characterClass) {
 		this.racialType = racialType;
 		this.characterClass = characterClass;
 		if (characterClass == CharacterClassEnum.fighter) {
@@ -36,6 +37,14 @@ public class Race {
 		}
 	}
 	
+	public RaceEnum getRacialType() {
+		return racialType;
+	}
+
+	public CharacterClassEnum getCharacterClass() {
+		return characterClass;
+	}
+	
 	public AbilitiesEnum getPrimary() {
 		return primary;
 	}
@@ -58,7 +67,9 @@ public class Race {
 
 	@Override
 	public String toString() {
-		return "[raceName=" + racialType.toString()  + "]";
+		return "BaseType [racialType=" + racialType + ", characterClass=" + characterClass + "]";
 	}
+
+
 	
 }

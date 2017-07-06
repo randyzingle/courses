@@ -2,8 +2,9 @@ package com.bms.adventure;
 
 import com.bms.adventure.characters.Abilities;
 import com.bms.adventure.characters.AbilitiesEnum;
+import com.bms.adventure.characters.BaseType;
 import com.bms.adventure.characters.CharacterClassEnum;
-import com.bms.adventure.characters.Race;
+import com.bms.adventure.characters.PlayerCharacter;
 import com.bms.adventure.characters.RaceEnum;
 import com.bms.adventure.utils.AbilityGenerator;
 import com.bms.adventure.utils.Dice;
@@ -11,14 +12,24 @@ import com.bms.adventure.utils.Dice;
 public class Adventure {
 	public static void main(String[] args) {
 		System.out.println("Adventure");
-		
+		makePlayerCharacter();
 
 	}
 	
+	private static void makePlayerCharacter() {
+		String name = "Baldur";
+		BaseType baseType = new BaseType(RaceEnum.dwarf, CharacterClassEnum.fighter);
+		PlayerCharacter pc = new PlayerCharacter(name, baseType);
+		System.out.println(pc);
+		baseType = new BaseType(RaceEnum.elf, CharacterClassEnum.fighter);
+		pc = new PlayerCharacter("Finnr", baseType);
+		System.out.println(pc);
+	}
+
 	public static void makeSomeFighters() {
 		String raceString = "dwarf";
 		
-		Race race = new Race(RaceEnum.valueOf(raceString), CharacterClassEnum.fighter);
+		BaseType race = new BaseType(RaceEnum.valueOf(raceString), CharacterClassEnum.fighter);
 		System.out.println("You are a " + race.toString());
 		System.out.println("Your ability modifiers are: " + race.getAbilityModifier().toString());
 		

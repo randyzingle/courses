@@ -4,6 +4,7 @@ import java.util.HashMap;
 
 public class Abilities {
 	
+	// raw or base abilities
 	private int strength;
 	private int intelligence;
 	private int wisdom;
@@ -13,6 +14,7 @@ public class Abilities {
 	
 	public static final int[] abilityModifiers = getAbilityModifiers();
 	
+	// raw abilities +/- effects of magic, poison, etc.
 	public HashMap<AbilitiesEnum, Integer> abilities = new HashMap<>();
 	
 	public Abilities(HashMap<AbilitiesEnum, Integer> abilities) {
@@ -22,6 +24,7 @@ public class Abilities {
 		this.dexterity = abilities.get(AbilitiesEnum.dexterity);
 		this.constitution = abilities.get(AbilitiesEnum.constitution);
 		this.charisma = abilities.get(AbilitiesEnum.charisma);
+		this.abilities = abilities;
 	}
 	
 	public Abilities(int strength, int intelligence, int wisdom, 
@@ -32,6 +35,12 @@ public class Abilities {
 		this.dexterity = dexterity;
 		this.constitution = constitution;
 		this.charisma = charisma;
+		abilities.put(AbilitiesEnum.strength, strength);
+		abilities.put(AbilitiesEnum.intelligence, intelligence);
+		abilities.put(AbilitiesEnum.wisdom, wisdom);
+		abilities.put(AbilitiesEnum.dexterity, dexterity);
+		abilities.put(AbilitiesEnum.constitution, constitution);
+		abilities.put(AbilitiesEnum.charisma, charisma);
 	}
 	
 	private static int[] getAbilityModifiers() {

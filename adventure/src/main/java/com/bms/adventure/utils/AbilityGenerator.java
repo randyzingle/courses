@@ -9,7 +9,7 @@ import java.util.Set;
 import com.bms.adventure.characters.Abilities;
 import com.bms.adventure.characters.AbilitiesEnum;
 import com.bms.adventure.characters.CharacterClassEnum;
-import com.bms.adventure.characters.Race;
+import com.bms.adventure.characters.BaseType;
 import com.bms.adventure.characters.RaceEnum;
 
 public class AbilityGenerator {
@@ -46,9 +46,13 @@ public class AbilityGenerator {
 		return abilities;
 	}
 	
+	public static Abilities generateAbilities(BaseType baseType) {
+		return generateAbilities(baseType.getRacialType(), baseType.getCharacterClass());
+	}
+	
 	public static Abilities generateAbilities(RaceEnum raceEnum, CharacterClassEnum characterClassEnum) {
 		Abilities abilities = null;
-		Race race = new Race(raceEnum, characterClassEnum);
+		BaseType race = new BaseType(raceEnum, characterClassEnum);
 		int[] stats = rollRawAbilities();
 		Arrays.sort(stats); // sorts lowest to highest
 		HashMap<AbilitiesEnum, Integer> map = new HashMap<>();
