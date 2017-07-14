@@ -63,6 +63,14 @@ public class EdgeNode implements Comparable<EdgeNode> {
 	}
 
 	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((location == null) ? 0 : location.hashCode());
+		return result;
+	}
+
+	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
 			return true;
@@ -71,10 +79,29 @@ public class EdgeNode implements Comparable<EdgeNode> {
 		if (getClass() != obj.getClass())
 			return false;
 		EdgeNode other = (EdgeNode) obj;
-		double distance = this.getLocation().distance(other.getLocation());
-		if (distance < TINY) return true;
-		return false;
+		if (location == null) {
+			if (other.location != null)
+				return false;
+		} else if (!location.equals(other.location))
+			return false;
+		return true;
 	}
+
+//	@Override
+//	public boolean equals(Object obj) {
+//		if (this == obj)
+//			return true;
+//		if (obj == null)
+//			return false;
+//		if (getClass() != obj.getClass())
+//			return false;
+//		EdgeNode other = (EdgeNode) obj;
+//		double distance = this.getLocation().distance(other.getLocation());
+//		if (distance < TINY) return true;
+//		return false;
+//	}
+	
+	
 	
 	
 
