@@ -10,3 +10,6 @@ build/
 gradle/
 libs/
 .recommenders
+bin/
+.classpath
+.project
