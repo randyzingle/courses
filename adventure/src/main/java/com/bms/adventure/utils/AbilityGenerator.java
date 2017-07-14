@@ -8,9 +8,9 @@ import java.util.Set;
 
 import com.bms.adventure.characters.Abilities;
 import com.bms.adventure.characters.AbilitiesEnum;
-import com.bms.adventure.characters.CharacterClassEnum;
 import com.bms.adventure.characters.BaseType;
-import com.bms.adventure.characters.RaceEnum;
+import com.bms.adventure.characters.CharacterClassEnum;
+import com.bms.adventure.characters.Race;
 
 public class AbilityGenerator {
 	
@@ -47,23 +47,23 @@ public class AbilityGenerator {
 	}
 	
 	public static Abilities generateAbilities(BaseType baseType) {
-		return generateAbilities(baseType.getRacialType(), baseType.getCharacterClass());
+		return generateAbilities(baseType.getRace(), baseType.getCharacterClass());
 	}
 	
-	public static Abilities generateAbilities(RaceEnum raceEnum, CharacterClassEnum characterClassEnum) {
+	public static Abilities generateAbilities(Race race, CharacterClassEnum characterClassEnum) {
 		Abilities abilities = null;
-		BaseType race = new BaseType(raceEnum, characterClassEnum);
+		BaseType baseType = new BaseType(race, characterClassEnum);
 		int[] stats = rollRawAbilities();
 		Arrays.sort(stats); // sorts lowest to highest
 		HashMap<AbilitiesEnum, Integer> map = new HashMap<>();
 		// set top stats based on racial preferences
-		map.put(race.getPrimary(), stats[5]);
-		map.put(race.getSecondary(), stats[4]);
-		map.put(race.getTertiary(), stats[3]);
+		map.put(baseType.getPrimary(), stats[5]);
+		map.put(baseType.getSecondary(), stats[4]);
+		map.put(baseType.getTertiary(), stats[3]);
 		AbilitiesEnum[] allAbilities = AbilitiesEnum.values(); // get all the values as an array
 		ArrayList<AbilitiesEnum> emptyAbilities = new ArrayList<>(3);
 		for (AbilitiesEnum ab: allAbilities) {
-			if(ab != race.getPrimary() && ab != race.getSecondary() && ab != race.getTertiary()) emptyAbilities.add(ab);
+			if(ab != baseType.getPrimary() && ab != baseType.getSecondary() && ab != baseType.getTertiary()) emptyAbilities.add(ab);
 		}
 		int[] remainingStats = Arrays.copyOfRange(stats, 0,3);
 		shuffle(remainingStats);
@@ -71,7 +71,7 @@ public class AbilityGenerator {
 			map.put(emptyAbilities.get(i), remainingStats[i]);
 		}
 		// add racial modifiers
-		HashMap<AbilitiesEnum, Integer> modifiers = race.getAbilityModifier();
+		HashMap<AbilitiesEnum, Integer> modifiers = baseType.getAbilityModifier();
 		Set<AbilitiesEnum> modifierKeys = modifiers.keySet();
 		for (AbilitiesEnum key: modifierKeys) {
 //			int stat = map.get(key);

@@ -4,8 +4,10 @@ import com.bms.adventure.characters.Abilities;
 import com.bms.adventure.characters.AbilitiesEnum;
 import com.bms.adventure.characters.BaseType;
 import com.bms.adventure.characters.CharacterClassEnum;
+import com.bms.adventure.characters.Dwarf;
+import com.bms.adventure.characters.Elf;
+import com.bms.adventure.characters.Human;
 import com.bms.adventure.characters.PlayerCharacter;
-import com.bms.adventure.characters.RaceEnum;
 import com.bms.adventure.utils.AbilityGenerator;
 import com.bms.adventure.utils.Dice;
 
@@ -18,18 +20,17 @@ public class Adventure {
 	
 	private static void makePlayerCharacter() {
 		String name = "Baldur";
-		BaseType baseType = new BaseType(RaceEnum.dwarf, CharacterClassEnum.fighter);
+		BaseType baseType = new BaseType(new Dwarf(), CharacterClassEnum.fighter);
 		PlayerCharacter pc = new PlayerCharacter(name, baseType);
 		System.out.println(pc);
-		baseType = new BaseType(RaceEnum.elf, CharacterClassEnum.fighter);
+		baseType = new BaseType(new Elf(), CharacterClassEnum.fighter);
 		pc = new PlayerCharacter("Finnr", baseType);
 		System.out.println(pc);
 	}
 
 	public static void makeSomeFighters() {
-		String raceString = "dwarf";
 		
-		BaseType race = new BaseType(RaceEnum.valueOf(raceString), CharacterClassEnum.fighter);
+		BaseType race = new BaseType(new Dwarf(), CharacterClassEnum.fighter);
 		System.out.println("You are a " + race.toString());
 		System.out.println("Your ability modifiers are: " + race.getAbilityModifier().toString());
 		
@@ -47,11 +48,11 @@ public class Adventure {
 		Abilities better = AbilityGenerator.generateAbilities(primary, secondary, tertiary);
 		System.out.println(better);
 		
-		Abilities elf = AbilityGenerator.generateAbilities(RaceEnum.elf, CharacterClassEnum.fighter);
+		Abilities elf = AbilityGenerator.generateAbilities(new Elf(), CharacterClassEnum.fighter);
 		System.out.println("Elven Fighter: ");
 		System.out.println(elf);
 		
-		Abilities human = AbilityGenerator.generateAbilities(RaceEnum.human, CharacterClassEnum.fighter);
+		Abilities human = AbilityGenerator.generateAbilities(new Human(), CharacterClassEnum.fighter);
 		System.out.println("Human Fighter: ");
 		System.out.println(human);
 		

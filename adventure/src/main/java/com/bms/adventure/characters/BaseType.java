@@ -5,31 +5,25 @@ import java.util.HashMap;
 public class BaseType {
 
 	private HashMap<AbilitiesEnum, Integer> abilityModifier = new HashMap<>();
-	private RaceEnum racialType;
+	private Race race;
 	private CharacterClassEnum characterClass;
 	private AbilitiesEnum primary;
 	private AbilitiesEnum secondary;
 	private AbilitiesEnum tertiary;
 	
-	public BaseType(RaceEnum racialType, CharacterClassEnum characterClass) {
-		this.racialType = racialType;
+	public BaseType(Race race, CharacterClassEnum characterClass) {
+		this.race = race;
 		this.characterClass = characterClass;
 		if (characterClass == CharacterClassEnum.fighter) {
-			if (racialType == RaceEnum.dwarf) {
-				abilityModifier.put(AbilitiesEnum.constitution, 2);
-				abilityModifier.put(AbilitiesEnum.charisma, -2);
+			if (race.getRacialType() == RaceEnum.dwarf) {
 				primary = AbilitiesEnum.strength;
 				secondary = AbilitiesEnum.constitution;
 				tertiary = AbilitiesEnum.wisdom;
-			} else if (racialType == RaceEnum.elf) {
-				abilityModifier.put(AbilitiesEnum.dexterity, 2);
-				abilityModifier.put(AbilitiesEnum.constitution, -2);
+			} else if (race.getRacialType() == RaceEnum.elf) {			
 				primary = AbilitiesEnum.dexterity;
 				secondary = AbilitiesEnum.strength;
 				tertiary = AbilitiesEnum.wisdom;
-			} else if (racialType == RaceEnum.human) {
-				abilityModifier.put(AbilitiesEnum.dexterity, 0);
-				abilityModifier.put(AbilitiesEnum.constitution, 0);
+			} else if (race.getRacialType() == RaceEnum.human) {
 				primary = AbilitiesEnum.strength;
 				secondary = AbilitiesEnum.constitution;
 				tertiary = AbilitiesEnum.wisdom;
@@ -37,8 +31,12 @@ public class BaseType {
 		}
 	}
 	
+	public Race getRace() {
+		return race;
+	}
+	
 	public RaceEnum getRacialType() {
-		return racialType;
+		return race.getRacialType();
 	}
 
 	public CharacterClassEnum getCharacterClass() {
@@ -62,12 +60,12 @@ public class BaseType {
 	}
 
 	public String getRaceName() {
-		return racialType.toString();
+		return race.getRacialType().toString();
 	}
 
 	@Override
 	public String toString() {
-		return "BaseType [racialType=" + racialType + ", characterClass=" + characterClass + "]";
+		return "BaseType [racialType=" + race.getRacialType() + ", characterClass=" + characterClass + "]";
 	}
 
 

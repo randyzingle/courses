@@ -3,6 +3,7 @@ package com.bms.adventure.characters;
 import java.util.HashMap;
 
 public class Abilities {
+
 	
 	// raw or base abilities
 	private int strength;
