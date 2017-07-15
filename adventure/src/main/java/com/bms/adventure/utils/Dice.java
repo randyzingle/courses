@@ -28,7 +28,9 @@ public class Dice {
 	
 	public static String getIntArrayAsString(int[] a) {
 		StringBuffer buff = new StringBuffer();
+		int sum = 0;
 		for (int i=0; i<a.length; i++) {
+			sum += a[i];
 			if (i==0) {
 				buff.append("Dice rolls: [" + a[i] + " ");
 			} else if (i==a.length-1) {
@@ -37,7 +39,7 @@ public class Dice {
 				buff.append(a[i] + " ");
 			}
 		}
-		return buff.toString();
+		return buff.toString() + " " + sum;
 	}
 
 }

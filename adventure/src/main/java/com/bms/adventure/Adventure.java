@@ -20,11 +20,8 @@ public class Adventure {
 	
 	private static void makePlayerCharacter() {
 		String name = "Baldur";
-		BaseType baseType = new BaseType(new Dwarf(), CharacterClassEnum.fighter);
+		BaseType baseType = new BaseType(new Elf(), CharacterClassEnum.fighter);
 		PlayerCharacter pc = new PlayerCharacter(name, baseType);
-		System.out.println(pc);
-		baseType = new BaseType(new Elf(), CharacterClassEnum.fighter);
-		pc = new PlayerCharacter("Finnr", baseType);
 		System.out.println(pc);
 	}
 
@@ -32,7 +29,7 @@ public class Adventure {
 		
 		BaseType race = new BaseType(new Dwarf(), CharacterClassEnum.fighter);
 		System.out.println("You are a " + race.toString());
-		System.out.println("Your ability modifiers are: " + race.getAbilityModifier().toString());
+		System.out.println("Your ability modifiers are: " + race.getRacialAbilityModifiers().toString());
 		
 		int strength = Dice.rollDice(3, 6);
 		System.out.println("Your strength is: " + strength);

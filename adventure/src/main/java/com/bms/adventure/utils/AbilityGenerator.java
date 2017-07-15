@@ -71,7 +71,7 @@ public class AbilityGenerator {
 			map.put(emptyAbilities.get(i), remainingStats[i]);
 		}
 		// add racial modifiers
-		HashMap<AbilitiesEnum, Integer> modifiers = baseType.getAbilityModifier();
+		HashMap<AbilitiesEnum, Integer> modifiers = baseType.getRacialAbilityModifiers();
 		Set<AbilitiesEnum> modifierKeys = modifiers.keySet();
 		for (AbilitiesEnum key: modifierKeys) {
 //			int stat = map.get(key);
