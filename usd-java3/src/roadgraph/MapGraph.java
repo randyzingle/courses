@@ -269,8 +269,8 @@ public class MapGraph {
 			Consumer<GeographicPoint> nodeSearched) {
 		if (start == null || goal == null) return null;
 
-		HashSet<EdgeNode> visited = new HashSet<>();
-		HashMap<GeographicPoint, GeographicPoint> pathTree = new HashMap<>();
+		List<EdgeNode> visited = new ArrayList<>();
+		HashMap<EdgeNode, EdgeNode> pathTree = new HashMap<>();
 		List<GeographicPoint> path = new ArrayList<>();
 		PriorityQueue<EdgeNode> candidates = new PriorityQueue<>(); // min priority queue (returns smallest)
 
@@ -297,7 +297,7 @@ public class MapGraph {
 			// Are we done yet? Is this our goal node?
 			if (curr.equals(goalNode)) {
 				// return the list of GeographicPoints (intersections) that make up the path
-				path = getPath(pathTree, goal, start);
+				path = getPathFromEdgeNodes(pathTree, goal, start, goalNode);
 				if (DEBUG)
 					printPath(path);
 				return path;
@@ -308,14 +308,44 @@ public class MapGraph {
 				if (visited.contains(node)) continue;
 				double dist = curr.getDistanceFromStart() + curr.getLocation().distance(node.getLocation());
 				if (dist < node.getDistanceFromStart()) {
-					node.setDistanceFromStart(dist);
-					pathTree.put(node.getLocation(), curr.getLocation());
+					// check to see if node is in parent-child tree and what the current distance is
+					if (pathTree.containsKey(node) && keyDistance(pathTree, node) < dist) {
+						System.out.println("Found: " + node.toString() + " with a smaller distance - don't replace");
+					} else {
+						node.setDistanceFromStart(dist);
+						pathTree.put(node, curr);
+					}
 					candidates.add(node);
 				}
 			}
 		}
 		
 		return null;
+	}
+
+	private double keyDistance(HashMap<EdgeNode, EdgeNode> pathTree, EdgeNode node) {
+		Set<EdgeNode> kset = pathTree.keySet();
+		for (EdgeNode en: kset) {
+			if (node.equals(en)) return en.getDistanceFromStart();
+		}
+		return Double.MAX_VALUE;
+	}
+
+	private List<GeographicPoint> getPathFromEdgeNodes(HashMap<EdgeNode, EdgeNode> pathTree, GeographicPoint goal,
+			GeographicPoint start, EdgeNode goalNode) {	
+		
+		List<GeographicPoint> plist = new ArrayList<GeographicPoint>();
+		// key = child node, value = parent node
+		GeographicPoint pt = goal;
+		EdgeNode node = goalNode;
+		plist.add(pt);
+		while (pt != start) {
+			node = pathTree.get(node);
+			pt = node.getLocation();
+			plist.add(pt);
+		}
+		Collections.reverse(plist);
+		return plist;
 	}
 
 	/**

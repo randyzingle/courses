@@ -12,7 +12,8 @@ public class MapGraphTesterDijkstra {
 	
 	private static int NTESTS = 5;
 	private static String SIMPLE_MAP = "data/testdata/simpletest.map";
-	private static String MAP1 = "data/graders/mod3/map1.txt";
+	private static String MAP2 = "data/graders/mod3/map2.txt";
+	private static String MAP3 = "data/graders/mod3/map3.txt";
 
 	public static void main(String[] args) {
 		try {
@@ -24,7 +25,7 @@ public class MapGraphTesterDijkstra {
 
 	private static void doIt() {
 		MapGraph graph = new MapGraph();
-		String file = SIMPLE_MAP;
+		String file = MAP2;
 		GraphLoader.loadRoadMap(file, graph);
 		System.out.println(graph);
 		
@@ -38,8 +39,8 @@ public class MapGraphTesterDijkstra {
 
 	private static void runSet(MapGraph graph) {
 		// Dijkstra's algorithm from (7.0, 3.0) to (4.0, -1.0)
-		GeographicPoint start = new GeographicPoint(1.0, 1.0);
-		GeographicPoint goal = new GeographicPoint(4.0, 0.0);
+		GeographicPoint start = new GeographicPoint(7.0, 3.0);
+		GeographicPoint goal = new GeographicPoint(4.0, -1.0);
 		System.out.println("starting vertex: " + start);
 		System.out.println("end vertext: " + goal);
 		List<GeographicPoint> path = graph.dijkstra(start, goal);
