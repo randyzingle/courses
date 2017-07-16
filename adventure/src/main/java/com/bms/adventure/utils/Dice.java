@@ -26,13 +26,35 @@ public class Dice {
 		return sum;
 	}
 	
+	public static int rollAbilityScoreDice(int ndice, int nsides) {
+		int[] dice = new int[ndice];
+		int sum = 0;
+		for (int i=0; i<ndice; i++) {
+			int test = random.nextInt(nsides) + 1;
+			if (test == 1) { // re-roll 1's 
+				i = i-1;
+				continue;
+			}
+			dice[i] = test;
+			sum += dice[i];
+		}
+		if(DEBUG) {
+			System.out.println(getIntArrayAsString(dice));
+		}
+		return sum;
+	}
+	
 	public static String getIntArrayAsString(int[] a) {
 		StringBuffer buff = new StringBuffer();
 		int sum = 0;
 		for (int i=0; i<a.length; i++) {
 			sum += a[i];
 			if (i==0) {
-				buff.append("Dice rolls: [" + a[i] + " ");
+				if (a.length==1) {
+					buff.append("Dice rolls: [" + a[i] + "]");
+				} else {
+					buff.append("Dice rolls: [" + a[i] + " ");
+				}
 			} else if (i==a.length-1) {
 				buff.append(a[i]+"]");
 			} else {

@@ -9,9 +9,14 @@ public class Weapon implements Equipment {
 	private static boolean DEBUG = true;
 	private WeaponDetails weaponDetails;
 	private static final String slot = "HAND";
-	
+	private int magicBonus;
+	private int diceNumber;
+	private int diceSides;
+
 	public Weapon(WeaponDetails weaponDetails) {
 		this.weaponDetails = weaponDetails;
+		this.diceNumber = weaponDetails.getDamageNumberDice();
+		this.diceSides = weaponDetails.getDamageNumberSides();
 	}
 	
 	public int getHitRoll() {
@@ -30,6 +35,10 @@ public class Weapon implements Equipment {
 			}
 		}
 		return hit;
+	}
+	
+	public int getBaseDamage() {
+		return Dice.rollDice(diceNumber, diceSides);
 	}
 	
 	// need to know opponent AC to determine crit
@@ -66,6 +75,18 @@ public class Weapon implements Equipment {
 		int critRoll = Dice.rollDice(1, 20) + attackBonus;
 		if (critRoll >= opponentAC) crit = true;
 		return crit;
+	}
+	
+	public int getMagicBonus() {
+		return magicBonus;
+	}
+
+	public void setMagicBonus(int magicBonus) {
+		this.magicBonus = magicBonus;
+	}
+
+	public WeaponDetails getWeaponDetails() {
+		return weaponDetails;
 	}
 
 	@Override

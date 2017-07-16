@@ -4,16 +4,13 @@ import java.util.HashMap;
 import java.util.Random;
 
 import com.bms.adventure.characters.equipment.Armor;
-import com.bms.adventure.characters.equipment.ArmorDetails;
 import com.bms.adventure.characters.equipment.Weapon;
-import com.bms.adventure.characters.equipment.WeaponDetails;
-import com.bms.adventure.storage.ArmorLoader;
-import com.bms.adventure.storage.WeaponsLoader;
+import com.bms.adventure.characters.race.Race;
 
 public class BaseType {
 
 	private Race race;
-	private CharacterClassEnum characterClass;
+	private CharacterClass characterClass;
 	private AbilitiesEnum primary;
 	private AbilitiesEnum secondary;
 	private AbilitiesEnum tertiary;
@@ -22,13 +19,13 @@ public class BaseType {
 	private Weapon weapon;
 	private Armor armor;
 
-	public BaseType(Race race, CharacterClassEnum characterClass) {
+	public BaseType(Race race, CharacterClass.CharacterClassEnum characterClassEnum) {
 		this.race = race;
-		this.characterClass = characterClass;
+		this.characterClass = makeCharacterClass(characterClassEnum);
 		weapon = race.getWeapon();
 		armor = race.getArmor();
 		// Race + Class specializations
-		if (characterClass == CharacterClassEnum.fighter) {
+		if (characterClassEnum == CharacterClass.CharacterClassEnum.fighter) {
 			if (race.getRacialType() == RaceEnum.dwarf) {
 				primary = AbilitiesEnum.strength;
 				secondary = AbilitiesEnum.constitution;
@@ -37,12 +34,12 @@ public class BaseType {
 			} else if (race.getRacialType() == RaceEnum.elf) {			
 				primary = AbilitiesEnum.dexterity;
 				secondary = AbilitiesEnum.strength;
-				tertiary = AbilitiesEnum.wisdom;
+				tertiary = AbilitiesEnum.constitution;
 				age = randomAge(70);
 			} else if (race.getRacialType() == RaceEnum.human) {
 				primary = AbilitiesEnum.strength;
 				secondary = AbilitiesEnum.constitution;
-				tertiary = AbilitiesEnum.wisdom;
+				tertiary = AbilitiesEnum.dexterity;
 				age = randomAge(21);
 			}
 		}
@@ -58,6 +55,16 @@ public class BaseType {
 			secondary = AbilitiesEnum.constitution;
 			tertiary = AbilitiesEnum.wisdom;
 		}
+	}
+	
+	private CharacterClass makeCharacterClass(CharacterClass.CharacterClassEnum characterClassEnum) {
+		CharacterClass cc = null;
+		if (characterClassEnum == CharacterClass.CharacterClassEnum.fighter) {
+			cc = new Fighter();
+		} else {
+			cc = new Fighter(); // have to be something ...
+		}
+		return cc;
 	}
 	public Weapon getWeapon() {
 		return weapon;
@@ -99,7 +106,7 @@ public class BaseType {
 		return race.getRacialType();
 	}
 
-	public CharacterClassEnum getCharacterClass() {
+	public CharacterClass getCharacterClass() {
 		return characterClass;
 	}
 	

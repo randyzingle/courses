@@ -1,7 +1,9 @@
-package com.bms.adventure.characters;
+package com.bms.adventure.characters.race;
 
 import java.util.HashMap;
 
+import com.bms.adventure.characters.AbilitiesEnum;
+import com.bms.adventure.characters.RaceEnum;
 import com.bms.adventure.characters.equipment.Armor;
 import com.bms.adventure.characters.equipment.Weapon;
 
@@ -38,7 +40,7 @@ public class Race {
 	}
 	@Override
 	public String toString() {
-		return "Race [racialType=" + racialType + ", armor=" + armor + ", weapon=" + weapon + ", gold=" + gold + "]";
+		return "Race [racialType=" + racialType + "]";
 	}
 	
 }

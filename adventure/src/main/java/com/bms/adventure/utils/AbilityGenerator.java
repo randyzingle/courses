@@ -9,8 +9,8 @@ import java.util.Set;
 import com.bms.adventure.characters.Abilities;
 import com.bms.adventure.characters.AbilitiesEnum;
 import com.bms.adventure.characters.BaseType;
-import com.bms.adventure.characters.CharacterClassEnum;
-import com.bms.adventure.characters.Race;
+import com.bms.adventure.characters.CharacterClass;
+import com.bms.adventure.characters.race.Race;
 
 public class AbilityGenerator {
 	
@@ -47,12 +47,7 @@ public class AbilityGenerator {
 	}
 	
 	public static Abilities generateAbilities(BaseType baseType) {
-		return generateAbilities(baseType.getRace(), baseType.getCharacterClass());
-	}
-	
-	public static Abilities generateAbilities(Race race, CharacterClassEnum characterClassEnum) {
 		Abilities abilities = null;
-		BaseType baseType = new BaseType(race, characterClassEnum);
 		int[] stats = rollRawAbilities();
 		Arrays.sort(stats); // sorts lowest to highest
 		HashMap<AbilitiesEnum, Integer> map = new HashMap<>();
@@ -74,8 +69,6 @@ public class AbilityGenerator {
 		HashMap<AbilitiesEnum, Integer> modifiers = baseType.getRacialAbilityModifiers();
 		Set<AbilitiesEnum> modifierKeys = modifiers.keySet();
 		for (AbilitiesEnum key: modifierKeys) {
-//			int stat = map.get(key);
-//			int modifier = modifiers.get(key);
 			map.put(key, map.get(key) + modifiers.get(key));
 		}
 		
@@ -97,7 +90,7 @@ public class AbilityGenerator {
 	private static int[] rollRawAbilities() {
 		int[] stat = new int[6];
 		for (int i=0; i<stat.length; i++) {
-			stat[i] = Dice.rollDice(3, 6);
+			stat[i] = Dice.rollAbilityScoreDice(3, 6);
 		}
 		return stat;
 	}

@@ -1,7 +1,8 @@
-package com.bms.adventure.characters;
+package com.bms.adventure.characters.race;
 
 import java.util.HashMap;
 
+import com.bms.adventure.characters.RaceEnum;
 import com.bms.adventure.characters.equipment.Armor;
 import com.bms.adventure.characters.equipment.ArmorDetails;
 import com.bms.adventure.characters.equipment.Weapon;
