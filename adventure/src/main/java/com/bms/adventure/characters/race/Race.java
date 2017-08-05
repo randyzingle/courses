@@ -3,6 +3,7 @@ package com.bms.adventure.characters.race;
 import java.util.HashMap;
 
 import com.bms.adventure.characters.AbilitiesEnum;
+import com.bms.adventure.characters.Faction;
 import com.bms.adventure.characters.RaceEnum;
 import com.bms.adventure.characters.equipment.Armor;
 import com.bms.adventure.characters.equipment.Weapon;
@@ -14,6 +15,14 @@ public class Race {
 	Armor armor;
 	Weapon weapon;
 	int gold;
+	Faction faction;
+	
+	public Faction getFaction() {
+		return faction;
+	}
+	public void setFaction(Faction faction) {
+		this.faction = faction;
+	}
 	public Armor getArmor() {
 		return armor;
 	}

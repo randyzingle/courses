@@ -23,6 +23,9 @@ public class PlayerCharacter implements Combatant {
 	private int level;
 	private int xp;
 	private int[] permanentHpRecord;
+	private Combatant currentTarget;
+	private Combatant currentAttacker;
+	private Status status;
 
 	
 	private PlayerCharacter(){};
@@ -70,6 +73,36 @@ public class PlayerCharacter implements Combatant {
 		dexBonus = Math.min(dexBonus, armor.getMaxDexBonus());
 		ac = 10 + dexBonus + armor.getArmorBonus() + armor.getMagicBonus();
 		return ac;
+	}
+
+	@Override
+	public Combatant getCurrentTarget() {
+		return currentTarget;
+	}
+
+	@Override
+	public void setCurrentTarget(Combatant currentTarget) {
+		this.currentTarget = currentTarget;
+	}
+
+	@Override
+	public Status getStatus() {
+		return status;
+	}
+
+	@Override
+	public void setStatus(Status status) {
+		this.status = status;
+	}
+
+	@Override
+	public Combatant getCurrentAttacker() {
+		return currentAttacker;
+	}
+
+	@Override
+	public void setCurrentAttacker(Combatant currentAttacker) {
+		this.currentAttacker = currentAttacker;
 	}
 
 	@Override

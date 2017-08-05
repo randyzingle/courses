@@ -25,6 +25,7 @@ public class Dwarf extends Race {
 		armor = new Armor(armorDetails);
 		weapon = new Weapon(weaponDetails);
 		gold = 50;
+		faction = new Faction();
 	}
 
 	@Override
