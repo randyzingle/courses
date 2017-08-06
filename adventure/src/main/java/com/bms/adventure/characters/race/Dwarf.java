@@ -3,6 +3,7 @@ package com.bms.adventure.characters.race;
 import java.util.HashMap;
 
 import com.bms.adventure.characters.AbilitiesEnum;
+import com.bms.adventure.characters.Faction;
 import com.bms.adventure.characters.RaceEnum;
 import com.bms.adventure.characters.equipment.Armor;
 import com.bms.adventure.characters.equipment.ArmorDetails;
@@ -25,7 +26,7 @@ public class Dwarf extends Race {
 		armor = new Armor(armorDetails);
 		weapon = new Weapon(weaponDetails);
 		gold = 50;
-		faction = new Faction();
+		faction = new Faction("dwarf");
 	}
 
 	@Override
