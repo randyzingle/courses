@@ -13,6 +13,7 @@ public class Faction {
 	ArrayList<String> foeFactionList = new ArrayList<>();
 	
 	public Faction(String factionName) {
+		this.factionName = factionName;
 		setFactions(factionName);
 	}
 	

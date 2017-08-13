@@ -1,9 +1,7 @@
-package com.bms.adventure.storage;
+package com.bms.adventure.characters.equipment;
 
 import java.util.HashMap;
 import java.util.Set;
-
-import com.bms.adventure.characters.equipment.ArmorDetails;
 
 public class ArmorLoader {
 	public static void main(String[] args) {

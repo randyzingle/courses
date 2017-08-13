@@ -1,11 +1,9 @@
-package com.bms.adventure.storage;
+package com.bms.adventure.characters.equipment;
 
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Set;
 import java.util.TreeSet;
-
-import com.bms.adventure.characters.equipment.WeaponDetails;
 
 public class WeaponsLoader {
 	

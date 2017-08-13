@@ -155,7 +155,7 @@ public class PlayerCharacter implements Combatant {
 				+ "HP=%d%n%sWeapon=%s%n%sArmor=%s%n%sHP per level=%s"
 				+ "%n++++++++++%n";
 		s = String.format(s, 
-				Constants.TAB4, name, baseType.getAge(),
+				Constants.TAB4, name, age,
 				Constants.TAB4, baseType.getRace(),
 				Constants.TAB4, abilities,
 				Constants.TAB4, armorClass, baseHitPoints, 
