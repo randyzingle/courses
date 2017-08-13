@@ -1,8 +1,5 @@
 package com.bms.adventure.characters;
 
-import java.util.HashMap;
-import java.util.Random;
-
 import com.bms.adventure.characters.equipment.Armor;
 import com.bms.adventure.characters.equipment.Weapon;
 import com.bms.adventure.characters.race.Race;
@@ -21,8 +18,8 @@ public class BaseType {
 	public BaseType(Race race, CharacterClass.CharacterClassEnum characterClassEnum) {
 		this.race = race;
 		this.characterClass = makeCharacterClass(characterClassEnum);
-		weapon = race.getStartingWeapon();
-		armor = race.getStartingArmor();
+		weapon = race.getWeapon();
+		armor = race.getArmor();
 		// Race + Class specializations
 		if (characterClassEnum == CharacterClass.CharacterClassEnum.fighter) {
 			if (race.getRacialType() == RaceEnum.dwarf) {

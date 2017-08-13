@@ -19,20 +19,63 @@ public abstract class Race {
 	int gold;
 	int age;
 	
+	
+	
+	public HashMap<AbilitiesEnum, Integer> getRacialAbilityModifiers() {
+		return racialAbilityModifiers;
+	}
+
+
+
+	public RaceEnum getRacialType() {
+		return racialType;
+	}
+
+
+
+	public Faction getFaction() {
+		return faction;
+	}
+
+
+
+	public Armor getArmor() {
+		return armor;
+	}
+
+
+
+	public Weapon getWeapon() {
+		return weapon;
+	}
+
+
+
+	public int getGold() {
+		return gold;
+	}
+
+
+
+	public int getAge() {
+		return age;
+	}
+
+
+
 	public int randomAge(int baseAge) {
 		Random random = new Random();
 		return baseAge + random.nextInt(baseAge/3);
 	}
-	
-	public abstract RaceEnum getRacialType();
-	
-	public abstract Weapon getStartingWeapon();
-	
-	public abstract Armor getStartingArmor();
-	
+
+
+
 	@Override
 	public String toString() {
-		return "Race [racialType=" + racialType + "]";
+		return "Race [racialAbilityModifiers=" + racialAbilityModifiers + ", racialType=" + racialType + ", faction="
+				+ faction.getFactionName() + ", armor=" + armor + ", weapon=" + weapon + ", gold=" + gold + ", age=" + age + "]";
 	}
+	
+	
 	
 }

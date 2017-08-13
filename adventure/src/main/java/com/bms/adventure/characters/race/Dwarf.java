@@ -25,28 +25,16 @@ public class Dwarf extends Race {
 		armor = new Armor(startingArmor);
 		weapon = new Weapon(startingWeapon);
 		gold = 50;
-		faction = new Faction("dwarf");
+		faction = new Faction(RaceEnum.dwarf.name());
 		age = randomAge(50);
 	}
-	
-	@Override
-	public RaceEnum getRacialType() {
-		return racialType;
-	}
-
-	@Override
-	public Weapon getStartingWeapon() {
-		return weapon;
-	}
-
-	@Override
-	public Armor getStartingArmor() {
-		return armor;
-	}	
 
 	@Override
 	public String toString() {
-		return "Dwarf [racialType=" + racialType + ", armor=" + armor + ", weapon=" + weapon + ", gold=" + gold + "]";
+		return "Dwarf [racialAbilityModifiers=" + racialAbilityModifiers + ", racialType=" + racialType + ", faction="
+				+ faction + ", armor=" + armor + ", weapon=" + weapon + ", gold=" + gold + ", age=" + age + "]";
 	}
+	
+
 
 }

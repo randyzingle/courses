@@ -3,6 +3,7 @@ package com.bms.adventure.characters.race;
 import java.util.HashMap;
 
 import com.bms.adventure.characters.AbilitiesEnum;
+import com.bms.adventure.characters.Faction;
 import com.bms.adventure.characters.equipment.Armor;
 import com.bms.adventure.characters.equipment.ArmorDetails;
 import com.bms.adventure.characters.equipment.ArmorLoader;
@@ -24,26 +25,16 @@ public class Elf extends Race {
 		armor = new Armor(startingArmor);
 		weapon = new Weapon(startingWeapon);
 		gold = 50;
+		faction = new Faction(RaceEnum.elf.name());
 		age = randomAge(70);
 	}
-	
-	@Override
-	public RaceEnum getRacialType() {
-		return racialType;
-	}
 
-	@Override
-	public Weapon getStartingWeapon() {
-		return weapon;
-	}
-
-	@Override
-	public Armor getStartingArmor() {
-		return armor;
-	}	
 	@Override
 	public String toString() {
-		return "Elf [racialType=" + racialType + ", armor=" + armor + ", weapon=" + weapon + ", gold=" + gold + "]";
+		return "Elf [racialAbilityModifiers=" + racialAbilityModifiers + ", racialType=" + racialType + ", faction="
+				+ faction + ", armor=" + armor + ", weapon=" + weapon + ", gold=" + gold + ", age=" + age + "]";
 	}
+	
+
 
 }

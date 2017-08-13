@@ -50,4 +50,11 @@ public class Faction {
 		this.foeFactionList = foeFactionList;
 	}
 
+	@Override
+	public String toString() {
+		return "Faction [factionName=" + factionName + "]";
+	}
+	
+	
+
 }

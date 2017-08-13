@@ -2,6 +2,8 @@ package com.bms.adventure.characters.race;
 
 import java.util.HashMap;
 
+import com.bms.adventure.characters.AbilitiesEnum;
+import com.bms.adventure.characters.Faction;
 import com.bms.adventure.characters.equipment.Armor;
 import com.bms.adventure.characters.equipment.ArmorDetails;
 import com.bms.adventure.characters.equipment.ArmorLoader;
@@ -21,21 +23,15 @@ public class Human extends Race {
 		armor = new Armor(startingArmor);
 		weapon = new Weapon(startingWeapon);
 		gold = 50;
-		age = randomAge(21);
+		faction = new Faction(RaceEnum.human.name());
+		age = randomAge(19);
 	}
 
 	@Override
-	public RaceEnum getRacialType() {
-		return racialType;
+	public String toString() {
+		return "Human [racialAbilityModifiers=" + racialAbilityModifiers + ", racialType=" + racialType + ", faction="
+				+ faction + ", armor=" + armor + ", weapon=" + weapon + ", gold=" + gold + ", age=" + age + "]";
 	}
 
-	@Override
-	public Weapon getStartingWeapon() {
-		return weapon;
-	}
 
-	@Override
-	public Armor getStartingArmor() {
-		return armor;
-	}	
 }
