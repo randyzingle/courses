@@ -25,6 +25,7 @@ public class ArmorLoader {
 		// armor
 		armorMap.put(ArmorDetails.LEATHER, new ArmorDetails(ArmorDetails.LEATHER, 10, 15, 2, 6));
 		armorMap.put(ArmorDetails.CHAIN_SHIRT, new ArmorDetails(ArmorDetails.CHAIN_SHIRT, 100, 25, 4, 4));
+		armorMap.put(ArmorDetails.ELVIN_CHAIN, new ArmorDetails(ArmorDetails.ELVIN_CHAIN, 800, 10, 4, 6));
 		armorMap.put(ArmorDetails.SCALE_MAIL, new ArmorDetails(ArmorDetails.SCALE_MAIL, 50, 30, 4, 3));
 	}
 }

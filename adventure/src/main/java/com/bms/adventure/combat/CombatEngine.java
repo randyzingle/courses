@@ -33,8 +33,7 @@ public class CombatEngine {
 		a1.add(c1);
 		ArrayList<Combatant> a2 = new ArrayList<>(1);
 		a2.add(c2);
-		Team team1 = new Team(UUID.randomUUID().toString(), a1, a2);
-		Team team2 = new Team(UUID.randomUUID().toString(), a1, a2);
+		
 		TreeSet<Combatant> combatants = new TreeSet<>(comparator);
 		combatants.add(c1);
 		combatants.add(c2);

@@ -1,10 +1,13 @@
 package com.bms.adventure.characters;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 import com.bms.adventure.characters.equipment.Armor;
 import com.bms.adventure.characters.equipment.Weapon;
+import com.bms.adventure.characters.race.Race;
 import com.bms.adventure.utils.AbilityGenerator;
+import com.bms.adventure.utils.CharacterClassInitializer;
 import com.bms.adventure.utils.Constants;
 import com.bms.adventure.utils.Dice;
 
@@ -14,29 +17,38 @@ public class PlayerCharacter implements Combatant {
 	
 	private String name;	
 	private Abilities abilities;
-	private BaseType baseType;
+	private CharacterClass characterClass;
+	private Race race;
 	private int armorClass;
+	private Armor armor;
+	private Weapon weapon;
 	private int baseHitPoints; // when rested and fully healthy
 	private int currentHitPoints; // less than baseHitPoints when injured, more if healed and magic bonus
 	private int hpBonus; // temporary magical bonus
 	private int armorClassBonus; // temporary magical bonus
 	private int level;
 	private int xp;
-	private int[] permanentHpRecord;
-	private Combatant currentTarget;
-	private Combatant currentAttacker;
+	private int age;
+	private int[] permanentHpRecord; // need to drop back if level-drained by undead
+	private ArrayList<Combatant> currentTarget;
+	private ArrayList<Combatant> currentAttacker;
 	private Status status;
 
 	
 	private PlayerCharacter(){};
 	
-	public static PlayerCharacter makeNewPlayerCharacter(String name, BaseType baseType, int level) {
+	public static PlayerCharacter makeNewPlayerCharacter(String name, int level, CharacterClass cc, Race race) {
 		PlayerCharacter pc = new PlayerCharacter();
-		pc.permanentHpRecord = new int[MAX_LEVEL+1]; // 0 hp for level 0 for PC
+		pc.permanentHpRecord = new int[MAX_LEVEL+1]; // 0 hp for level 0 for PCs - 1-4 for LV0 commoners
 		pc.level = level;
 		pc.name = name;
-		pc.baseType = baseType;
-		pc.abilities = AbilityGenerator.generateAbilities(baseType);
+		pc.characterClass = cc;
+		pc.race = race;
+		pc.age = pc.race.getAge();
+		pc.armor = race.getArmor();
+		pc.weapon = race.getWeapon();
+		CharacterClassInitializer cci = new CharacterClassInitializer(race, cc);
+		pc.abilities = AbilityGenerator.generateAbilities(cci);
 		pc.armorClass = pc.calculateArmorClass();
 		pc.baseHitPoints = pc.calculateInitialHP();
 		pc.currentHitPoints = pc.baseHitPoints;
@@ -45,7 +57,7 @@ public class PlayerCharacter implements Combatant {
 	
 	private int calculateInitialHP() {
 		int temp = 0;
-		int nsidesDice = baseType.getCharacterClass().getHpDiceSides();
+		int nsidesDice = characterClass.getHpDiceSides();
 		int con = abilities.getConstitution();
 		int constitutionBonus = Abilities.abilityModifiers[con];
 		for (int i=1; i<=level; i++) {
@@ -67,7 +79,7 @@ public class PlayerCharacter implements Combatant {
 	// TODO - only do this if something changes
 	public int calculateArmorClass() {
 		int ac = 0;
-		Armor armor = baseType.getArmor();
+		
 		int dex = abilities.getDexterity();
 		int dexBonus = Abilities.abilityModifiers[dex]; // need to change this to a method to make safe - check boundaries
 		dexBonus = Math.min(dexBonus, armor.getMaxDexBonus());
@@ -76,12 +88,12 @@ public class PlayerCharacter implements Combatant {
 	}
 
 	@Override
-	public Combatant getCurrentTarget() {
+	public ArrayList<Combatant> getCurrentTarget() {
 		return currentTarget;
 	}
 
 	@Override
-	public void setCurrentTarget(Combatant currentTarget) {
+	public void setCurrentTarget(ArrayList<Combatant> currentTarget) {
 		this.currentTarget = currentTarget;
 	}
 
@@ -96,12 +108,12 @@ public class PlayerCharacter implements Combatant {
 	}
 
 	@Override
-	public Combatant getCurrentAttacker() {
+	public ArrayList<Combatant> getCurrentAttacker() {
 		return currentAttacker;
 	}
 
 	@Override
-	public void setCurrentAttacker(Combatant currentAttacker) {
+	public void setCurrentAttacker(ArrayList<Combatant> currentAttacker) {
 		this.currentAttacker = currentAttacker;
 	}
 
@@ -109,7 +121,7 @@ public class PlayerCharacter implements Combatant {
 	public int getInitiative() {
 		int dex = abilities.getDexterity();
 		int initBonus = abilities.abilityModifiers[dex];
-		return Dice.rollDice(1, 20, initBonus); 
+		return Dice.rollDice(1, 20) + initBonus; 
 	}
 
 	@Override
@@ -124,27 +136,27 @@ public class PlayerCharacter implements Combatant {
 
 	@Override
 	public int getAttackRoll(int attackNumber) {
-		int levelBonus = baseType.getCharacterClass().getBaseAttackBonus()[attackNumber][level];
+		int levelBonus = characterClass.getBaseAttackBonus()[attackNumber][level];
 		int strengthBonus = abilities.abilityModifiers[abilities.getStrength()];
-		int weaponBonus = baseType.getWeapon().getMagicBonus();
+		int weaponBonus = weapon.getMagicBonus();
 		return Dice.rollDice(1, 20) + levelBonus + strengthBonus + weaponBonus;     
 	}
 
 	@Override
 	public int getDamageRoll() {
 		int strengthBonus = abilities.abilityModifiers[abilities.getStrength()];
-		int weaponBonus = baseType.getWeapon().getMagicBonus();
+		int weaponBonus = weapon.getMagicBonus();
 		return 0;
 	}
 
 	@Override
 	public Armor getArmor() {
-		return baseType.getArmor();
+		return armor;
 	}
 
 	@Override
 	public Weapon getWeapon() {
-		return baseType.getWeapon();
+		return weapon;
 	}
 	
 
@@ -155,12 +167,12 @@ public class PlayerCharacter implements Combatant {
 				+ "HP=%d%n%sWeapon=%s%n%sArmor=%s%n%sHP per level=%s"
 				+ "%n++++++++++%n";
 		s = String.format(s, 
-				Constants.TAB4, name, baseType.getRace().getAge(),
-				Constants.TAB4, baseType.getRace(),
+				Constants.TAB4, name, age,
+				Constants.TAB4, race,
 				Constants.TAB4, abilities,
 				Constants.TAB4, armorClass, baseHitPoints, 
-				Constants.TAB4, baseType.getWeapon(), 
-				Constants.TAB4, baseType.getArmor(),
+				Constants.TAB4, weapon, 
+				Constants.TAB4, armor,
 				Constants.TAB4, Arrays.toString(permanentHpRecord)
 			);			
 		return s;

@@ -16,6 +16,8 @@ public class Fighter extends CharacterClass {
 	
 	private static final int hpDiceSides = 10;
 	
+	private static final CharacterClassEnum type = CharacterClassEnum.fighter;
+	
 	@Override
 	public int[] getFortSaveBonus() {
 		return fortSaveBonus;

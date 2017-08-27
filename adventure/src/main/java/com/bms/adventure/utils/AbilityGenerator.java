@@ -8,14 +8,13 @@ import java.util.Set;
 
 import com.bms.adventure.characters.Abilities;
 import com.bms.adventure.characters.AbilitiesEnum;
-import com.bms.adventure.characters.BaseType;
 import com.bms.adventure.characters.CharacterClass;
 import com.bms.adventure.characters.race.Race;
 
 public class AbilityGenerator {
 	
 	//TODO need to add re-roll rules:
-	// reroll if total modifiers are 0 or less, or if highest score is 13 or lower
+	// re-roll if total modifiers are 0 or less, or if highest score is 13 or lower
 
 	public static Abilities generateRawRandomAbilities() {
 		Abilities abilities = null;
@@ -38,7 +37,7 @@ public class AbilityGenerator {
 			if(ab != primary && ab != secondary && ab != tertiary) emptyAbilities.add(ab);
 		}
 		int[] remainingStats = Arrays.copyOfRange(stats, 0,3);
-		shuffle(remainingStats);
+		Dice.shuffle(remainingStats);
 		for (int i=0; i<remainingStats.length; i++) {
 			map.put(emptyAbilities.get(i), remainingStats[i]);
 		}
@@ -46,27 +45,27 @@ public class AbilityGenerator {
 		return abilities;
 	}
 	
-	public static Abilities generateAbilities(BaseType baseType) {
+	public static Abilities generateAbilities(CharacterClassInitializer cci) {
 		Abilities abilities = null;
 		int[] stats = rollRawAbilities();
 		Arrays.sort(stats); // sorts lowest to highest
 		HashMap<AbilitiesEnum, Integer> map = new HashMap<>();
 		// set top stats based on racial preferences
-		map.put(baseType.getPrimary(), stats[5]);
-		map.put(baseType.getSecondary(), stats[4]);
-		map.put(baseType.getTertiary(), stats[3]);
+		map.put(cci.getPrimary(), stats[5]);
+		map.put(cci.getSecondary(), stats[4]);
+		map.put(cci.getTertiary(), stats[3]);
 		AbilitiesEnum[] allAbilities = AbilitiesEnum.values(); // get all the values as an array
 		ArrayList<AbilitiesEnum> emptyAbilities = new ArrayList<>(3);
 		for (AbilitiesEnum ab: allAbilities) {
-			if(ab != baseType.getPrimary() && ab != baseType.getSecondary() && ab != baseType.getTertiary()) emptyAbilities.add(ab);
+			if(ab != cci.getPrimary() && ab != cci.getSecondary() && ab != cci.getTertiary()) emptyAbilities.add(ab);
 		}
 		int[] remainingStats = Arrays.copyOfRange(stats, 0,3);
-		shuffle(remainingStats);
+		Dice.shuffle(remainingStats);
 		for (int i=0; i<remainingStats.length; i++) {
 			map.put(emptyAbilities.get(i), remainingStats[i]);
 		}
 		// add racial modifiers
-		HashMap<AbilitiesEnum, Integer> modifiers = baseType.getRace().getRacialAbilityModifiers();
+		HashMap<AbilitiesEnum, Integer> modifiers = cci.getRace().getRacialAbilityModifiers();
 		Set<AbilitiesEnum> modifierKeys = modifiers.keySet();
 		for (AbilitiesEnum key: modifierKeys) {
 			map.put(key, map.get(key) + modifiers.get(key));
@@ -76,21 +75,12 @@ public class AbilityGenerator {
 		return abilities;
 	}
 	
-	public static void shuffle(int[] a) { // move this to Dice
-		Random random = new Random();
-		int n = a.length;
-		for (int i=0; i<n; i++) {
-			int r = random.nextInt(n-i) + i;
-			int temp = a[i];
-			a[i] = a[r];
-			a[r] = temp;
-		}
-	}
+
 
 	private static int[] rollRawAbilities() {
 		int[] stat = new int[6];
 		for (int i=0; i<stat.length; i++) {
-			stat[i] = Dice.rollAbilityScoreDice(3, 6);
+			stat[i] = Dice.rollDiceDiscardOnes(3, 6);
 		}
 		return stat;
 	}

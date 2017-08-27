@@ -3,6 +3,7 @@ package com.bms.adventure.characters.equipment;
 public class ArmorDetails {
 	
 	public static final String CHAIN_SHIRT = "chain shirt";
+	public static final String ELVIN_CHAIN = "elvin chainmail";
 	public static final String LEATHER = "leather armor";
 	public static final String SCALE_MAIL = "scale mail";
 	

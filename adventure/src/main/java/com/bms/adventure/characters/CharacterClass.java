@@ -2,8 +2,6 @@ package com.bms.adventure.characters;
 
 public abstract class CharacterClass {
 
-	public static enum CharacterClassEnum {fighter};
-
 	public abstract int[] getFortSaveBonus();
 
 	public abstract int[] getRefSaveBonus();

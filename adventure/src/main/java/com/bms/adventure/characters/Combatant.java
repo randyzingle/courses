@@ -1,5 +1,7 @@
 package com.bms.adventure.characters;
 
+import java.util.ArrayList;
+
 import com.bms.adventure.characters.equipment.Armor;
 import com.bms.adventure.characters.equipment.Weapon;
 
@@ -19,13 +21,13 @@ public interface Combatant {
 	
 	// who is our current target?
 	// also set up a list eventually for multi-target spells etc
-	public Combatant getCurrentTarget();
-	public void setCurrentTarget(Combatant currentTarget);
+	public ArrayList<Combatant> getCurrentTarget();
+	public void setCurrentTarget(ArrayList<Combatant> currentTarget);
 	
 	// who is currently attacking us?
 	// again eventually set up multiple attackers
-	public Combatant getCurrentAttacker();
-	public void setCurrentAttacker(Combatant currentAttacker);
+	public ArrayList<Combatant> getCurrentAttacker();
+	public void setCurrentAttacker(ArrayList<Combatant> currentAttacker);
 	
 	// certain attacks and abilities can damage armor and weapons
 	public Armor getArmor();

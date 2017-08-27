@@ -10,14 +10,10 @@ public class Dice {
 	private static Random random = new Random();
 	
 	public static int rollDice(int ndice, int nsides) {
-		return rollDice(ndice, nsides, 0);
-	}
-	
-	public static int rollDice(int ndice, int nsides, int modifier) {
 		int[] dice = new int[ndice];
 		int sum = 0;
 		for (int i=0; i<ndice; i++) {
-			dice[i] = random.nextInt(nsides) + 1 + modifier;
+			dice[i] = random.nextInt(nsides) + 1;
 			sum += dice[i];
 		}
 		if(DEBUG) {
@@ -26,7 +22,7 @@ public class Dice {
 		return sum;
 	}
 	
-	public static int rollAbilityScoreDice(int ndice, int nsides) {
+	public static int rollDiceDiscardOnes(int ndice, int nsides) {
 		int[] dice = new int[ndice];
 		int sum = 0;
 		for (int i=0; i<ndice; i++) {
@@ -62,6 +58,17 @@ public class Dice {
 			}
 		}
 		return buff.toString() + " " + sum;
+	}
+	
+	public static void shuffle(int[] a) { 
+		Random random = new Random();
+		int n = a.length;
+		for (int i=0; i<n; i++) {
+			int r = random.nextInt(n-i) + i;
+			int temp = a[i];
+			a[i] = a[r];
+			a[r] = temp;
+		}
 	}
 
 }

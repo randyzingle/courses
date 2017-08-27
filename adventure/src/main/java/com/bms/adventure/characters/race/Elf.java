@@ -14,7 +14,7 @@ import com.bms.adventure.characters.equipment.WeaponsLoader;
 public class Elf extends Race {
 
 	// starting armor, weapons for elf
-	ArmorDetails startingArmor = ArmorLoader.getArmor().get(ArmorDetails.LEATHER);
+	ArmorDetails startingArmor = ArmorLoader.getArmor().get(ArmorDetails.ELVIN_CHAIN);
 	WeaponDetails startingWeapon = WeaponsLoader.getWeapons().get(WeaponDetails.LONGSWORD);
 	
 	public Elf() {
