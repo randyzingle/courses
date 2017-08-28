@@ -10,10 +10,15 @@ public interface Combatant {
 	public static enum Status {able, disabled, dying, dead}
 	
 	public int getInitiative();
+	public void setInitiative(int init);
+	public int rollInitiative(); // just roll once at the beginning of combat
 	public int getArmorClass();
 	public int getCurrentHitPoints();
 	public int getAttackRoll(int attackNumber);
 	public int getDamageRoll();
+	public String getName();
+	public String getRace();
+	public void modifyCurrentHitPoints(int hps);
 	
 	// whats our current status (dead, dying, etc)
 	public Status getStatus();

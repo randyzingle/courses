@@ -103,6 +103,10 @@ public class Weapon implements Equipment {
 	public String getSlot() {
 		return slot;
 	}
+	
+	public String getName() {
+		return weaponDetails.getName();
+	}
 
 	@Override
 	public String toString() {

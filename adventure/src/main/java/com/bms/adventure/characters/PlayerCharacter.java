@@ -12,10 +12,10 @@ import com.bms.adventure.utils.Constants;
 import com.bms.adventure.utils.Dice;
 
 public class PlayerCharacter implements Combatant {
-	
+
 	private static final int MAX_LEVEL = 10;
-	
-	private String name;	
+
+	private String name;
 	private Abilities abilities;
 	private CharacterClass characterClass;
 	private Race race;
@@ -33,10 +33,11 @@ public class PlayerCharacter implements Combatant {
 	private ArrayList<Combatant> currentTarget;
 	private ArrayList<Combatant> currentAttacker;
 	private Status status;
+	private int initiative;
 
-	
+
 	private PlayerCharacter(){};
-	
+
 	public static PlayerCharacter makeNewPlayerCharacter(String name, int level, CharacterClass cc, Race race) {
 		PlayerCharacter pc = new PlayerCharacter();
 		pc.permanentHpRecord = new int[MAX_LEVEL+1]; // 0 hp for level 0 for PCs - 1-4 for LV0 commoners
@@ -54,7 +55,7 @@ public class PlayerCharacter implements Combatant {
 		pc.currentHitPoints = pc.baseHitPoints;
 		return pc;
 	}
-	
+
 	private int calculateInitialHP() {
 		int temp = 0;
 		int nsidesDice = characterClass.getHpDiceSides();
@@ -67,19 +68,19 @@ public class PlayerCharacter implements Combatant {
 				temp += permanentHpRecord[i];
 			} else {
 				// roll for hp
-				int roll = Dice.rollDice(1, nsidesDice) + constitutionBonus;
-				if (roll < 1) roll = 1;
+				int roll = Dice.rollDiceDiscardOnes(1, nsidesDice) + constitutionBonus;
+				if (roll < 1) roll = 1; // can't let constitution penalty give 0 or less HPs for new level
 				permanentHpRecord[i] = roll;
 				temp += permanentHpRecord[i];
 			}
 		}
-		return temp; 
+		return temp;
 	}
-	
+
 	// TODO - only do this if something changes
 	public int calculateArmorClass() {
 		int ac = 0;
-		
+
 		int dex = abilities.getDexterity();
 		int dexBonus = Abilities.abilityModifiers[dex]; // need to change this to a method to make safe - check boundaries
 		dexBonus = Math.min(dexBonus, armor.getMaxDexBonus());
@@ -118,10 +119,12 @@ public class PlayerCharacter implements Combatant {
 	}
 
 	@Override
-	public int getInitiative() {
+	public int rollInitiative() {
 		int dex = abilities.getDexterity();
 		int initBonus = abilities.abilityModifiers[dex];
-		return Dice.rollDice(1, 20) + initBonus; 
+		int init = Dice.rollDice(1, 20) + initBonus;
+		System.out.println("Initiative for " + this.name + ": " + init);
+		return init;
 	}
 
 	@Override
@@ -133,20 +136,35 @@ public class PlayerCharacter implements Combatant {
 	public int getCurrentHitPoints() {
 		return currentHitPoints;
 	}
+	
+	@Override
+	public void modifyCurrentHitPoints(int hps) {
+		this.currentHitPoints += hps;
+		if (currentHitPoints == 0) {
+			this.status = Status.disabled;
+		} else if (currentHitPoints > 0) {
+			this.status = Status.able;
+		} else if (currentHitPoints < 0 && currentHitPoints > -10) {
+			this.status = Status.dying;
+		} else {
+			this.status = Status.dead;
+		}
+	}
 
 	@Override
 	public int getAttackRoll(int attackNumber) {
 		int levelBonus = characterClass.getBaseAttackBonus()[attackNumber][level];
 		int strengthBonus = abilities.abilityModifiers[abilities.getStrength()];
 		int weaponBonus = weapon.getMagicBonus();
-		return Dice.rollDice(1, 20) + levelBonus + strengthBonus + weaponBonus;     
+		return Dice.rollDice(1, 20) + levelBonus + strengthBonus + weaponBonus;
 	}
 
 	@Override
 	public int getDamageRoll() {
 		int strengthBonus = abilities.abilityModifiers[abilities.getStrength()];
 		int weaponBonus = weapon.getMagicBonus();
-		return 0;
+		int damage = weapon.getBaseDamage() + weaponBonus + strengthBonus;
+		return damage;
 	}
 
 	@Override
@@ -158,25 +176,42 @@ public class PlayerCharacter implements Combatant {
 	public Weapon getWeapon() {
 		return weapon;
 	}
-	
 
+	@Override
+	public void setInitiative(int init) {
+		this.initiative = init;
+		
+	}
+	@Override
+	public String getName() {
+		return name;
+	}
+
+	@Override
+	public String getRace() {
+		return race.getRacialType().toString();
+	}
+
+	@Override
+	public int getInitiative() {
+		return this.initiative;
+	}
 
 	@Override
 	public String toString() {
 		String s = "Player Character:%n++++++++++%n%sname=%s, age=%d%n%srace=%s%n%s%s%n%sAC=%d, "
 				+ "HP=%d%n%sWeapon=%s%n%sArmor=%s%n%sHP per level=%s"
 				+ "%n++++++++++%n";
-		s = String.format(s, 
+		s = String.format(s,
 				Constants.TAB4, name, age,
 				Constants.TAB4, race,
 				Constants.TAB4, abilities,
-				Constants.TAB4, armorClass, baseHitPoints, 
-				Constants.TAB4, weapon, 
+				Constants.TAB4, armorClass, baseHitPoints,
+				Constants.TAB4, weapon,
 				Constants.TAB4, armor,
 				Constants.TAB4, Arrays.toString(permanentHpRecord)
-			);			
+			);
 		return s;
 	}
-
 
 }

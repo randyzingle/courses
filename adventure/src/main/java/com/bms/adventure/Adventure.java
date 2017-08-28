@@ -1,30 +1,25 @@
 package com.bms.adventure;
 
 import java.util.ArrayList;
-import java.util.Random;
 
 import com.bms.adventure.characters.Fighter;
 import com.bms.adventure.characters.PlayerCharacter;
 import com.bms.adventure.characters.race.Dwarf;
 import com.bms.adventure.characters.race.Elf;
+import com.bms.adventure.combat.CombatEngine;
 
 public class Adventure {
 	
 	public static void main(String[] args) {
 		System.out.println("Adventure");
 		ArrayList<PlayerCharacter> pcs = makePlayerCharacter();
-	}
-	
-	public static void shuffle(int[] a) { // move this to Dice
-		Random random = new Random();
-		int n = a.length;
-		for (int i=0; i<n; i++) {
-			int r = random.nextInt(n-i) + i;
-			int temp = a[i];
-			a[i] = a[r];
-			a[r] = temp;
+		// get the first two players in the list to fight
+		if (pcs.size() > 1) {
+			CombatEngine ce = new CombatEngine();
+			ce.simpleCombat(pcs.get(0), pcs.get(1));
 		}
 	}
+
 	
 	private static ArrayList<PlayerCharacter> makePlayerCharacter() {
 		ArrayList<PlayerCharacter> pcs = new ArrayList<>();
