@@ -19,6 +19,10 @@ public interface Combatant {
 	public String getName();
 	public String getRace();
 	public void modifyCurrentHitPoints(int hps);
+	public int getBaseHitPoints();
+	
+	// fully heal the combatant
+	public void fullyHeal();
 	
 	// whats our current status (dead, dying, etc)
 	public Status getStatus();

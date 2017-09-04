@@ -53,6 +53,7 @@ public class PlayerCharacter implements Combatant {
 		pc.armorClass = pc.calculateArmorClass();
 		pc.baseHitPoints = pc.calculateInitialHP();
 		pc.currentHitPoints = pc.baseHitPoints;
+		pc.status = Status.able;
 		return pc;
 	}
 
@@ -212,6 +213,18 @@ public class PlayerCharacter implements Combatant {
 				Constants.TAB4, Arrays.toString(permanentHpRecord)
 			);
 		return s;
+	}
+
+	@Override
+	public int getBaseHitPoints() {
+		return baseHitPoints;
+		
+	}
+	
+	@Override
+	public void fullyHeal() {
+		currentHitPoints = baseHitPoints;
+		status = Status.able;
 	}
 
 }
