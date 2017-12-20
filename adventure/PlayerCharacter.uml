@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.bms.adventure.characters.PlayerCharacter</OriginalElement>
+  <nodes>
+    <node x="340.0" y="-100.0">com.bms.adventure.characters.CharacterClass</node>
+    <node x="156.0" y="320.0">com.bms.adventure.characters.Faction</node>
+    <node x="-423.0" y="-114.0">com.bms.adventure.characters.equipment.ArmorDetails</node>
+    <node x="-415.0" y="107.0">com.bms.adventure.characters.equipment.Equipment</node>
+    <node x="-401.0" y="-7.0">com.bms.adventure.characters.equipment.Armor</node>
+    <node x="0.0" y="79.0">com.bms.adventure.characters.PlayerCharacter</node>
+    <node x="438.0" y="222.0">com.bms.adventure.characters.race.Race</node>
+    <node x="-405.0" y="233.0">com.bms.adventure.characters.equipment.Weapon</node>
+    <node x="25.0" y="190.0">com.bms.adventure.characters.Abilities</node>
+    <node x="394.0" y="-173.0">com.bms.adventure.characters.CharacterClassEnum</node>
+    <node x="124.0" y="500.0">com.bms.adventure.characters.race.Dwarf</node>
+    <node x="277.0" y="-235.0">com.bms.adventure.utils.CharacterClassInitializer</node>
+    <node x="-422.0" y="-232.0">com.bms.adventure.characters.equipment.ArmorLoader</node>
+    <node x="498.0" y="-14.0">com.bms.adventure.characters.Fighter</node>
+    <node x="15.0" y="-133.0">com.bms.adventure.characters.Combatant</node>
+    <node x="31.0" y="-238.0">com.bms.adventure.characters.Team</node>
+    <node x="-429.0" y="432.0">com.bms.adventure.characters.equipment.WeaponsLoader</node>
+    <node x="246.0" y="29.0">com.bms.adventure.characters.AbilitiesEnum</node>
+    <node x="412.0" y="81.0">com.bms.adventure.characters.race.RaceEnum</node>
+    <node x="-427.0" y="336.0">com.bms.adventure.characters.equipment.WeaponDetails</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.bms.adventure.characters.race.Race" target="com.bms.adventure.characters.equipment.Weapon">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.bms.adventure.characters.race.Race" target="com.bms.adventure.characters.AbilitiesEnum">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.bms.adventure.characters.equipment.Armor" target="com.bms.adventure.characters.equipment.ArmorDetails">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.bms.adventure.characters.race.Dwarf" target="com.bms.adventure.characters.equipment.WeaponDetails">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.bms.adventure.characters.Fighter" target="com.bms.adventure.characters.CharacterClass">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.bms.adventure.characters.race.Dwarf" target="com.bms.adventure.characters.equipment.Weapon">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.bms.adventure.characters.PlayerCharacter" target="com.bms.adventure.characters.Combatant">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.bms.adventure.characters.Abilities" target="com.bms.adventure.characters.AbilitiesEnum">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.bms.adventure.characters.PlayerCharacter" target="com.bms.adventure.characters.equipment.Weapon">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.bms.adventure.characters.equipment.WeaponsLoader" target="com.bms.adventure.characters.equipment.WeaponDetails">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.bms.adventure.characters.equipment.Weapon" target="com.bms.adventure.characters.equipment.WeaponDetails">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.bms.adventure.characters.PlayerCharacter" target="com.bms.adventure.utils.CharacterClassInitializer">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.bms.adventure.characters.race.Race" target="com.bms.adventure.characters.equipment.Armor">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.bms.adventure.utils.CharacterClassInitializer" target="com.bms.adventure.characters.race.Race">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.bms.adventure.characters.race.Dwarf" target="com.bms.adventure.characters.equipment.Armor">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.bms.adventure.characters.race.Dwarf" target="com.bms.adventure.characters.equipment.ArmorDetails">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.bms.adventure.characters.equipment.Armor" target="com.bms.adventure.characters.equipment.Equipment">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.bms.adventure.characters.race.Dwarf" target="com.bms.adventure.characters.Faction">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.bms.adventure.characters.PlayerCharacter" target="com.bms.adventure.characters.Abilities">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.bms.adventure.characters.Team" target="com.bms.adventure.characters.Combatant">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.bms.adventure.characters.race.Race" target="com.bms.adventure.characters.race.RaceEnum">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.bms.adventure.characters.equipment.ArmorLoader" target="com.bms.adventure.characters.equipment.ArmorDetails">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.bms.adventure.characters.equipment.Weapon" target="com.bms.adventure.characters.equipment.Equipment">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.bms.adventure.utils.CharacterClassInitializer" target="com.bms.adventure.characters.CharacterClass">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.bms.adventure.characters.race.Race" target="com.bms.adventure.characters.Faction">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.bms.adventure.characters.Fighter" target="com.bms.adventure.characters.CharacterClassEnum">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.bms.adventure.characters.PlayerCharacter" target="com.bms.adventure.characters.equipment.Armor">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.bms.adventure.characters.race.Dwarf" target="com.bms.adventure.characters.race.Race">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.bms.adventure.characters.PlayerCharacter" target="com.bms.adventure.characters.CharacterClass">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.bms.adventure.characters.PlayerCharacter" target="com.bms.adventure.characters.race.Race">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.bms.adventure.utils.CharacterClassInitializer" target="com.bms.adventure.characters.AbilitiesEnum">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="64.5" y="183.5" />
+  <SelectedNodes>
+    <node>com.bms.adventure.characters.Combatant</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

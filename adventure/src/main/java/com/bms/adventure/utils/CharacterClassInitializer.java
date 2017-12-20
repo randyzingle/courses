@@ -12,7 +12,7 @@ import com.bms.adventure.characters.race.RaceEnum;
  * CharacterClassInitializer is a mixture of CharacterClass and Race. 
  * 
  * You need both to determine which abilities a PlayerCharacter will want to maximize,
- * and which staring weapons and armor they will have. 
+ * and which starting weapons and armor they will have.
  * 
  * @author rzingle
  *

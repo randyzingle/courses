@@ -64,13 +64,13 @@ public class CombatEngine {
 			}
 		}
 		boolean fighting = true;
-		while(true) {
+		while(fighting) {
 			round += 1;
 			fighting = combatRound(first, last);
 			if (!fighting) break;
 			fighting = combatRound(last, first);
 			if (!fighting) break;
-			// safe-guard
+			// we'll fight for a maximum of 15 rounds
 			if (round > 15) break;
 		}
 		String s = String.format("%s, %s, %d, %d : %s, %s, %d, %d%n", 
