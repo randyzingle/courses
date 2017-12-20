@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ef0e0a48-fdd4-4a6d-a4e2-fa6f2612ecfc" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../deepai/course1/_3cc10c0294ce15295e17e737a1d4dde1_C1W2L08.pptx" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradlew" afterPath="$PROJECT_DIR$/gradlew" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bms/adventure/combat/CombatEngine.java" afterPath="$PROJECT_DIR$/src/main/java/com/bms/adventure/combat/CombatEngine.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bms/adventure/utils/CharacterClassInitializer.java" afterPath="$PROJECT_DIR$/src/main/java/com/bms/adventure/utils/CharacterClassInitializer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bms/adventure/utils/Dice.java" afterPath="$PROJECT_DIR$/src/main/java/com/bms/adventure/utils/Dice.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/combat.txt" afterPath="$PROJECT_DIR$/src/main/resources/combat.txt" />
-    </list>
+    <list default="true" id="ef0e0a48-fdd4-4a6d-a4e2-fa6f2612ecfc" name="Default" comment="" />
     <ignored path="adventure.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -1537,12 +1530,12 @@
       <workItem from="1511471770349" duration="1562000" />
       <workItem from="1512339315253" duration="2559000" />
       <workItem from="1513629713908" duration="3043000" />
-      <workItem from="1513718395256" duration="930000" />
+      <workItem from="1513718395256" duration="1122000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8094000" />
+    <option name="totallyTimeSpent" value="8286000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2132" y="-13" width="1484" height="1046" extended-state="0" />
