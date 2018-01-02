@@ -13,16 +13,19 @@ public class Adventure {
 	
 	public static void main(String[] args) {
 		System.out.println("Adventure");
-		ArrayList<PlayerCharacter> pcs = makePlayerCharacter();
-		// get the first two players in the list to fight
-		if (pcs.size() > 1) {
-			CombatEngine ce = new CombatEngine();
-			for (int i=0; i<50; i++) {
-				PlayerCharacter first = PlayerCharacter.makeNewPlayerCharacter("Baldur", 2, new Fighter(), new Dwarf());
-				PlayerCharacter last = PlayerCharacter.makeNewPlayerCharacter("Aldir", 2, new Fighter(), new Elf());
-				ce.simpleCombat(first, last);
-			}
+//		ArrayList<PlayerCharacter> pcs = makePlayerCharacter();
+		// make two PCs and get them to fight nbattles
+		int nbattles = 5;
+
+		CombatEngine ce = new CombatEngine();
+		for (int i=0; i<nbattles; i++) {
+			PlayerCharacter first = PlayerCharacter.makeNewPlayerCharacter("Baldur", 2, new Fighter(), new Dwarf());
+			System.out.println(first);
+			PlayerCharacter last = PlayerCharacter.makeNewPlayerCharacter("Aldir", 2, new Fighter(), new Elf());
+			System.out.println(last);
+			ce.simpleCombat(first, last);
 		}
+
 	}
 
 	

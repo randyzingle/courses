@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import com.bms.adventure.characters.equipment.Armor;
 import com.bms.adventure.characters.equipment.Weapon;
 
-public interface Combatant {
+public interface Combatant extends Comparable<Combatant> {
 	
 	public static enum Status {able, disabled, dying, dead}
 	

@@ -15,7 +15,8 @@ import com.bms.adventure.characters.Team;
 public class CombatEngine {
 	
 	private BufferedWriter writer;
-	private String fileName = "src/main/resources/combat.txt";
+	private String fileName = "src/main/resources/output/combat.txt";
+	private static final int ROUND_LIMIT = 2;
 	
 	public CombatEngine() {
 		try {
@@ -24,16 +25,6 @@ public class CombatEngine {
 			ex.printStackTrace();
 		}
 	}
-	
-	private Comparator<Combatant> comparator = new Comparator<Combatant>() {
-		public int compare(Combatant c1, Combatant c2) {
-			int init1 = c1.getInitiative();
-			int init2 = c2.getInitiative();
-			if (init1 < init2) return -1;
-			if (init1 == init2) return 0;
-			return -1;
-		}
-	};
  	
 	public void teamCombat(ArrayList<Team> combatTeams) {
 		
@@ -72,8 +63,8 @@ public class CombatEngine {
 			if (!fighting) break;
 			fighting = combatRound(defender, attacker);
 			if (!fighting) break;
-			// we'll fight for a maximum of 15 rounds
-			if (round > 15) break;
+			// we'll fight for a maximum of ROUND_LIMIT rounds
+			if (round > ROUND_LIMIT) break;
 		}
 		String s = String.format("%s, %s, %d, %d : %s, %s, %d, %d%n", 
 			attacker.getRace(), attacker.getStatus(), attacker.getArmorClass(), attacker.getBaseHitPoints(),

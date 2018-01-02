@@ -10,7 +10,7 @@ import com.bms.adventure.characters.Combatant.Status;
 
 public class CombatAnalyzer {
 
-	private String file = "src/main/resources/combat.txt";
+	private String file = "src/main/resources/output/combat.txt";
 	
 	public static void main(String[] args) {
 		CombatAnalyzer ca = new CombatAnalyzer();

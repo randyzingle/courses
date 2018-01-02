@@ -56,6 +56,15 @@ public class PlayerCharacter implements Combatant {
 		pc.status = Status.able;
 		return pc;
 	}
+	
+	// Still need to implement this in the combat engine
+	@Override
+	public int compareTo(Combatant c) {
+		// Sort combatants by initiative order
+		if (c.getInitiative() > this.getInitiative()) return -1;
+		if (c.getInitiative() < this.getInitiative()) return 1;
+		return 0;
+	}
 
 	private int calculateInitialHP() {
 		int temp = 0;
@@ -241,6 +250,8 @@ public class PlayerCharacter implements Combatant {
 			);
 		return s;
 	}
+
+
 
 
 
