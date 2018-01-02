@@ -14,12 +14,14 @@ public interface Combatant {
 	public int rollInitiative(); // just roll once at the beginning of combat
 	public int getArmorClass();
 	public int getCurrentHitPoints();
-	public int getAttackRoll(int attackNumber);
-	public int getDamageRoll();
+	public int getAttackBonus(int attackNumber);
+	public int getBaseDamage();
+	public int getCritDamage();
 	public String getName();
 	public String getRace();
 	public void modifyCurrentHitPoints(int hps);
 	public int getBaseHitPoints();
+	public boolean criticalHitImune();
 	
 	// fully heal the combatant
 	public void fullyHeal();

@@ -5,25 +5,25 @@ import java.util.HashMap;
 import com.bms.adventure.characters.AbilitiesEnum;
 import com.bms.adventure.characters.Faction;
 import com.bms.adventure.characters.equipment.Armor;
-import com.bms.adventure.characters.equipment.ArmorDetails;
+import com.bms.adventure.characters.equipment.ArmorFactory;
 import com.bms.adventure.characters.equipment.ArmorLoader;
 import com.bms.adventure.characters.equipment.Weapon;
-import com.bms.adventure.characters.equipment.WeaponDetails;
+import com.bms.adventure.characters.equipment.WeaponsFactory;
 import com.bms.adventure.characters.equipment.WeaponsLoader;
 
 public class Dwarf extends Race {
 
 	// starting armor, weapons for dwarf
-	ArmorDetails startingArmor = ArmorLoader.getArmor().get(ArmorDetails.SCALE_MAIL);
-	WeaponDetails startingWeapon = WeaponsLoader.getWeapons().get(WeaponDetails.WARHAMMER);
+	Armor startingArmor = ArmorFactory.getArmor(ArmorLoader.SCALE_MAIL);
+	Weapon startingWeapon = WeaponsFactory.getWeapon(WeaponsLoader.WARHAMMER);
 	
 	public Dwarf() {
 		racialAbilityModifiers = new HashMap<>();
 		racialAbilityModifiers.put(AbilitiesEnum.constitution, 2);
 		racialAbilityModifiers.put(AbilitiesEnum.charisma, -2);
 		racialType = RaceEnum.dwarf;
-		armor = new Armor(startingArmor);
-		weapon = new Weapon(startingWeapon);
+		armor = startingArmor; 
+		weapon = startingWeapon;
 		gold = 50;
 		faction = new Faction(RaceEnum.dwarf.name());
 		age = randomAge(50);

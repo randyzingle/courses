@@ -1,40 +1,32 @@
 package com.bms.adventure.characters.equipment;
 
-import java.util.TreeSet;
-
+/**
+ * This is our Base Weapon description. We only need one of each as they are not individual weapons but
+ * rather are descriptions of weapon types. Characters, Monsters, stores etc will have a copy of the 
+ * weapons detailed here, in the Weapon.java class.
+ *  
+ * @author razing
+ *
+ */
 public class WeaponDetails {
-	
-	public static final String RAPIER = "rapier";
-	public static final String WARHAMMER = "warhammer";
-	public static final String LONGSWORD = "longsword";
-	public static final String MACE = "mace";
 	
 	private String name;
 	private int cost;
 	private double weight;
 	private int damageNumberDice;
 	private int damageNumberSides;
-	private TreeSet<Integer> critHits; // 3 element array for crit on 18,19,20 (1 if yes, 0 if no)
+	private int critThreshold;
 	private int critMultiplier;
-	private int magicBonus;
-	
-	public WeaponDetails(){}
 	
 	public WeaponDetails(String name, int cost, double weight, int damageNumberDice, int damageNumberSides, 
-			TreeSet<Integer> critHits, int critMultiplier) {
-		this(name, cost, weight, damageNumberDice, damageNumberSides, critHits, critMultiplier, 0);
-	}
-	
-	public WeaponDetails(String name, int cost, double weight, int damageNumberDice, int damageNumberSides, 
-			TreeSet<Integer> critHits, int critMultiplier, int magicBonus) {
+			int critThreshold, int critMultiplier) {
 		this.name = name;
 		this.cost = cost;
 		this.weight = weight;
 		this.damageNumberDice = damageNumberDice;
 		this.damageNumberSides = damageNumberSides;
-		this.critHits = critHits;
+		this.critThreshold = critThreshold;
 		this.critMultiplier = critMultiplier;
-		this.magicBonus = magicBonus;
 	}
 	
 	public String getName() {
@@ -67,11 +59,11 @@ public class WeaponDetails {
 	public void setDamageNumberSides(int damageNumberSides) {
 		this.damageNumberSides = damageNumberSides;
 	}
-	public TreeSet<Integer> getCritHits() {
-		return critHits;
+	public int getCritThreshold() {
+		return critThreshold;
 	}
-	public void setCritHits(TreeSet<Integer> critHits) {
-		this.critHits = critHits;
+	public void setCritThreshold(int critThreshold) {
+		this.critThreshold = critThreshold;
 	}
 	public int getCritMultiplier() {
 		return critMultiplier;
@@ -79,30 +71,12 @@ public class WeaponDetails {
 	public void setCritMultiplier(int critMultiplier) {
 		this.critMultiplier = critMultiplier;
 	}
-	public int getMagicBonus() {
-		return magicBonus;
-	}
-
-	public void setMagicBonus(int magicBonus) {
-		this.magicBonus = magicBonus;
-	}
 
 	@Override
 	public String toString() {
-		String critString = "";
-		if (critHits.isEmpty()) {
-			critString = "no ";
-		} else if (critHits.size() == 1) {
-			critString = critHits.first().toString();
-		} else if (critHits.size() > 1) {
-			critString = critHits.first().toString() + "-" + critHits.last().toString();
-		}
-		String s = "%-12s: %4d GP, %dd%d%s damage, %5sx%d crit, %4.1f lbs";
-		String magicString = "";
-		if (magicBonus > 0) {
-			magicString = "[+"+magicBonus+"]";
-		}
-		return String.format(s, name, cost, damageNumberDice, damageNumberSides, magicString, critString, critMultiplier, weight);
+		String critString = critThreshold + "+";
+		String s = "%-12s: %4d GP, %dd%d damage, %5sx%d crit, %4.1f lbs";
+		return String.format(s, name, cost, damageNumberDice, damageNumberSides, critString, critMultiplier, weight);
 	}
 	
 }

@@ -8,6 +8,8 @@ import java.util.TreeSet;
 
 import com.bms.adventure.characters.Combatant;
 import com.bms.adventure.characters.Combatant.Status;
+import com.bms.adventure.utils.BigPrint;
+import com.bms.adventure.utils.Dice;
 import com.bms.adventure.characters.Team;
 
 public class CombatEngine {
@@ -43,39 +45,39 @@ public class CombatEngine {
 		// add combatants in order of initiative roll
 		c1.setInitiative(c1.rollInitiative());
 		c2.setInitiative(c2.rollInitiative());
-		Combatant first = null;
-		Combatant last = null;
+		Combatant attacker = null;
+		Combatant defender = null;
 		if (c1.getInitiative() < c2.getInitiative()) {
-			first = c2;
-			last = c1;
+			attacker = c2;
+			defender = c1;
 		} else if (c1.getInitiative() > c2.getInitiative()) {
-			first = c1;
-			last = c2;
+			attacker = c1;
+			defender = c2;
 			
 		} else {
 			// tied - randomly decide who goes first
 			double d = Math.random();
 			if (d < 0.5) {
-				first = c1;
-				last = c2;			
+				attacker = c1;
+				defender = c2;			
 			} else {
-				first = c2;
-				last = c1;
+				attacker = c2;
+				defender = c1;
 			}
 		}
 		boolean fighting = true;
 		while(fighting) {
 			round += 1;
-			fighting = combatRound(first, last);
+			fighting = combatRound(attacker, defender);
 			if (!fighting) break;
-			fighting = combatRound(last, first);
+			fighting = combatRound(defender, attacker);
 			if (!fighting) break;
 			// we'll fight for a maximum of 15 rounds
 			if (round > 15) break;
 		}
 		String s = String.format("%s, %s, %d, %d : %s, %s, %d, %d%n", 
-			first.getRace(), first.getStatus(), first.getArmorClass(), first.getBaseHitPoints(),
-			last.getRace(), last.getStatus(), last.getArmorClass(), last.getBaseHitPoints()
+			attacker.getRace(), attacker.getStatus(), attacker.getArmorClass(), attacker.getBaseHitPoints(),
+			defender.getRace(), defender.getStatus(), defender.getArmorClass(), defender.getBaseHitPoints()
 		);
 		System.out.print(s);
 		try {
@@ -86,35 +88,68 @@ public class CombatEngine {
 		}
 	}
 	
-	private boolean combatRound(Combatant first, Combatant last) {
+	private boolean combatRound(Combatant attacker, Combatant defender) {
 		boolean fighting = true;
 		String s = "The %s, %s swings his %s at %s%n";
-		System.out.printf(s, first.getRace(), first.getName(), first.getWeapon().getName(), last.getName());
-		boolean hit = hit(first, last);
+		System.out.printf(s, attacker.getRace(), attacker.getName(), attacker.getWeapon().getName(), defender.getName());
+		// raw hit roll, 1 always misses, 20 always hits
+		int hitRoll = Dice.rollDice(1, 20);
+		boolean hit = false;
+		if (hitRoll == 20) {
+			hit = true;
+		} else if (hitRoll == 1) {
+			hit = false;
+		} else {
+			hit = hit(hitRoll, attacker, defender);
+		}
 		if (hit) {
-			int damage = first.getDamageRoll(); // modify this to check for critical hits
-			last.modifyCurrentHitPoints(-1 * damage);
-			int hp = last.getCurrentHitPoints();
-			System.out.printf("%s did %d hps of damage, %s has %d hitpoints%n",first.getName(), damage, last.getName(), hp);
-			if (last.getStatus() != Status.able) {
+			boolean crit = false;
+			if(!defender.criticalHitImune()) crit = checkCrit(hitRoll, attacker, defender);
+			int damage = 0;
+			if (crit) {
+				damage = attacker.getCritDamage();
+			} else {
+				damage = attacker.getBaseDamage();
+			}
+			defender.modifyCurrentHitPoints(-1 * damage);
+			int hp = defender.getCurrentHitPoints();
+			System.out.printf("%s did %d hps of damage, %s has %d hitpoints%n",attacker.getName(), damage, defender.getName(), hp);
+			if (defender.getStatus() != Status.able) {
 				// fight is over
-				System.out.printf("Fight is over, %s is %s%n", last.getName(), last.getStatus().toString());
+				System.out.printf("Fight is over, %s is %s%n", defender.getName(), defender.getStatus().toString());
 				fighting = false;
 			}
 		}
 		return fighting;
 	}
 	
-	private boolean hit(Combatant first, Combatant last) {
+	private boolean hit(int hitRoll, Combatant attacker, Combatant defender) {
 		boolean hit = false;
-		int attackRoll = first.getAttackRoll(1);
-		if (attackRoll >= last.getArmorClass()) {
+		int attackRoll = hitRoll + attacker.getAttackBonus(1);
+		if (attackRoll >= defender.getArmorClass()) {
 			String s = "HIT: %s rolled an attack roll of %d, %s has an AC of %d and was hit%n";
-			System.out.printf(s, first.getName(), attackRoll, last.getName(), last.getArmorClass());
+			System.out.printf(s, attacker.getName(), attackRoll, defender.getName(), defender.getArmorClass());
 			hit = true;
-		}
-		
+		}	
 		return hit;
+	}
+	
+	private boolean checkCrit(int hitRoll, Combatant attacker, Combatant defender) {
+		boolean crit = false;
+		// for it to be a crit we need to be in the weapon's crit range (Player's handbook pg 123)
+		int critThreshold = attacker.getWeapon().getWeaponDetails().getCritThreshold();
+		if (hitRoll < critThreshold) return false;
+		// at this point we have a possible crit
+		System.out.printf("We have a possible critical hit: roll=%d, base crit for weapon=%d%n", hitRoll, critThreshold);
+		// roll again 
+		int critRoll = Dice.rollDice(1, 20);
+		boolean hit =  hit(critRoll, attacker, defender);
+		if (hit) {
+			String s = "Critical hit on a roll of " + critRoll;
+			BigPrint.print(s);
+			crit = true;
+		}
+		return crit;
 	}
 
 }

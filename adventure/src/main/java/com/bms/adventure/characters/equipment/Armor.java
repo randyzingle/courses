@@ -4,9 +4,11 @@ public class Armor implements Equipment {
 	
 	private ArmorDetails armorDetails;
 	private static final String slot = "BODY";
+	private int magicBonus;
 	
-	public Armor(ArmorDetails armorDetails) {
+	public Armor(ArmorDetails armorDetails, String description, int magicBonus) {
 		this.armorDetails = armorDetails;
+		this.magicBonus = magicBonus;
 	}
 	
 	public int getArmorBonus() {
@@ -18,7 +20,7 @@ public class Armor implements Equipment {
 	}
 	
 	public int getMagicBonus() {
-		return armorDetails.getMagicBonus();
+		return magicBonus;
 	}
 
 	@Override

@@ -2,26 +2,25 @@ package com.bms.adventure.characters.race;
 
 import java.util.HashMap;
 
-import com.bms.adventure.characters.AbilitiesEnum;
 import com.bms.adventure.characters.Faction;
 import com.bms.adventure.characters.equipment.Armor;
-import com.bms.adventure.characters.equipment.ArmorDetails;
+import com.bms.adventure.characters.equipment.ArmorFactory;
 import com.bms.adventure.characters.equipment.ArmorLoader;
 import com.bms.adventure.characters.equipment.Weapon;
-import com.bms.adventure.characters.equipment.WeaponDetails;
+import com.bms.adventure.characters.equipment.WeaponsFactory;
 import com.bms.adventure.characters.equipment.WeaponsLoader;
 
 public class Human extends Race {
 
 	// starting armor, weapons for human
-	ArmorDetails startingArmor = ArmorLoader.getArmor().get(ArmorDetails.CHAIN_SHIRT);
-	WeaponDetails startingWeapon = WeaponsLoader.getWeapons().get(WeaponDetails.MACE);
+	Armor startingArmor = ArmorFactory.getArmor(ArmorLoader.CHAIN_SHIRT);
+	Weapon startingWeapon = WeaponsFactory.getWeapon(WeaponsLoader.MACE);
 	
 	public Human() {
 		racialAbilityModifiers = new HashMap<>();
 		racialType = RaceEnum.human;
-		armor = new Armor(startingArmor);
-		weapon = new Weapon(startingWeapon);
+		armor = startingArmor;
+		weapon = startingWeapon;
 		gold = 50;
 		faction = new Faction(RaceEnum.human.name());
 		age = randomAge(19);

@@ -153,18 +153,28 @@ public class PlayerCharacter implements Combatant {
 	}
 
 	@Override
-	public int getAttackRoll(int attackNumber) {
-		int levelBonus = characterClass.getBaseAttackBonus()[attackNumber][level];
+	public int getAttackBonus(int attackNumber) {
+		int baseAttackBonus = characterClass.getBaseAttackBonus()[attackNumber][level];
 		int strengthBonus = abilities.abilityModifiers[abilities.getStrength()];
 		int weaponBonus = weapon.getMagicBonus();
-		return Dice.rollDice(1, 20) + levelBonus + strengthBonus + weaponBonus;
+		return baseAttackBonus + strengthBonus + weaponBonus;
 	}
 
 	@Override
-	public int getDamageRoll() {
+	public int getBaseDamage() {
 		int strengthBonus = abilities.abilityModifiers[abilities.getStrength()];
-		int weaponBonus = weapon.getMagicBonus();
-		int damage = weapon.getBaseDamage() + weaponBonus + strengthBonus;
+		int magicBonus = weapon.getMagicBonus();
+		int damageBonus = strengthBonus + magicBonus;
+		return weapon.getBaseDamage(damageBonus);
+	}
+	
+	@Override
+	public int getCritDamage() {
+		int multiplier = weapon.getWeaponDetails().getCritMultiplier();
+		int damage = 0;
+		for (int i=0; i<multiplier; i++) {
+			damage += getBaseDamage();
+		}
 		return damage;
 	}
 
@@ -197,6 +207,23 @@ public class PlayerCharacter implements Combatant {
 	public int getInitiative() {
 		return this.initiative;
 	}
+	
+	@Override
+	public int getBaseHitPoints() {
+		return baseHitPoints;
+		
+	}
+	
+	@Override
+	public void fullyHeal() {
+		currentHitPoints = baseHitPoints;
+		status = Status.able;
+	}
+
+	@Override
+	public boolean criticalHitImune() {
+		return false;
+	}
 
 	@Override
 	public String toString() {
@@ -215,16 +242,6 @@ public class PlayerCharacter implements Combatant {
 		return s;
 	}
 
-	@Override
-	public int getBaseHitPoints() {
-		return baseHitPoints;
-		
-	}
-	
-	@Override
-	public void fullyHeal() {
-		currentHitPoints = baseHitPoints;
-		status = Status.able;
-	}
+
 
 }

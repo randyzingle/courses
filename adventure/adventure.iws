@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ef0e0a48-fdd4-4a6d-a4e2-fa6f2612ecfc" name="Default" comment="" />
+    <list default="true" id="ef0e0a48-fdd4-4a6d-a4e2-fa6f2612ecfc" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/modules/adventure.iml" afterPath="$PROJECT_DIR$/.idea/modules/adventure.iml" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/adventure_main.iml" afterPath="$PROJECT_DIR$/.idea/modules/adventure_main.iml" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/adventure_test.iml" afterPath="$PROJECT_DIR$/.idea/modules/adventure_test.iml" />
+      <change beforePath="$PROJECT_DIR$/adventure.ipr" afterPath="$PROJECT_DIR$/adventure.ipr" />
+      <change beforePath="$PROJECT_DIR$/adventure.iws" afterPath="$PROJECT_DIR$/adventure.iws" />
+      <change beforePath="$PROJECT_DIR$/../deepai/course1/.ipynb_checkpoints/Untitled-checkpoint.ipynb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../deepai/course1/.ipynb_checkpoints/week2-vectorization-checkpoint.ipynb" afterPath="$PROJECT_DIR$/../deepai/course1/.ipynb_checkpoints/week2-vectorization-checkpoint.ipynb" />
+      <change beforePath="$PROJECT_DIR$/../deepai/course1/Untitled.ipynb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../deepai/course1/untitled.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../deepai/course1/week2-vectorization.ipynb" afterPath="$PROJECT_DIR$/../deepai/course1/week2-vectorization.ipynb" />
+    </list>
     <ignored path="adventure.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -54,7 +65,6 @@
     <breakpoint_rules converted="true" />
     <ui_properties converted="true" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="ExportToHTMLSettings">
     <option name="printScope" value="1" />
     <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/exportToHTML" />
@@ -80,174 +90,8 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/bms/adventure/characters/equipment/Armor.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PlayerCharacter.uml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PlayerCharacter.uml">
-          <provider selected="true" editor-type-id="UmlEditorProvider">
-            <state>
-              <ID>JAVA</ID>
-              <OriginalElement>com.bms.adventure.characters.PlayerCharacter</OriginalElement>
-              <nodes>
-                <node x="340.0" y="-100.0">com.bms.adventure.characters.CharacterClass</node>
-                <node x="156.0" y="320.0">com.bms.adventure.characters.Faction</node>
-                <node x="-423.0" y="-114.0">com.bms.adventure.characters.equipment.ArmorDetails</node>
-                <node x="-401.0" y="-7.0">com.bms.adventure.characters.equipment.Armor</node>
-                <node x="0.0" y="79.0">com.bms.adventure.characters.PlayerCharacter</node>
-                <node x="-415.0" y="107.0">com.bms.adventure.characters.equipment.Equipment</node>
-                <node x="-405.0" y="233.0">com.bms.adventure.characters.equipment.Weapon</node>
-                <node x="25.0" y="190.0">com.bms.adventure.characters.Abilities</node>
-                <node x="438.0" y="222.0">com.bms.adventure.characters.race.Race</node>
-                <node x="394.0" y="-173.0">com.bms.adventure.characters.CharacterClassEnum</node>
-                <node x="124.0" y="500.0">com.bms.adventure.characters.race.Dwarf</node>
-                <node x="-422.0" y="-232.0">com.bms.adventure.characters.equipment.ArmorLoader</node>
-                <node x="277.0" y="-235.0">com.bms.adventure.utils.CharacterClassInitializer</node>
-                <node x="15.0" y="-133.0">com.bms.adventure.characters.Combatant</node>
-                <node x="498.0" y="-14.0">com.bms.adventure.characters.Fighter</node>
-                <node x="31.0" y="-238.0">com.bms.adventure.characters.Team</node>
-                <node x="-429.0" y="432.0">com.bms.adventure.characters.equipment.WeaponsLoader</node>
-                <node x="412.0" y="81.0">com.bms.adventure.characters.race.RaceEnum</node>
-                <node x="246.0" y="29.0">com.bms.adventure.characters.AbilitiesEnum</node>
-                <node x="-427.0" y="336.0">com.bms.adventure.characters.equipment.WeaponDetails</node>
-              </nodes>
-              <notes />
-              <edges>
-                <edge source="com.bms.adventure.characters.race.Race" target="com.bms.adventure.characters.equipment.Weapon">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="com.bms.adventure.characters.equipment.Armor" target="com.bms.adventure.characters.equipment.ArmorDetails">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="com.bms.adventure.characters.race.Race" target="com.bms.adventure.characters.AbilitiesEnum">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="com.bms.adventure.characters.race.Dwarf" target="com.bms.adventure.characters.equipment.WeaponDetails">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="com.bms.adventure.characters.Fighter" target="com.bms.adventure.characters.CharacterClass">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="com.bms.adventure.characters.race.Dwarf" target="com.bms.adventure.characters.equipment.Weapon">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="com.bms.adventure.characters.PlayerCharacter" target="com.bms.adventure.characters.Combatant">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="com.bms.adventure.characters.Abilities" target="com.bms.adventure.characters.AbilitiesEnum">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="com.bms.adventure.characters.PlayerCharacter" target="com.bms.adventure.characters.equipment.Weapon">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="com.bms.adventure.characters.equipment.WeaponsLoader" target="com.bms.adventure.characters.equipment.WeaponDetails">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="com.bms.adventure.characters.equipment.Weapon" target="com.bms.adventure.characters.equipment.WeaponDetails">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="com.bms.adventure.characters.PlayerCharacter" target="com.bms.adventure.utils.CharacterClassInitializer">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="com.bms.adventure.characters.race.Race" target="com.bms.adventure.characters.equipment.Armor">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="com.bms.adventure.utils.CharacterClassInitializer" target="com.bms.adventure.characters.race.Race">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="com.bms.adventure.characters.race.Dwarf" target="com.bms.adventure.characters.equipment.Armor">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="com.bms.adventure.characters.equipment.Armor" target="com.bms.adventure.characters.equipment.Equipment">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="com.bms.adventure.characters.race.Dwarf" target="com.bms.adventure.characters.equipment.ArmorDetails">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="com.bms.adventure.characters.race.Dwarf" target="com.bms.adventure.characters.Faction">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="com.bms.adventure.characters.PlayerCharacter" target="com.bms.adventure.characters.Abilities">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="com.bms.adventure.characters.Team" target="com.bms.adventure.characters.Combatant">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="com.bms.adventure.characters.race.Race" target="com.bms.adventure.characters.race.RaceEnum">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="com.bms.adventure.characters.equipment.ArmorLoader" target="com.bms.adventure.characters.equipment.ArmorDetails">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="com.bms.adventure.characters.equipment.Weapon" target="com.bms.adventure.characters.equipment.Equipment">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="com.bms.adventure.utils.CharacterClassInitializer" target="com.bms.adventure.characters.CharacterClass">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="com.bms.adventure.characters.race.Race" target="com.bms.adventure.characters.Faction">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="com.bms.adventure.characters.Fighter" target="com.bms.adventure.characters.CharacterClassEnum">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="com.bms.adventure.characters.race.Dwarf" target="com.bms.adventure.characters.race.Race">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="com.bms.adventure.characters.PlayerCharacter" target="com.bms.adventure.characters.equipment.Armor">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="com.bms.adventure.utils.CharacterClassInitializer" target="com.bms.adventure.characters.AbilitiesEnum">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="com.bms.adventure.characters.PlayerCharacter" target="com.bms.adventure.characters.race.Race">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="com.bms.adventure.characters.PlayerCharacter" target="com.bms.adventure.characters.CharacterClass">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-              </edges>
-              <settings layout="Hierarchic Group" zoom="1.0" x="-253.5" y="-25.5" />
-              <SelectedNodes>
-                <node>com.bms.adventure.characters.PlayerCharacter</node>
-              </SelectedNodes>
-              <Categories />
-              <SCOPE>All</SCOPE>
-              <VISIBILITY>private</VISIBILITY>
             </state>
           </provider>
         </entry>
@@ -256,7 +100,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/bms/adventure/storage/CharacterWriter.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -266,7 +110,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/bms/adventure/storage/CharacterReader.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -275,8 +119,8 @@
       <file leaf-file-name="CombatEngine.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/bms/adventure/combat/CombatEngine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="66" column="22" selection-start-line="66" selection-start-column="22" selection-end-line="66" selection-end-column="22" />
+            <state relative-caret-position="870">
+              <caret line="66" column="22" lean-forward="false" selection-start-line="66" selection-start-column="22" selection-end-line="66" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -286,17 +130,17 @@
         <entry file="file://$PROJECT_DIR$/src/main/resources/combat.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ArmorDetails.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ArmorDetails.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/bms/adventure/characters/equipment/ArmorDetails.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -306,7 +150,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/bms/adventure/characters/equipment/ArmorLoader.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -316,8 +160,308 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/bms/adventure/characters/equipment/Equipment.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
-              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+              <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlayerCharacter.uml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/PlayerCharacter.uml">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>JAVA</ID>
+              <OriginalElement>com.bms.adventure.characters.PlayerCharacter</OriginalElement>
+              <nodes>
+                <node x="1253.6493589743588" y="130.0">com.bms.adventure.characters.CharacterClass</node>
+                <node x="625.6697940349882" y="130.0">com.bms.adventure.characters.Faction</node>
+                <node x="423.45677576733635" y="0.0">com.bms.adventure.characters.equipment.ArmorDetails</node>
+                <node x="287.45677576733635" y="0.0">com.bms.adventure.characters.equipment.Equipment</node>
+                <node x="517.6697940349882" y="130.0">com.bms.adventure.characters.equipment.Armor</node>
+                <node x="628.1947940349883" y="600.0">com.bms.adventure.characters.PlayerCharacter</node>
+                <node x="921.6775088417331" y="280.0">com.bms.adventure.characters.Abilities</node>
+                <node x="667.0947940349881" y="280.0">com.bms.adventure.characters.race.Race</node>
+                <node x="243.93646070165482" y="130.0">com.bms.adventure.characters.equipment.Weapon</node>
+                <node x="459.17765488821544" y="470.0">com.bms.adventure.characters.race.Dwarf</node>
+                <node x="1055.6493589743588" y="130.0">com.bms.adventure.characters.CharacterClassEnum</node>
+                <node x="365.9364607016548" y="130.0">com.bms.adventure.characters.equipment.ArmorLoader</node>
+                <node x="961.6947940349881" y="470.0">com.bms.adventure.utils.CharacterClassInitializer</node>
+                <node x="1113.6493589743588" y="280.0">com.bms.adventure.characters.Fighter</node>
+                <node x="12.87876839396256" y="470.0">com.bms.adventure.characters.Combatant</node>
+                <node x="0.0" y="600.0">com.bms.adventure.characters.Team</node>
+                <node x="73.93646070165482" y="130.0">com.bms.adventure.characters.equipment.WeaponsLoader</node>
+                <node x="902.6493589743588" y="130.0">com.bms.adventure.characters.AbilitiesEnum</node>
+                <node x="740.6697940349882" y="130.0">com.bms.adventure.characters.race.RaceEnum</node>
+                <node x="78.3535714285714" y="0.0">com.bms.adventure.characters.equipment.WeaponDetails</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="com.bms.adventure.characters.race.Race" target="com.bms.adventure.characters.equipment.Weapon">
+                  <point x="-35.55000000000007" y="-15.0" />
+                  <point x="671.0447940349882" y="230.0" />
+                  <point x="319.6864607016548" y="230.0" />
+                  <point x="25.25" y="15.0" />
+                </edge>
+                <edge source="com.bms.adventure.utils.CharacterClassInitializer" target="com.bms.adventure.characters.Fighter">
+                  <point x="36.9375" y="-15.0" />
+                  <point x="1097.1322940349883" y="430.0" />
+                  <point x="1160.1493589743588" y="430.0" />
+                  <point x="0.0" y="15.0" />
+                </edge>
+                <edge source="com.bms.adventure.characters.race.Race" target="com.bms.adventure.characters.AbilitiesEnum">
+                  <point x="27.649999999999977" y="-15.0" />
+                  <point x="734.2447940349882" y="230.0" />
+                  <point x="912.1493589743588" y="230.0" />
+                  <point x="-57.0" y="15.0" />
+                </edge>
+                <edge source="com.bms.adventure.characters.equipment.Armor" target="com.bms.adventure.characters.equipment.ArmorDetails">
+                  <point x="0.0" y="-15.0" />
+                  <point x="561.6697940349882" y="60.0" />
+                  <point x="524.8139186244792" y="60.0" />
+                  <point x="36.85714285714289" y="15.0" />
+                </edge>
+                <edge source="com.bms.adventure.characters.race.Dwarf" target="com.bms.adventure.characters.equipment.WeaponDetails">
+                  <point x="-33.076923076923094" y="-15.0" />
+                  <point x="469.10073181129235" y="370.0" />
+                  <point x="63.43646070165482" y="370.0" />
+                  <point x="63.43646070165482" y="100.0" />
+                  <point x="108.78214285714273" y="100.0" />
+                  <point x="-40.57142857142867" y="15.0" />
+                </edge>
+                <edge source="com.bms.adventure.characters.Fighter" target="com.bms.adventure.characters.CharacterClass">
+                  <point x="31.0" y="-15.0" />
+                  <point x="1191.1493589743588" y="260.0" />
+                  <point x="1267.9493589743588" y="260.0" />
+                  <point x="-57.2" y="15.0" />
+                </edge>
+                <edge source="com.bms.adventure.characters.race.Dwarf" target="com.bms.adventure.characters.equipment.Weapon">
+                  <point x="-19.84615384615381" y="-15.0" />
+                  <point x="482.33150104206163" y="350.0" />
+                  <point x="302.5197940349882" y="350.0" />
+                  <point x="8.416666666666742" y="15.0" />
+                </edge>
+                <edge source="com.bms.adventure.characters.race.Dwarf" target="com.bms.adventure.characters.AbilitiesEnum">
+                  <point x="39.692307692307736" y="-15.0" />
+                  <point x="541.8699625805232" y="450.0" />
+                  <point x="894.4988864942529" y="450.0" />
+                  <point x="894.4988864942529" y="250.0" />
+                  <point x="950.1493589743588" y="250.0" />
+                  <point x="-19.0" y="15.0" />
+                </edge>
+                <edge source="com.bms.adventure.characters.PlayerCharacter" target="com.bms.adventure.characters.Combatant">
+                  <point x="-58.799999999999955" y="-15.0" />
+                  <point x="642.8947940349883" y="570.0" />
+                  <point x="95.47876839396247" y="570.0" />
+                  <point x="23.59999999999991" y="15.0" />
+                </edge>
+                <edge source="com.bms.adventure.characters.Abilities" target="com.bms.adventure.characters.AbilitiesEnum">
+                  <point x="24.5" y="-15.0" />
+                  <point x="995.1775088417331" y="260.0" />
+                  <point x="988.1493589743588" y="260.0" />
+                  <point x="19.0" y="15.0" />
+                </edge>
+                <edge source="com.bms.adventure.characters.PlayerCharacter" target="com.bms.adventure.characters.equipment.Weapon">
+                  <point x="-29.399999999999977" y="-15.0" />
+                  <point x="672.2947940349882" y="540.0" />
+                  <point x="291.5197940349882" y="540.0" />
+                  <point x="291.5197940349882" y="260.0" />
+                  <point x="286.0197940349881" y="260.0" />
+                  <point x="-8.416666666666742" y="15.0" />
+                </edge>
+                <edge source="com.bms.adventure.characters.equipment.WeaponsLoader" target="com.bms.adventure.characters.equipment.WeaponDetails">
+                  <point x="50.0" y="-15.0" />
+                  <point x="198.93646070165482" y="110.0" />
+                  <point x="169.63928571428562" y="110.0" />
+                  <point x="20.28571428571422" y="15.0" />
+                </edge>
+                <edge source="com.bms.adventure.characters.race.Dwarf" target="com.bms.adventure.characters.equipment.ArmorLoader">
+                  <point x="-6.615384615384642" y="-15.0" />
+                  <point x="495.5622702728308" y="330.0" />
+                  <point x="430.9364607016548" y="330.0" />
+                  <point x="0.0" y="15.0" />
+                </edge>
+                <edge source="com.bms.adventure.characters.Combatant" target="com.bms.adventure.characters.equipment.Weapon">
+                  <point x="-29.5" y="-15.0" />
+                  <point x="42.37876839396256" y="250.0" />
+                  <point x="252.35312736832157" y="250.0" />
+                  <point x="-42.08333333333326" y="15.0" />
+                </edge>
+                <edge source="com.bms.adventure.characters.equipment.Weapon" target="com.bms.adventure.characters.equipment.WeaponDetails">
+                  <point x="-33.66666666666674" y="-15.0" />
+                  <point x="260.7697940349881" y="100.0" />
+                  <point x="189.92500000000007" y="100.0" />
+                  <point x="40.57142857142867" y="15.0" />
+                </edge>
+                <edge source="com.bms.adventure.characters.PlayerCharacter" target="com.bms.adventure.utils.CharacterClassInitializer">
+                  <point x="39.200000000000045" y="-15.0" />
+                  <point x="740.8947940349883" y="550.0" />
+                  <point x="1010.9447940349881" y="550.0" />
+                  <point x="-49.25" y="15.0" />
+                </edge>
+                <edge source="com.bms.adventure.characters.race.Race" target="com.bms.adventure.characters.equipment.Armor">
+                  <point x="-11.850000000000023" y="-15.0" />
+                  <point x="694.7447940349882" y="200.0" />
+                  <point x="598.3364607016548" y="200.0" />
+                  <point x="36.66666666666663" y="15.0" />
+                </edge>
+                <edge source="com.bms.adventure.utils.CharacterClassInitializer" target="com.bms.adventure.characters.race.Race">
+                  <point x="-86.1875" y="-15.0" />
+                  <point x="974.0072940349881" y="430.0" />
+                  <point x="726.3447940349881" y="430.0" />
+                  <point x="19.75" y="15.0" />
+                </edge>
+                <edge source="com.bms.adventure.characters.race.Dwarf" target="com.bms.adventure.characters.equipment.Armor">
+                  <point x="6.615384615384642" y="-15.0" />
+                  <point x="508.7930395036001" y="400.0" />
+                  <point x="538.7954350606292" y="400.0" />
+                  <point x="-22.0" y="15.0" />
+                </edge>
+                <edge source="com.bms.adventure.characters.equipment.Armor" target="com.bms.adventure.characters.equipment.Equipment">
+                  <point x="-29.33333333333337" y="-15.0" />
+                  <point x="532.3364607016548" y="70.0" />
+                  <point x="374.45677576733635" y="70.0" />
+                  <point x="29.0" y="15.0" />
+                </edge>
+                <edge source="com.bms.adventure.characters.race.Dwarf" target="com.bms.adventure.characters.equipment.ArmorDetails">
+                  <point x="0.0" y="-15.0" />
+                  <point x="502.17765488821544" y="380.0" />
+                  <point x="506.4364607016548" y="380.0" />
+                  <point x="18.428571428571445" y="15.0" />
+                </edge>
+                <edge source="com.bms.adventure.characters.race.Dwarf" target="com.bms.adventure.characters.Faction">
+                  <point x="13.230769230769283" y="-15.0" />
+                  <point x="515.4084241189847" y="410.0" />
+                  <point x="569.4405306618669" y="410.0" />
+                  <point x="569.4405306618669" y="260.0" />
+                  <point x="641.5031273683215" y="260.0" />
+                  <point x="-31.66666666666663" y="15.0" />
+                </edge>
+                <edge source="com.bms.adventure.characters.PlayerCharacter" target="com.bms.adventure.characters.Abilities">
+                  <point x="19.600000000000023" y="-15.0" />
+                  <point x="721.2947940349882" y="530.0" />
+                  <point x="941.3947940349882" y="530.0" />
+                  <point x="941.3947940349882" y="450.0" />
+                  <point x="946.1775088417331" y="450.0" />
+                  <point x="-24.5" y="15.0" />
+                </edge>
+                <edge source="com.bms.adventure.characters.Team" target="com.bms.adventure.characters.Combatant">
+                  <point x="-20.75" y="-15.0" />
+                  <point x="20.75" y="580.0" />
+                  <point x="24.678768393962514" y="580.0" />
+                  <point x="-47.200000000000045" y="15.0" />
+                </edge>
+                <edge source="com.bms.adventure.characters.race.Race" target="com.bms.adventure.characters.race.RaceEnum">
+                  <point x="19.75" y="-15.0" />
+                  <point x="726.3447940349881" y="220.0" />
+                  <point x="783.4197940349882" y="220.0" />
+                  <point x="-14.25" y="15.0" />
+                </edge>
+                <edge source="com.bms.adventure.characters.equipment.ArmorLoader" target="com.bms.adventure.characters.equipment.ArmorDetails">
+                  <point x="-43.33333333333337" y="-15.0" />
+                  <point x="387.60312736832145" y="90.0" />
+                  <point x="451.09963291019346" y="90.0" />
+                  <point x="-36.85714285714289" y="15.0" />
+                </edge>
+                <edge source="com.bms.adventure.characters.equipment.Weapon" target="com.bms.adventure.characters.equipment.Equipment">
+                  <point x="33.66666666666674" y="-15.0" />
+                  <point x="328.10312736832157" y="110.0" />
+                  <point x="316.45677576733635" y="110.0" />
+                  <point x="-29.0" y="15.0" />
+                </edge>
+                <edge source="com.bms.adventure.characters.race.Dwarf" target="com.bms.adventure.characters.race.RaceEnum">
+                  <point x="33.076923076923094" y="-15.0" />
+                  <point x="535.2545779651385" y="440.0" />
+                  <point x="820.6697940349882" y="440.0" />
+                  <point x="820.6697940349882" y="220.0" />
+                  <point x="811.9197940349882" y="220.0" />
+                  <point x="14.25" y="15.0" />
+                </edge>
+                <edge source="com.bms.adventure.characters.race.Dwarf" target="com.bms.adventure.characters.equipment.WeaponsLoader">
+                  <point x="-26.461538461538453" y="-15.0" />
+                  <point x="475.716116426677" y="360.0" />
+                  <point x="163.71617168750788" y="360.0" />
+                  <point x="163.71617168750788" y="240.0" />
+                  <point x="148.93646070165482" y="240.0" />
+                  <point x="0.0" y="15.0" />
+                </edge>
+                <edge source="com.bms.adventure.utils.CharacterClassInitializer" target="com.bms.adventure.characters.CharacterClass">
+                  <point x="61.5625" y="-15.0" />
+                  <point x="1121.7572940349883" y="440.0" />
+                  <point x="1274.3775088417333" y="440.0" />
+                  <point x="1274.3775088417333" y="260.0" />
+                  <point x="1296.5493589743587" y="260.0" />
+                  <point x="-28.600000000000023" y="15.0" />
+                </edge>
+                <edge source="com.bms.adventure.characters.race.Race" target="com.bms.adventure.characters.Faction">
+                  <point x="-3.9500000000000455" y="-15.0" />
+                  <point x="702.6447940349881" y="190.0" />
+                  <point x="673.1697940349882" y="190.0" />
+                  <point x="0.0" y="15.0" />
+                </edge>
+                <edge source="com.bms.adventure.utils.CharacterClassInitializer" target="com.bms.adventure.characters.race.RaceEnum">
+                  <point x="-36.9375" y="-15.0" />
+                  <point x="1023.2572940349881" y="410.0" />
+                  <point x="859.1161716875079" y="410.0" />
+                  <point x="859.1161716875079" y="220.0" />
+                  <point x="840.4197940349882" y="220.0" />
+                  <point x="42.75" y="15.0" />
+                </edge>
+                <edge source="com.bms.adventure.characters.race.Dwarf" target="com.bms.adventure.characters.race.Race">
+                  <point x="26.461538461538453" y="-15.0" />
+                  <point x="528.6391933497539" y="430.0" />
+                  <point x="686.8447940349881" y="430.0" />
+                  <point x="-19.75" y="15.0" />
+                </edge>
+                <edge source="com.bms.adventure.characters.PlayerCharacter" target="com.bms.adventure.characters.equipment.Armor">
+                  <point x="-9.799999999999955" y="-15.0" />
+                  <point x="691.8947940349883" y="520.0" />
+                  <point x="594.016171687508" y="520.0" />
+                  <point x="594.016171687508" y="240.0" />
+                  <point x="569.0031273683215" y="240.0" />
+                  <point x="7.333333333333371" y="15.0" />
+                </edge>
+                <edge source="com.bms.adventure.characters.Fighter" target="com.bms.adventure.characters.CharacterClassEnum">
+                  <point x="0.0" y="-15.0" />
+                  <point x="1160.1493589743588" y="250.0" />
+                  <point x="1189.1493589743588" y="250.0" />
+                  <point x="44.5" y="15.0" />
+                </edge>
+                <edge source="com.bms.adventure.characters.Combatant" target="com.bms.adventure.characters.equipment.Armor">
+                  <point x="29.5" y="-15.0" />
+                  <point x="101.37876839396256" y="390.0" />
+                  <point x="527.7954350606292" y="390.0" />
+                  <point x="527.7954350606292" y="260.0" />
+                  <point x="525.0031273683215" y="260.0" />
+                  <point x="-36.66666666666663" y="15.0" />
+                </edge>
+                <edge source="com.bms.adventure.characters.PlayerCharacter" target="com.bms.adventure.characters.race.Race">
+                  <point x="9.799999999999955" y="-15.0" />
+                  <point x="711.4947940349882" y="430.0" />
+                  <point x="713.1781273683216" y="430.0" />
+                  <point x="6.583333333333371" y="15.0" />
+                </edge>
+                <edge source="com.bms.adventure.utils.CharacterClassInitializer" target="com.bms.adventure.characters.AbilitiesEnum">
+                  <point x="-12.3125" y="-15.0" />
+                  <point x="1047.8822940349883" y="440.0" />
+                  <point x="1072.393108974359" y="440.0" />
+                  <point x="1072.393108974359" y="260.0" />
+                  <point x="1007.1493589743588" y="260.0" />
+                  <point x="38.0" y="15.0" />
+                </edge>
+                <edge source="com.bms.adventure.characters.PlayerCharacter" target="com.bms.adventure.characters.CharacterClass">
+                  <point x="58.799999999999955" y="-15.0" />
+                  <point x="760.4947940349882" y="570.0" />
+                  <point x="1338.530136494253" y="570.0" />
+                  <point x="1338.530136494253" y="250.0" />
+                  <point x="1353.749358974359" y="250.0" />
+                  <point x="28.600000000000023" y="15.0" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="0.803072625698324" x="706.0" y="305.0" />
+              <SelectedNodes />
+              <Categories />
+              <SCOPE>All</SCOPE>
+              <VISIBILITY>private</VISIBILITY>
             </state>
           </provider>
         </entry>
@@ -326,7 +470,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/bms/adventure/characters/PlayerCharacter.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
-              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+              <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -340,12 +484,12 @@
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
       <map>
-        <entry key="$PROJECT_DIR$" value="$USER_HOME$/.sdkman/candidates/gradle/4.3.1" />
+        <entry key="$PROJECT_DIR$" value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4.1-bin/46gopw3g8i1v3zqqx4q949t2x/gradle-4.4.1" />
       </map>
     </option>
     <option name="myGradleVersions">
       <map>
-        <entry key="$PROJECT_DIR$" value="4.3.1" />
+        <entry key="$PROJECT_DIR$" value="4.4.1" />
       </map>
     </option>
     <option name="availableProjects">
@@ -552,7 +696,10 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="3022942790000" />
+        <entry key="$PROJECT_DIR$" value="4542607309000" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="3966975628" />
+        <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="1781704101" />
+        <entry key="$PROJECT_DIR$/settings.gradle" value="2811306391" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -574,80 +721,80 @@
               <option name="name" value="adventure" />
               <option name="projectBuildClasspath">
                 <list>
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/ant-1.9.6.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/ant-launcher-1.9.6.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/gradle-base-services-4.3.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/gradle-base-services-groovy-4.3.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/gradle-build-cache-4.3.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/gradle-build-option-4.3.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/gradle-cli-4.3.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/gradle-core-4.3.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/gradle-core-api-4.3.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/gradle-docs-4.3.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/gradle-installation-beacon-4.3.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/gradle-jvm-services-4.3.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/gradle-kotlin-dsl-0.12.3.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/gradle-kotlin-dsl-tooling-builders-0.12.3.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/gradle-kotlin-dsl-tooling-models-0.12.3.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/gradle-launcher-4.3.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/gradle-logging-4.3.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/gradle-messaging-4.3.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/gradle-model-core-4.3.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/gradle-model-groovy-4.3.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/gradle-native-4.3.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/gradle-persistent-cache-4.3.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/gradle-process-services-4.3.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/gradle-resources-4.3.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/gradle-runtime-api-info-4.3.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/gradle-tooling-api-4.3.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/gradle-wrapper-4.3.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/groovy-all-2.4.12.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-announce-4.3.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-antlr-4.3.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-build-cache-http-4.3.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-build-comparison-4.3.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-build-init-4.3.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-code-quality-4.3.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-composite-builds-4.3.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-dependency-management-4.3.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-diagnostics-4.3.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-ear-4.3.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-ide-4.3.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-ide-native-4.3.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-ide-play-4.3.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-ivy-4.3.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-jacoco-4.3.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-javascript-4.3.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-language-groovy-4.3.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-language-java-4.3.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-language-jvm-4.3.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-language-native-4.3.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-language-scala-4.3.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-maven-4.3.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-osgi-4.3.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-platform-base-4.3.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-platform-jvm-4.3.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-platform-native-4.3.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-platform-play-4.3.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-plugin-development-4.3.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-plugin-use-4.3.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-plugins-4.3.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-publish-4.3.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-reporting-4.3.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-resources-gcs-4.3.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-resources-http-4.3.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-resources-s3-4.3.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-resources-sftp-4.3.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-scala-4.3.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-signing-4.3.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-test-kit-4.3.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-testing-base-4.3.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-testing-jvm-4.3.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-testing-native-4.3.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-tooling-api-builders-4.3.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-version-control-4.3.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/gradle-workers-4.3.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3.1-bin/7yzdu24db77gi3zukl2a7o0xx/gradle-4.3.1/lib/plugins/ivy-2.2.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4.1-bin/46gopw3g8i1v3zqqx4q949t2x/gradle-4.4.1/lib/gradle-core-api-4.4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4.1-bin/46gopw3g8i1v3zqqx4q949t2x/gradle-4.4.1/lib/gradle-persistent-cache-4.4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4.1-bin/46gopw3g8i1v3zqqx4q949t2x/gradle-4.4.1/lib/gradle-model-core-4.4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4.1-bin/46gopw3g8i1v3zqqx4q949t2x/gradle-4.4.1/lib/gradle-kotlin-dsl-tooling-builders-0.13.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4.1-bin/46gopw3g8i1v3zqqx4q949t2x/gradle-4.4.1/lib/gradle-build-option-4.4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4.1-bin/46gopw3g8i1v3zqqx4q949t2x/gradle-4.4.1/lib/gradle-cli-4.4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4.1-bin/46gopw3g8i1v3zqqx4q949t2x/gradle-4.4.1/lib/gradle-core-4.4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4.1-bin/46gopw3g8i1v3zqqx4q949t2x/gradle-4.4.1/lib/gradle-resources-4.4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4.1-bin/46gopw3g8i1v3zqqx4q949t2x/gradle-4.4.1/lib/groovy-all-2.4.12.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4.1-bin/46gopw3g8i1v3zqqx4q949t2x/gradle-4.4.1/lib/gradle-base-services-4.4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4.1-bin/46gopw3g8i1v3zqqx4q949t2x/gradle-4.4.1/lib/ant-launcher-1.9.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4.1-bin/46gopw3g8i1v3zqqx4q949t2x/gradle-4.4.1/lib/ant-1.9.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4.1-bin/46gopw3g8i1v3zqqx4q949t2x/gradle-4.4.1/lib/gradle-installation-beacon-4.4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4.1-bin/46gopw3g8i1v3zqqx4q949t2x/gradle-4.4.1/lib/gradle-base-services-groovy-4.4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4.1-bin/46gopw3g8i1v3zqqx4q949t2x/gradle-4.4.1/lib/gradle-launcher-4.4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4.1-bin/46gopw3g8i1v3zqqx4q949t2x/gradle-4.4.1/lib/gradle-logging-4.4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4.1-bin/46gopw3g8i1v3zqqx4q949t2x/gradle-4.4.1/lib/gradle-runtime-api-info-4.4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4.1-bin/46gopw3g8i1v3zqqx4q949t2x/gradle-4.4.1/lib/gradle-kotlin-dsl-0.13.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4.1-bin/46gopw3g8i1v3zqqx4q949t2x/gradle-4.4.1/lib/gradle-native-4.4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4.1-bin/46gopw3g8i1v3zqqx4q949t2x/gradle-4.4.1/lib/gradle-kotlin-dsl-tooling-models-0.13.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4.1-bin/46gopw3g8i1v3zqqx4q949t2x/gradle-4.4.1/lib/gradle-jvm-services-4.4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4.1-bin/46gopw3g8i1v3zqqx4q949t2x/gradle-4.4.1/lib/gradle-docs-4.4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4.1-bin/46gopw3g8i1v3zqqx4q949t2x/gradle-4.4.1/lib/gradle-tooling-api-4.4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4.1-bin/46gopw3g8i1v3zqqx4q949t2x/gradle-4.4.1/lib/gradle-process-services-4.4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4.1-bin/46gopw3g8i1v3zqqx4q949t2x/gradle-4.4.1/lib/gradle-model-groovy-4.4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4.1-bin/46gopw3g8i1v3zqqx4q949t2x/gradle-4.4.1/lib/gradle-messaging-4.4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4.1-bin/46gopw3g8i1v3zqqx4q949t2x/gradle-4.4.1/lib/gradle-wrapper-4.4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4.1-bin/46gopw3g8i1v3zqqx4q949t2x/gradle-4.4.1/lib/gradle-build-cache-4.4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4.1-bin/46gopw3g8i1v3zqqx4q949t2x/gradle-4.4.1/lib/plugins/gradle-scala-4.4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4.1-bin/46gopw3g8i1v3zqqx4q949t2x/gradle-4.4.1/lib/plugins/gradle-reporting-4.4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4.1-bin/46gopw3g8i1v3zqqx4q949t2x/gradle-4.4.1/lib/plugins/gradle-resources-gcs-4.4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4.1-bin/46gopw3g8i1v3zqqx4q949t2x/gradle-4.4.1/lib/plugins/gradle-diagnostics-4.4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4.1-bin/46gopw3g8i1v3zqqx4q949t2x/gradle-4.4.1/lib/plugins/gradle-plugin-development-4.4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4.1-bin/46gopw3g8i1v3zqqx4q949t2x/gradle-4.4.1/lib/plugins/gradle-antlr-4.4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4.1-bin/46gopw3g8i1v3zqqx4q949t2x/gradle-4.4.1/lib/plugins/gradle-language-groovy-4.4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4.1-bin/46gopw3g8i1v3zqqx4q949t2x/gradle-4.4.1/lib/plugins/gradle-dependency-management-4.4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4.1-bin/46gopw3g8i1v3zqqx4q949t2x/gradle-4.4.1/lib/plugins/gradle-platform-native-4.4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4.1-bin/46gopw3g8i1v3zqqx4q949t2x/gradle-4.4.1/lib/plugins/gradle-ivy-4.4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4.1-bin/46gopw3g8i1v3zqqx4q949t2x/gradle-4.4.1/lib/plugins/gradle-ide-4.4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4.1-bin/46gopw3g8i1v3zqqx4q949t2x/gradle-4.4.1/lib/plugins/gradle-resources-sftp-4.4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4.1-bin/46gopw3g8i1v3zqqx4q949t2x/gradle-4.4.1/lib/plugins/gradle-testing-native-4.4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4.1-bin/46gopw3g8i1v3zqqx4q949t2x/gradle-4.4.1/lib/plugins/gradle-platform-base-4.4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4.1-bin/46gopw3g8i1v3zqqx4q949t2x/gradle-4.4.1/lib/plugins/gradle-language-java-4.4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4.1-bin/46gopw3g8i1v3zqqx4q949t2x/gradle-4.4.1/lib/plugins/gradle-testing-jvm-4.4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4.1-bin/46gopw3g8i1v3zqqx4q949t2x/gradle-4.4.1/lib/plugins/gradle-build-init-4.4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4.1-bin/46gopw3g8i1v3zqqx4q949t2x/gradle-4.4.1/lib/plugins/gradle-version-control-4.4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4.1-bin/46gopw3g8i1v3zqqx4q949t2x/gradle-4.4.1/lib/plugins/gradle-testing-base-4.4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4.1-bin/46gopw3g8i1v3zqqx4q949t2x/gradle-4.4.1/lib/plugins/gradle-build-cache-http-4.4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4.1-bin/46gopw3g8i1v3zqqx4q949t2x/gradle-4.4.1/lib/plugins/gradle-resources-http-4.4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4.1-bin/46gopw3g8i1v3zqqx4q949t2x/gradle-4.4.1/lib/plugins/gradle-workers-4.4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4.1-bin/46gopw3g8i1v3zqqx4q949t2x/gradle-4.4.1/lib/plugins/gradle-jacoco-4.4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4.1-bin/46gopw3g8i1v3zqqx4q949t2x/gradle-4.4.1/lib/plugins/gradle-announce-4.4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4.1-bin/46gopw3g8i1v3zqqx4q949t2x/gradle-4.4.1/lib/plugins/gradle-language-jvm-4.4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4.1-bin/46gopw3g8i1v3zqqx4q949t2x/gradle-4.4.1/lib/plugins/gradle-plugin-use-4.4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4.1-bin/46gopw3g8i1v3zqqx4q949t2x/gradle-4.4.1/lib/plugins/gradle-platform-jvm-4.4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4.1-bin/46gopw3g8i1v3zqqx4q949t2x/gradle-4.4.1/lib/plugins/gradle-ide-native-4.4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4.1-bin/46gopw3g8i1v3zqqx4q949t2x/gradle-4.4.1/lib/plugins/gradle-composite-builds-4.4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4.1-bin/46gopw3g8i1v3zqqx4q949t2x/gradle-4.4.1/lib/plugins/gradle-javascript-4.4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4.1-bin/46gopw3g8i1v3zqqx4q949t2x/gradle-4.4.1/lib/plugins/gradle-ide-play-4.4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4.1-bin/46gopw3g8i1v3zqqx4q949t2x/gradle-4.4.1/lib/plugins/gradle-ear-4.4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4.1-bin/46gopw3g8i1v3zqqx4q949t2x/gradle-4.4.1/lib/plugins/gradle-resources-s3-4.4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4.1-bin/46gopw3g8i1v3zqqx4q949t2x/gradle-4.4.1/lib/plugins/gradle-build-comparison-4.4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4.1-bin/46gopw3g8i1v3zqqx4q949t2x/gradle-4.4.1/lib/plugins/gradle-publish-4.4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4.1-bin/46gopw3g8i1v3zqqx4q949t2x/gradle-4.4.1/lib/plugins/gradle-language-native-4.4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4.1-bin/46gopw3g8i1v3zqqx4q949t2x/gradle-4.4.1/lib/plugins/gradle-platform-play-4.4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4.1-bin/46gopw3g8i1v3zqqx4q949t2x/gradle-4.4.1/lib/plugins/gradle-tooling-api-builders-4.4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4.1-bin/46gopw3g8i1v3zqqx4q949t2x/gradle-4.4.1/lib/plugins/gradle-maven-4.4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4.1-bin/46gopw3g8i1v3zqqx4q949t2x/gradle-4.4.1/lib/plugins/gradle-code-quality-4.4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4.1-bin/46gopw3g8i1v3zqqx4q949t2x/gradle-4.4.1/lib/plugins/gradle-osgi-4.4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4.1-bin/46gopw3g8i1v3zqqx4q949t2x/gradle-4.4.1/lib/plugins/gradle-signing-4.4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4.1-bin/46gopw3g8i1v3zqqx4q949t2x/gradle-4.4.1/lib/plugins/gradle-test-kit-4.4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4.1-bin/46gopw3g8i1v3zqqx4q949t2x/gradle-4.4.1/lib/plugins/ivy-2.2.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4.1-bin/46gopw3g8i1v3zqqx4q949t2x/gradle-4.4.1/lib/plugins/gradle-plugins-4.4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4.1-bin/46gopw3g8i1v3zqqx4q949t2x/gradle-4.4.1/lib/plugins/gradle-language-scala-4.4.1.jar" />
                   <option value="$PROJECT_DIR$/buildSrc/src/main/java" />
                   <option value="$PROJECT_DIR$/buildSrc/src/main/groovy" />
                 </list>
@@ -659,6 +806,11 @@
     </option>
     <option name="externalProjectsViewState">
       <projects_view />
+    </option>
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$" value="RE_IMPORT" />
+      </map>
     </option>
   </component>
   <component name="IdeDocumentHistory">
@@ -681,7 +833,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="2132" />
-    <option name="y" value="-13" />
+    <option name="y" value="23" />
     <option name="width" value="1484" />
     <option name="height" value="1046" />
   </component>
@@ -690,16 +842,7 @@
       <profile-state />
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <OptionsSetting value="true" id="Add" />
-    <OptionsSetting value="true" id="Remove" />
-    <OptionsSetting value="true" id="Checkout" />
-    <OptionsSetting value="true" id="Update" />
-    <OptionsSetting value="true" id="Status" />
-    <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
-    <ConfirmationsSetting value="0" id="Remove" />
-  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectReloadState">
     <option name="STATE" value="0" />
   </component>
@@ -718,295 +861,82 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="adventure" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="adventure" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="adventure" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="adventure" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="adventure" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="adventure" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="adventure" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="adventure" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="adventure" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="adventure" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="adventure" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utils" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="adventure" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="adventure" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="adventure" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="storage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="adventure" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="adventure" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="adventure" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ml" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="adventure" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="adventure" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="adventure" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="combat" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="adventure" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="adventure" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="adventure" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="characters" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="adventure" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="adventure" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="adventure" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="characters" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="race" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="adventure" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="adventure" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="adventure" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="characters" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="equipment" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
+          <expand>
+            <path>
+              <item name="adventure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adventure" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="adventure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adventure" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="adventure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adventure" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="adventure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adventure" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="adventure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adventure" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="adventure" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="adventure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adventure" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="adventure" type="462c0819:PsiDirectoryNode" />
+              <item name="characters" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="adventure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adventure" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="adventure" type="462c0819:PsiDirectoryNode" />
+              <item name="characters" type="462c0819:PsiDirectoryNode" />
+              <item name="equipment" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="adventure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adventure" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="adventure" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="adventure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adventure" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1019,9 +949,107 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/adventure.ipr" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="passParentEnv" value="true" />
+      <setting name="launchBrowser" value="true" />
+      <setting name="launchBrowserUrl" value="" />
+      <setting name="depsClasspath" value="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="DEPLOY" value="true" />
@@ -1067,56 +1095,6 @@
       <Profilers>
         <option name="GAPID_DISABLE_PCS" value="false" />
       </Profilers>
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
       <method />
     </configuration>
     <configuration default="true" type="ArquillianTestNG" factoryName="">
@@ -1239,36 +1217,6 @@
       </ExternalSystemSettings>
       <method />
     </configuration>
-    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
-      <setting name="vmparams" value="" />
-      <setting name="cmdLine" value="run-app" />
-      <setting name="passParentEnv" value="true" />
-      <setting name="launchBrowser" value="true" />
-      <setting name="depsClasspath" value="false" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
-      <extension name="coverage" enabled="false" merge="false" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
     <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -1340,14 +1288,6 @@
       <method />
     </configuration>
     <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
-      <method />
-    </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
       <method />
     </configuration>
     <configuration default="true" type="ScalaTestRunConfiguration" factoryName="ScalaTest">
@@ -1442,14 +1382,9 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <envs />
-      <method />
+    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
+      <Host>localhost</Host>
+      <Port>5050</Port>
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
       <command value="run-script" />
@@ -1492,9 +1427,13 @@
       <envs />
       <method />
     </configuration>
-    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
-      <Host>localhost</Host>
-      <Port>5050</Port>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
     </configuration>
   </component>
   <component name="SbtLocalSettings">
@@ -1506,19 +1445,8 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
-  <component name="SvnConfiguration" maxAnnotateRevisions="500">
-    <option name="USER" value="" />
-    <option name="PASSWORD" value="" />
-    <option name="LAST_MERGED_REVISION" />
-    <option name="UPDATE_RUN_STATUS" value="false" />
-    <option name="MERGE_DRY_RUN" value="false" />
-    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
-    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
-    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
-    <option name="DETECT_NESTED_COPIES" value="true" />
-    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
-    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
-    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -1531,19 +1459,21 @@
       <workItem from="1512339315253" duration="2559000" />
       <workItem from="1513629713908" duration="3043000" />
       <workItem from="1513718395256" duration="1122000" />
+      <workItem from="1514910436441" duration="584000" />
+      <workItem from="1514914524626" duration="865000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8286000" />
+    <option name="totallyTimeSpent" value="9735000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2132" y="-13" width="1484" height="1046" extended-state="0" />
-    <editor active="true" />
+    <frame x="2132" y="23" width="1484" height="1046" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1552,12 +1482,14 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27148846" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22538142" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22506739" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1568,6 +1500,9 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -1591,7 +1526,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bms/adventure/characters/PlayerCharacter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1599,7 +1534,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bms/adventure/characters/equipment/Armor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1607,7 +1542,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bms/adventure/combat/CombatEngine.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="960">
-          <caret line="72" column="53" selection-start-line="72" selection-start-column="53" selection-end-line="72" selection-end-column="53" />
+          <caret line="72" column="53" lean-forward="false" selection-start-line="72" selection-start-column="53" selection-end-line="72" selection-end-column="53" />
           <folding />
         </state>
       </provider>
@@ -1615,7 +1550,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bms/adventure/ml/CombatAnalyzer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1623,7 +1558,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bms/adventure/storage/CharacterReader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1631,7 +1566,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bms/adventure/storage/CharacterWriter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1639,7 +1574,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bms/adventure/utils/AbilityGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1647,55 +1582,49 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bms/adventure/utils/CharacterClassInitializer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-          <folding />
+          <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bms/adventure/utils/Constants.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bms/adventure/utils/Dice.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bms/adventure/Adventure.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bms/adventure/characters/CharacterClass.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-          <folding />
+          <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bms/adventure/characters/Fighter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding />
+          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1869,14 +1798,14 @@
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bms/adventure/characters/Combatant.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
           <folding />
         </state>
       </provider>
@@ -1884,55 +1813,49 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bms/adventure/characters/Abilities.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-600">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bms/adventure/characters/AbilitiesEnum.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-          <folding />
+          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bms/adventure/characters/CharacterClass.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-          <folding />
+          <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bms/adventure/characters/Fighter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding />
+          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bms/adventure/characters/race/RaceEnum.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-          <folding />
+          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bms/adventure/characters/race/Human.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding />
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bms/adventure/characters/race/Race.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+          <caret line="10" column="22" lean-forward="false" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
           <folding />
         </state>
       </provider>
@@ -1940,15 +1863,14 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bms/adventure/characters/race/Elf.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding />
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bms/adventure/characters/race/Dwarf.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1956,15 +1878,14 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bms/adventure/characters/equipment/WeaponsLoader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bms/adventure/characters/equipment/WeaponDetails.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-437">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1972,7 +1893,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bms/adventure/characters/equipment/Weapon.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-707">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1980,7 +1901,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bms/adventure/ml/CombatAnalyzer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1988,7 +1909,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bms/adventure/utils/AbilityGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1996,47 +1917,35 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bms/adventure/utils/CharacterClassInitializer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-          <folding />
+          <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bms/adventure/utils/Constants.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bms/adventure/utils/Dice.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bms/adventure/Adventure.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bms/adventure/characters/equipment/ArmorLoader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bms/adventure/characters/equipment/Equipment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -2044,7 +1953,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bms/adventure/characters/PlayerCharacter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -2214,7 +2123,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bms/adventure/storage/CharacterWriter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -2222,15 +2131,15 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bms/adventure/storage/CharacterReader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bms/adventure/combat/CombatEngine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="66" column="22" selection-start-line="66" selection-start-column="22" selection-end-line="66" selection-end-column="22" />
+        <state relative-caret-position="870">
+          <caret line="66" column="22" lean-forward="false" selection-start-line="66" selection-start-column="22" selection-end-line="66" selection-end-column="22" />
           <folding />
         </state>
       </provider>
@@ -2238,7 +2147,31 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bms/adventure/characters/equipment/Armor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bms/adventure/characters/equipment/ArmorDetails.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/combat.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bms/adventure/characters/equipment/Equipment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
           <folding />
         </state>
       </provider>
@@ -2249,179 +2182,382 @@
           <ID>JAVA</ID>
           <OriginalElement>com.bms.adventure.characters.PlayerCharacter</OriginalElement>
           <nodes>
-            <node x="340.0" y="-100.0">com.bms.adventure.characters.CharacterClass</node>
-            <node x="156.0" y="320.0">com.bms.adventure.characters.Faction</node>
-            <node x="-423.0" y="-114.0">com.bms.adventure.characters.equipment.ArmorDetails</node>
-            <node x="-401.0" y="-7.0">com.bms.adventure.characters.equipment.Armor</node>
-            <node x="0.0" y="79.0">com.bms.adventure.characters.PlayerCharacter</node>
-            <node x="-415.0" y="107.0">com.bms.adventure.characters.equipment.Equipment</node>
-            <node x="-405.0" y="233.0">com.bms.adventure.characters.equipment.Weapon</node>
-            <node x="25.0" y="190.0">com.bms.adventure.characters.Abilities</node>
-            <node x="438.0" y="222.0">com.bms.adventure.characters.race.Race</node>
-            <node x="394.0" y="-173.0">com.bms.adventure.characters.CharacterClassEnum</node>
-            <node x="124.0" y="500.0">com.bms.adventure.characters.race.Dwarf</node>
-            <node x="-422.0" y="-232.0">com.bms.adventure.characters.equipment.ArmorLoader</node>
-            <node x="277.0" y="-235.0">com.bms.adventure.utils.CharacterClassInitializer</node>
-            <node x="15.0" y="-133.0">com.bms.adventure.characters.Combatant</node>
-            <node x="498.0" y="-14.0">com.bms.adventure.characters.Fighter</node>
-            <node x="31.0" y="-238.0">com.bms.adventure.characters.Team</node>
-            <node x="-429.0" y="432.0">com.bms.adventure.characters.equipment.WeaponsLoader</node>
-            <node x="412.0" y="81.0">com.bms.adventure.characters.race.RaceEnum</node>
-            <node x="246.0" y="29.0">com.bms.adventure.characters.AbilitiesEnum</node>
-            <node x="-427.0" y="336.0">com.bms.adventure.characters.equipment.WeaponDetails</node>
+            <node x="1253.6493589743588" y="130.0">com.bms.adventure.characters.CharacterClass</node>
+            <node x="625.6697940349882" y="130.0">com.bms.adventure.characters.Faction</node>
+            <node x="423.45677576733635" y="0.0">com.bms.adventure.characters.equipment.ArmorDetails</node>
+            <node x="287.45677576733635" y="0.0">com.bms.adventure.characters.equipment.Equipment</node>
+            <node x="517.6697940349882" y="130.0">com.bms.adventure.characters.equipment.Armor</node>
+            <node x="628.1947940349883" y="600.0">com.bms.adventure.characters.PlayerCharacter</node>
+            <node x="921.6775088417331" y="280.0">com.bms.adventure.characters.Abilities</node>
+            <node x="667.0947940349881" y="280.0">com.bms.adventure.characters.race.Race</node>
+            <node x="243.93646070165482" y="130.0">com.bms.adventure.characters.equipment.Weapon</node>
+            <node x="459.17765488821544" y="470.0">com.bms.adventure.characters.race.Dwarf</node>
+            <node x="1055.6493589743588" y="130.0">com.bms.adventure.characters.CharacterClassEnum</node>
+            <node x="365.9364607016548" y="130.0">com.bms.adventure.characters.equipment.ArmorLoader</node>
+            <node x="961.6947940349881" y="470.0">com.bms.adventure.utils.CharacterClassInitializer</node>
+            <node x="1113.6493589743588" y="280.0">com.bms.adventure.characters.Fighter</node>
+            <node x="12.87876839396256" y="470.0">com.bms.adventure.characters.Combatant</node>
+            <node x="0.0" y="600.0">com.bms.adventure.characters.Team</node>
+            <node x="73.93646070165482" y="130.0">com.bms.adventure.characters.equipment.WeaponsLoader</node>
+            <node x="902.6493589743588" y="130.0">com.bms.adventure.characters.AbilitiesEnum</node>
+            <node x="740.6697940349882" y="130.0">com.bms.adventure.characters.race.RaceEnum</node>
+            <node x="78.3535714285714" y="0.0">com.bms.adventure.characters.equipment.WeaponDetails</node>
           </nodes>
           <notes />
           <edges>
             <edge source="com.bms.adventure.characters.race.Race" target="com.bms.adventure.characters.equipment.Weapon">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
+              <point x="-35.55000000000007" y="-15.0" />
+              <point x="671.0447940349882" y="230.0" />
+              <point x="319.6864607016548" y="230.0" />
+              <point x="25.25" y="15.0" />
             </edge>
-            <edge source="com.bms.adventure.characters.equipment.Armor" target="com.bms.adventure.characters.equipment.ArmorDetails">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
+            <edge source="com.bms.adventure.utils.CharacterClassInitializer" target="com.bms.adventure.characters.Fighter">
+              <point x="36.9375" y="-15.0" />
+              <point x="1097.1322940349883" y="430.0" />
+              <point x="1160.1493589743588" y="430.0" />
+              <point x="0.0" y="15.0" />
             </edge>
             <edge source="com.bms.adventure.characters.race.Race" target="com.bms.adventure.characters.AbilitiesEnum">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
+              <point x="27.649999999999977" y="-15.0" />
+              <point x="734.2447940349882" y="230.0" />
+              <point x="912.1493589743588" y="230.0" />
+              <point x="-57.0" y="15.0" />
+            </edge>
+            <edge source="com.bms.adventure.characters.equipment.Armor" target="com.bms.adventure.characters.equipment.ArmorDetails">
+              <point x="0.0" y="-15.0" />
+              <point x="561.6697940349882" y="60.0" />
+              <point x="524.8139186244792" y="60.0" />
+              <point x="36.85714285714289" y="15.0" />
             </edge>
             <edge source="com.bms.adventure.characters.race.Dwarf" target="com.bms.adventure.characters.equipment.WeaponDetails">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
+              <point x="-33.076923076923094" y="-15.0" />
+              <point x="469.10073181129235" y="370.0" />
+              <point x="63.43646070165482" y="370.0" />
+              <point x="63.43646070165482" y="100.0" />
+              <point x="108.78214285714273" y="100.0" />
+              <point x="-40.57142857142867" y="15.0" />
             </edge>
             <edge source="com.bms.adventure.characters.Fighter" target="com.bms.adventure.characters.CharacterClass">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
+              <point x="31.0" y="-15.0" />
+              <point x="1191.1493589743588" y="260.0" />
+              <point x="1267.9493589743588" y="260.0" />
+              <point x="-57.2" y="15.0" />
             </edge>
             <edge source="com.bms.adventure.characters.race.Dwarf" target="com.bms.adventure.characters.equipment.Weapon">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
+              <point x="-19.84615384615381" y="-15.0" />
+              <point x="482.33150104206163" y="350.0" />
+              <point x="302.5197940349882" y="350.0" />
+              <point x="8.416666666666742" y="15.0" />
+            </edge>
+            <edge source="com.bms.adventure.characters.race.Dwarf" target="com.bms.adventure.characters.AbilitiesEnum">
+              <point x="39.692307692307736" y="-15.0" />
+              <point x="541.8699625805232" y="450.0" />
+              <point x="894.4988864942529" y="450.0" />
+              <point x="894.4988864942529" y="250.0" />
+              <point x="950.1493589743588" y="250.0" />
+              <point x="-19.0" y="15.0" />
             </edge>
             <edge source="com.bms.adventure.characters.PlayerCharacter" target="com.bms.adventure.characters.Combatant">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
+              <point x="-58.799999999999955" y="-15.0" />
+              <point x="642.8947940349883" y="570.0" />
+              <point x="95.47876839396247" y="570.0" />
+              <point x="23.59999999999991" y="15.0" />
             </edge>
             <edge source="com.bms.adventure.characters.Abilities" target="com.bms.adventure.characters.AbilitiesEnum">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
+              <point x="24.5" y="-15.0" />
+              <point x="995.1775088417331" y="260.0" />
+              <point x="988.1493589743588" y="260.0" />
+              <point x="19.0" y="15.0" />
             </edge>
             <edge source="com.bms.adventure.characters.PlayerCharacter" target="com.bms.adventure.characters.equipment.Weapon">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
+              <point x="-29.399999999999977" y="-15.0" />
+              <point x="672.2947940349882" y="540.0" />
+              <point x="291.5197940349882" y="540.0" />
+              <point x="291.5197940349882" y="260.0" />
+              <point x="286.0197940349881" y="260.0" />
+              <point x="-8.416666666666742" y="15.0" />
             </edge>
             <edge source="com.bms.adventure.characters.equipment.WeaponsLoader" target="com.bms.adventure.characters.equipment.WeaponDetails">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
+              <point x="50.0" y="-15.0" />
+              <point x="198.93646070165482" y="110.0" />
+              <point x="169.63928571428562" y="110.0" />
+              <point x="20.28571428571422" y="15.0" />
+            </edge>
+            <edge source="com.bms.adventure.characters.race.Dwarf" target="com.bms.adventure.characters.equipment.ArmorLoader">
+              <point x="-6.615384615384642" y="-15.0" />
+              <point x="495.5622702728308" y="330.0" />
+              <point x="430.9364607016548" y="330.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="com.bms.adventure.characters.Combatant" target="com.bms.adventure.characters.equipment.Weapon">
+              <point x="-29.5" y="-15.0" />
+              <point x="42.37876839396256" y="250.0" />
+              <point x="252.35312736832157" y="250.0" />
+              <point x="-42.08333333333326" y="15.0" />
             </edge>
             <edge source="com.bms.adventure.characters.equipment.Weapon" target="com.bms.adventure.characters.equipment.WeaponDetails">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
+              <point x="-33.66666666666674" y="-15.0" />
+              <point x="260.7697940349881" y="100.0" />
+              <point x="189.92500000000007" y="100.0" />
+              <point x="40.57142857142867" y="15.0" />
             </edge>
             <edge source="com.bms.adventure.characters.PlayerCharacter" target="com.bms.adventure.utils.CharacterClassInitializer">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
+              <point x="39.200000000000045" y="-15.0" />
+              <point x="740.8947940349883" y="550.0" />
+              <point x="1010.9447940349881" y="550.0" />
+              <point x="-49.25" y="15.0" />
             </edge>
             <edge source="com.bms.adventure.characters.race.Race" target="com.bms.adventure.characters.equipment.Armor">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
+              <point x="-11.850000000000023" y="-15.0" />
+              <point x="694.7447940349882" y="200.0" />
+              <point x="598.3364607016548" y="200.0" />
+              <point x="36.66666666666663" y="15.0" />
             </edge>
             <edge source="com.bms.adventure.utils.CharacterClassInitializer" target="com.bms.adventure.characters.race.Race">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
+              <point x="-86.1875" y="-15.0" />
+              <point x="974.0072940349881" y="430.0" />
+              <point x="726.3447940349881" y="430.0" />
+              <point x="19.75" y="15.0" />
             </edge>
             <edge source="com.bms.adventure.characters.race.Dwarf" target="com.bms.adventure.characters.equipment.Armor">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
+              <point x="6.615384615384642" y="-15.0" />
+              <point x="508.7930395036001" y="400.0" />
+              <point x="538.7954350606292" y="400.0" />
+              <point x="-22.0" y="15.0" />
             </edge>
             <edge source="com.bms.adventure.characters.equipment.Armor" target="com.bms.adventure.characters.equipment.Equipment">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
+              <point x="-29.33333333333337" y="-15.0" />
+              <point x="532.3364607016548" y="70.0" />
+              <point x="374.45677576733635" y="70.0" />
+              <point x="29.0" y="15.0" />
             </edge>
             <edge source="com.bms.adventure.characters.race.Dwarf" target="com.bms.adventure.characters.equipment.ArmorDetails">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
+              <point x="0.0" y="-15.0" />
+              <point x="502.17765488821544" y="380.0" />
+              <point x="506.4364607016548" y="380.0" />
+              <point x="18.428571428571445" y="15.0" />
             </edge>
             <edge source="com.bms.adventure.characters.race.Dwarf" target="com.bms.adventure.characters.Faction">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
+              <point x="13.230769230769283" y="-15.0" />
+              <point x="515.4084241189847" y="410.0" />
+              <point x="569.4405306618669" y="410.0" />
+              <point x="569.4405306618669" y="260.0" />
+              <point x="641.5031273683215" y="260.0" />
+              <point x="-31.66666666666663" y="15.0" />
             </edge>
             <edge source="com.bms.adventure.characters.PlayerCharacter" target="com.bms.adventure.characters.Abilities">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
+              <point x="19.600000000000023" y="-15.0" />
+              <point x="721.2947940349882" y="530.0" />
+              <point x="941.3947940349882" y="530.0" />
+              <point x="941.3947940349882" y="450.0" />
+              <point x="946.1775088417331" y="450.0" />
+              <point x="-24.5" y="15.0" />
             </edge>
             <edge source="com.bms.adventure.characters.Team" target="com.bms.adventure.characters.Combatant">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
+              <point x="-20.75" y="-15.0" />
+              <point x="20.75" y="580.0" />
+              <point x="24.678768393962514" y="580.0" />
+              <point x="-47.200000000000045" y="15.0" />
             </edge>
             <edge source="com.bms.adventure.characters.race.Race" target="com.bms.adventure.characters.race.RaceEnum">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
+              <point x="19.75" y="-15.0" />
+              <point x="726.3447940349881" y="220.0" />
+              <point x="783.4197940349882" y="220.0" />
+              <point x="-14.25" y="15.0" />
             </edge>
             <edge source="com.bms.adventure.characters.equipment.ArmorLoader" target="com.bms.adventure.characters.equipment.ArmorDetails">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
+              <point x="-43.33333333333337" y="-15.0" />
+              <point x="387.60312736832145" y="90.0" />
+              <point x="451.09963291019346" y="90.0" />
+              <point x="-36.85714285714289" y="15.0" />
             </edge>
             <edge source="com.bms.adventure.characters.equipment.Weapon" target="com.bms.adventure.characters.equipment.Equipment">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
+              <point x="33.66666666666674" y="-15.0" />
+              <point x="328.10312736832157" y="110.0" />
+              <point x="316.45677576733635" y="110.0" />
+              <point x="-29.0" y="15.0" />
+            </edge>
+            <edge source="com.bms.adventure.characters.race.Dwarf" target="com.bms.adventure.characters.race.RaceEnum">
+              <point x="33.076923076923094" y="-15.0" />
+              <point x="535.2545779651385" y="440.0" />
+              <point x="820.6697940349882" y="440.0" />
+              <point x="820.6697940349882" y="220.0" />
+              <point x="811.9197940349882" y="220.0" />
+              <point x="14.25" y="15.0" />
+            </edge>
+            <edge source="com.bms.adventure.characters.race.Dwarf" target="com.bms.adventure.characters.equipment.WeaponsLoader">
+              <point x="-26.461538461538453" y="-15.0" />
+              <point x="475.716116426677" y="360.0" />
+              <point x="163.71617168750788" y="360.0" />
+              <point x="163.71617168750788" y="240.0" />
+              <point x="148.93646070165482" y="240.0" />
+              <point x="0.0" y="15.0" />
             </edge>
             <edge source="com.bms.adventure.utils.CharacterClassInitializer" target="com.bms.adventure.characters.CharacterClass">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
+              <point x="61.5625" y="-15.0" />
+              <point x="1121.7572940349883" y="440.0" />
+              <point x="1274.3775088417333" y="440.0" />
+              <point x="1274.3775088417333" y="260.0" />
+              <point x="1296.5493589743587" y="260.0" />
+              <point x="-28.600000000000023" y="15.0" />
             </edge>
             <edge source="com.bms.adventure.characters.race.Race" target="com.bms.adventure.characters.Faction">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
+              <point x="-3.9500000000000455" y="-15.0" />
+              <point x="702.6447940349881" y="190.0" />
+              <point x="673.1697940349882" y="190.0" />
+              <point x="0.0" y="15.0" />
             </edge>
-            <edge source="com.bms.adventure.characters.Fighter" target="com.bms.adventure.characters.CharacterClassEnum">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
+            <edge source="com.bms.adventure.utils.CharacterClassInitializer" target="com.bms.adventure.characters.race.RaceEnum">
+              <point x="-36.9375" y="-15.0" />
+              <point x="1023.2572940349881" y="410.0" />
+              <point x="859.1161716875079" y="410.0" />
+              <point x="859.1161716875079" y="220.0" />
+              <point x="840.4197940349882" y="220.0" />
+              <point x="42.75" y="15.0" />
             </edge>
             <edge source="com.bms.adventure.characters.race.Dwarf" target="com.bms.adventure.characters.race.Race">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
+              <point x="26.461538461538453" y="-15.0" />
+              <point x="528.6391933497539" y="430.0" />
+              <point x="686.8447940349881" y="430.0" />
+              <point x="-19.75" y="15.0" />
             </edge>
             <edge source="com.bms.adventure.characters.PlayerCharacter" target="com.bms.adventure.characters.equipment.Armor">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
+              <point x="-9.799999999999955" y="-15.0" />
+              <point x="691.8947940349883" y="520.0" />
+              <point x="594.016171687508" y="520.0" />
+              <point x="594.016171687508" y="240.0" />
+              <point x="569.0031273683215" y="240.0" />
+              <point x="7.333333333333371" y="15.0" />
             </edge>
-            <edge source="com.bms.adventure.utils.CharacterClassInitializer" target="com.bms.adventure.characters.AbilitiesEnum">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
+            <edge source="com.bms.adventure.characters.Fighter" target="com.bms.adventure.characters.CharacterClassEnum">
+              <point x="0.0" y="-15.0" />
+              <point x="1160.1493589743588" y="250.0" />
+              <point x="1189.1493589743588" y="250.0" />
+              <point x="44.5" y="15.0" />
+            </edge>
+            <edge source="com.bms.adventure.characters.Combatant" target="com.bms.adventure.characters.equipment.Armor">
+              <point x="29.5" y="-15.0" />
+              <point x="101.37876839396256" y="390.0" />
+              <point x="527.7954350606292" y="390.0" />
+              <point x="527.7954350606292" y="260.0" />
+              <point x="525.0031273683215" y="260.0" />
+              <point x="-36.66666666666663" y="15.0" />
             </edge>
             <edge source="com.bms.adventure.characters.PlayerCharacter" target="com.bms.adventure.characters.race.Race">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
+              <point x="9.799999999999955" y="-15.0" />
+              <point x="711.4947940349882" y="430.0" />
+              <point x="713.1781273683216" y="430.0" />
+              <point x="6.583333333333371" y="15.0" />
+            </edge>
+            <edge source="com.bms.adventure.utils.CharacterClassInitializer" target="com.bms.adventure.characters.AbilitiesEnum">
+              <point x="-12.3125" y="-15.0" />
+              <point x="1047.8822940349883" y="440.0" />
+              <point x="1072.393108974359" y="440.0" />
+              <point x="1072.393108974359" y="260.0" />
+              <point x="1007.1493589743588" y="260.0" />
+              <point x="38.0" y="15.0" />
             </edge>
             <edge source="com.bms.adventure.characters.PlayerCharacter" target="com.bms.adventure.characters.CharacterClass">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
+              <point x="58.799999999999955" y="-15.0" />
+              <point x="760.4947940349882" y="570.0" />
+              <point x="1338.530136494253" y="570.0" />
+              <point x="1338.530136494253" y="250.0" />
+              <point x="1353.749358974359" y="250.0" />
+              <point x="28.600000000000023" y="15.0" />
             </edge>
           </edges>
-          <settings layout="Hierarchic Group" zoom="1.0" x="-253.5" y="-25.5" />
-          <SelectedNodes>
-            <node>com.bms.adventure.characters.PlayerCharacter</node>
-          </SelectedNodes>
+          <settings layout="Hierarchic Group" zoom="0.803072625698324" x="706.0" y="305.0" />
+          <SelectedNodes />
           <Categories />
           <SCOPE>All</SCOPE>
           <VISIBILITY>private</VISIBILITY>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/combat.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bms/adventure/characters/equipment/ArmorDetails.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>adventure</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Gradle: junit:junit:4.12</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
