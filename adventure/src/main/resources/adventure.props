@@ -1,4 +1,4 @@
 # Configures the server at startup
 
-weapon_source=static
+weapon_source=file
 armor_source=static

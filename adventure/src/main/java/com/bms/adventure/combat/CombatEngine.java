@@ -16,7 +16,7 @@ public class CombatEngine {
 	
 	private BufferedWriter writer;
 	private String fileName = "src/main/resources/output/combat.txt";
-	private static final int ROUND_LIMIT = 2;
+	private static final int ROUND_LIMIT = 10;
 	
 	public CombatEngine() {
 		try {

@@ -63,7 +63,7 @@ public class Weapon implements Equipment {
 
 	@Override
 	public String toString() {
-		return "Weapon [weaponDetails=" + weaponDetails + "]";
+		return "Weapon [weaponDetails=" + weaponDetails + ", magic bonus=+" + magicBonus + "]";
 	}
 
 }

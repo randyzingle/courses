@@ -1,0 +1,10 @@
+# List of weapons with their stats
+# name, cost(GP), weight, number of damage dice, number of sides for damage, crit threshold, crit multiplier
+rapier, 20, 3, 1, 6, 18, 2
+warhammer, 12, 8, 1, 8, 20, 3
+longsword, 15, 4, 1, 8, 19, 2
+mace, 12, 12, 1, 8, 20, 2
+mace, 12, 12, 1, 8, 20, asdf
+flail, 8, 5, 1, 8, 20, 2
+asdf, 8, asdf
+glave, 8, 10, 1, 10, 18, 2 
