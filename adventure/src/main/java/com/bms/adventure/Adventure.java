@@ -14,9 +14,19 @@ public class Adventure {
 	public static void main(String[] args) {
 		System.out.println("Adventure");
 //		ArrayList<PlayerCharacter> pcs = makePlayerCharacter();
+//		fight();
+		makeAndSave();
+	}
+	
+	private static void makeAndSave() {
+		String name = "Baldur";
+		PlayerCharacter first = PlayerCharacter.makeNewPlayerCharacter(name, 2, new Fighter(), new Dwarf());
+		System.out.println(first);
+	}
+
+	private static void fight() {
 		// make two PCs and get them to fight nbattles
 		int nbattles = 5;
-
 		CombatEngine ce = new CombatEngine();
 		for (int i=0; i<nbattles; i++) {
 			PlayerCharacter first = PlayerCharacter.makeNewPlayerCharacter("Baldur", 2, new Fighter(), new Dwarf());
@@ -25,7 +35,6 @@ public class Adventure {
 			System.out.println(last);
 			ce.simpleCombat(first, last);
 		}
-
 	}
 
 	

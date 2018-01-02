@@ -16,12 +16,12 @@ public class AbilityGenerator {
 	//TODO need to add re-roll rules:
 	// re-roll if total modifiers are 0 or less, or if highest score is 13 or lower
 
-	public static Abilities generateRawRandomAbilities() {
-		Abilities abilities = null;
-		int[] stats = rollRawAbilities();
-		abilities = new Abilities(stats[0], stats[1], stats[2], stats[3], stats[4], stats[5]);
-		return abilities;
-	}
+//	public static Abilities generateRawRandomAbilities() {
+//		Abilities abilities = null;
+//		int[] stats = rollRawAbilities();
+//		abilities = new Abilities(stats[0], stats[1], stats[2], stats[3], stats[4], stats[5]);
+//		return abilities;
+//	}
 	
 	public static Abilities generateAbilities(AbilitiesEnum primary, AbilitiesEnum secondary, AbilitiesEnum tertiary) {
 		Abilities abilities = null;

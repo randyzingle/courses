@@ -28,21 +28,21 @@ public class Abilities {
 		this.abilities = abilities;
 	}
 	
-	public Abilities(int strength, int intelligence, int wisdom, 
-			int dexterity, int constitution, int charisma) {
-		this.strength = strength;
-		this.intelligence = intelligence;
-		this.wisdom = wisdom;
-		this.dexterity = dexterity;
-		this.constitution = constitution;
-		this.charisma = charisma;
-		abilities.put(AbilitiesEnum.strength, strength);
-		abilities.put(AbilitiesEnum.intelligence, intelligence);
-		abilities.put(AbilitiesEnum.wisdom, wisdom);
-		abilities.put(AbilitiesEnum.dexterity, dexterity);
-		abilities.put(AbilitiesEnum.constitution, constitution);
-		abilities.put(AbilitiesEnum.charisma, charisma);
-	}
+//	public Abilities(int strength, int intelligence, int wisdom, 
+//			int dexterity, int constitution, int charisma) {
+//		this.strength = strength;
+//		this.intelligence = intelligence;
+//		this.wisdom = wisdom;
+//		this.dexterity = dexterity;
+//		this.constitution = constitution;
+//		this.charisma = charisma;
+//		abilities.put(AbilitiesEnum.strength, strength);
+//		abilities.put(AbilitiesEnum.intelligence, intelligence);
+//		abilities.put(AbilitiesEnum.wisdom, wisdom);
+//		abilities.put(AbilitiesEnum.dexterity, dexterity);
+//		abilities.put(AbilitiesEnum.constitution, constitution);
+//		abilities.put(AbilitiesEnum.charisma, charisma);
+//	}
 	
 	private static int[] getAbilityModifiers() {
 		int[] mods = new int[46];

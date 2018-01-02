@@ -61,9 +61,5 @@ public class CharacterClassInitializer {
 	public Race getRace() {
 		return race;
 	}
-
-
-
-
 	
 }

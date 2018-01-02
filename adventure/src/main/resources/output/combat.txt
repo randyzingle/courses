@@ -453,3 +453,8 @@ elf, able, 17, 14 : dwarf, dying, 14, 18
 elf, able, 18, 15 : dwarf, dying, 13, 21
 dwarf, dead, 13, 23 : elf, able, 17, 17
 dwarf, able, 13, 21 : elf, dead, 17, 14
+elf, able, 19, 13 : dwarf, dead, 14, 16
+elf, able, 17, 20 : dwarf, dead, 14, 23
+elf, able, 17, 16 : dwarf, dying, 13, 18
+elf, able, 18, 14 : dwarf, dying, 14, 24
+elf, able, 17, 17 : dwarf, dying, 14, 19
