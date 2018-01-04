@@ -19,6 +19,7 @@ public class PropertyLoader {
 				InputStream in = ClassLoader.getSystemResourceAsStream("adventure.props");
 				props = new Properties();
 				props.load(in);
+				in.close();
 			} catch (Exception ex) {
 				ex.printStackTrace();
 			}
