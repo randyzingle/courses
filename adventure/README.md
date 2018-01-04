@@ -1,5 +1,7 @@
 # Creating Weapons and Armor
 
+run **gradlew eclipse** then import this as a Java project.
+
 We're going to use some standard OO Programming techniques to load and create weapons (Weapon.java) and armor (Armor.java). Both the Weapon and Armor class will implement an Equipment interface.
 
 The two patterns we'll use are:
