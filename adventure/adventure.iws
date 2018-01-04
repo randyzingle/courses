@@ -1,32 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ef0e0a48-fdd4-4a6d-a4e2-fa6f2612ecfc" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bms/adventure/Adventure.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bms/adventure/characters/Abilities.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bms/adventure/characters/AbilitiesEnum.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bms/adventure/characters/CharacterClass.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bms/adventure/characters/CharacterClassEnum.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bms/adventure/characters/Combatant.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bms/adventure/characters/Faction.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bms/adventure/characters/Fighter.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bms/adventure/characters/PlayerCharacter.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bms/adventure/characters/Team.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bms/adventure/characters/race/Dwarf.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bms/adventure/characters/race/Elf.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bms/adventure/characters/race/Human.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bms/adventure/characters/race/Race.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bms/adventure/characters/race/RaceEnum.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bms/adventure/combat/CombatEngine.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bms/adventure/equipment/weapon.uml" afterPath="$PROJECT_DIR$/src/main/java/com/bms/adventure/equipment/weapon.uml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bms/adventure/ml/CombatAnalyzer.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bms/adventure/storage/CharacterReader.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bms/adventure/storage/CharacterWriter.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bms/adventure/utils/AbilityGenerator.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bms/adventure/utils/CharacterClassInitializer.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/adventure.props" afterPath="$PROJECT_DIR$/src/main/resources/adventure.props" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/output/combat.txt" afterPath="" />
-    </list>
+    <list default="true" id="ef0e0a48-fdd4-4a6d-a4e2-fa6f2612ecfc" name="Default" comment="" />
     <ignored path="adventure.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -154,52 +129,21 @@
               <ID>JAVA</ID>
               <OriginalElement />
               <nodes>
-                <node x="182.58333333333334" y="79.0">com.bms.adventure.equipment.Weapon</node>
-                <node x="66.19444444444446" y="158.0">com.bms.adventure.equipment.WeaponsFactory</node>
-                <node x="10.500000000000014" y="79.0">com.bms.adventure.equipment.WeaponsLoader</node>
-                <node x="208.08333333333334" y="0.0">com.bms.adventure.equipment.Equipment</node>
-                <node x="39.166666666666686" y="0.0">com.bms.adventure.equipment.WeaponDetails</node>
+                <node x="0.0" y="153.0">com.bms.adventure.equipment.WeaponsFactory</node>
+                <node x="0.0" y="79.0">com.bms.adventure.equipment.WeaponsLoader</node>
+                <node x="0.0" y="227.0">com.bms.adventure.equipment.Equipment</node>
+                <node x="4.0" y="0.0">com.bms.adventure.equipment.WeaponDetails</node>
               </nodes>
               <notes />
               <edges>
-                <edge source="com.bms.adventure.equipment.WeaponsFactory" target="com.bms.adventure.equipment.Weapon">
-                  <point x="19.0" y="-14.5" />
-                  <point x="161.19444444444446" y="128.0" />
-                  <point x="207.33333333333334" y="128.0" />
-                  <point x="-24.75" y="14.5" />
-                </edge>
                 <edge source="com.bms.adventure.equipment.WeaponsLoader" target="com.bms.adventure.equipment.WeaponDetails">
-                  <point x="-49.33333333333334" y="-14.5" />
-                  <point x="35.16666666666667" y="59.0" />
-                  <point x="74.16666666666669" y="59.0" />
+                  <point x="-37.0" y="-14.5" />
+                  <point x="37.0" y="54.0" />
+                  <point x="39.0" y="54.0" />
                   <point x="-35.0" y="14.5" />
                 </edge>
-                <edge source="com.bms.adventure.equipment.Weapon" target="com.bms.adventure.equipment.Equipment">
-                  <point x="33.0" y="-14.5" />
-                  <point x="0.0" y="14.5" />
-                </edge>
-                <edge source="com.bms.adventure.equipment.Weapon" target="com.bms.adventure.equipment.WeaponDetails">
-                  <point x="-33.0" y="-14.5" />
-                  <point x="199.08333333333334" y="59.0" />
-                  <point x="144.16666666666669" y="59.0" />
-                  <point x="35.0" y="14.5" />
-                </edge>
-                <edge source="com.bms.adventure.equipment.WeaponsFactory" target="com.bms.adventure.equipment.WeaponsLoader">
-                  <point x="-19.0" y="-14.5" />
-                  <point x="123.19444444444446" y="128.0" />
-                  <point x="84.50000000000001" y="128.0" />
-                  <point x="0.0" y="14.5" />
-                </edge>
-                <edge source="com.bms.adventure.equipment.WeaponsFactory" target="com.bms.adventure.equipment.WeaponDetails">
-                  <point x="-57.0" y="-14.5" />
-                  <point x="85.19444444444446" y="138.0" />
-                  <point x="0.0" y="138.0" />
-                  <point x="0.0" y="49.0" />
-                  <point x="50.83333333333337" y="49.0" />
-                  <point x="-58.333333333333314" y="14.5" />
-                </edge>
               </edges>
-              <settings layout="Hierarchic Group" zoom="1.0" x="161.5" y="93.5" />
+              <settings layout="Hierarchic Group" zoom="1.0" x="76.0" y="128.0" />
               <SelectedNodes />
               <Categories />
               <SCOPE>All</SCOPE>
@@ -1179,12 +1123,12 @@
       <workItem from="1513718395256" duration="1122000" />
       <workItem from="1514910436441" duration="584000" />
       <workItem from="1514914524626" duration="1141000" />
-      <workItem from="1515082609811" duration="1272000" />
+      <workItem from="1515082609811" duration="1739000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11283000" />
+    <option name="totallyTimeSpent" value="11750000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1358" y="26" width="1257" height="808" extended-state="0" />
@@ -1944,52 +1888,21 @@
           <ID>JAVA</ID>
           <OriginalElement />
           <nodes>
-            <node x="182.58333333333334" y="79.0">com.bms.adventure.equipment.Weapon</node>
-            <node x="66.19444444444446" y="158.0">com.bms.adventure.equipment.WeaponsFactory</node>
-            <node x="10.500000000000014" y="79.0">com.bms.adventure.equipment.WeaponsLoader</node>
-            <node x="208.08333333333334" y="0.0">com.bms.adventure.equipment.Equipment</node>
-            <node x="39.166666666666686" y="0.0">com.bms.adventure.equipment.WeaponDetails</node>
+            <node x="0.0" y="153.0">com.bms.adventure.equipment.WeaponsFactory</node>
+            <node x="0.0" y="79.0">com.bms.adventure.equipment.WeaponsLoader</node>
+            <node x="0.0" y="227.0">com.bms.adventure.equipment.Equipment</node>
+            <node x="4.0" y="0.0">com.bms.adventure.equipment.WeaponDetails</node>
           </nodes>
           <notes />
           <edges>
-            <edge source="com.bms.adventure.equipment.WeaponsFactory" target="com.bms.adventure.equipment.Weapon">
-              <point x="19.0" y="-14.5" />
-              <point x="161.19444444444446" y="128.0" />
-              <point x="207.33333333333334" y="128.0" />
-              <point x="-24.75" y="14.5" />
-            </edge>
             <edge source="com.bms.adventure.equipment.WeaponsLoader" target="com.bms.adventure.equipment.WeaponDetails">
-              <point x="-49.33333333333334" y="-14.5" />
-              <point x="35.16666666666667" y="59.0" />
-              <point x="74.16666666666669" y="59.0" />
+              <point x="-37.0" y="-14.5" />
+              <point x="37.0" y="54.0" />
+              <point x="39.0" y="54.0" />
               <point x="-35.0" y="14.5" />
             </edge>
-            <edge source="com.bms.adventure.equipment.Weapon" target="com.bms.adventure.equipment.Equipment">
-              <point x="33.0" y="-14.5" />
-              <point x="0.0" y="14.5" />
-            </edge>
-            <edge source="com.bms.adventure.equipment.Weapon" target="com.bms.adventure.equipment.WeaponDetails">
-              <point x="-33.0" y="-14.5" />
-              <point x="199.08333333333334" y="59.0" />
-              <point x="144.16666666666669" y="59.0" />
-              <point x="35.0" y="14.5" />
-            </edge>
-            <edge source="com.bms.adventure.equipment.WeaponsFactory" target="com.bms.adventure.equipment.WeaponsLoader">
-              <point x="-19.0" y="-14.5" />
-              <point x="123.19444444444446" y="128.0" />
-              <point x="84.50000000000001" y="128.0" />
-              <point x="0.0" y="14.5" />
-            </edge>
-            <edge source="com.bms.adventure.equipment.WeaponsFactory" target="com.bms.adventure.equipment.WeaponDetails">
-              <point x="-57.0" y="-14.5" />
-              <point x="85.19444444444446" y="138.0" />
-              <point x="0.0" y="138.0" />
-              <point x="0.0" y="49.0" />
-              <point x="50.83333333333337" y="49.0" />
-              <point x="-58.333333333333314" y="14.5" />
-            </edge>
           </edges>
-          <settings layout="Hierarchic Group" zoom="1.0" x="161.5" y="93.5" />
+          <settings layout="Hierarchic Group" zoom="1.0" x="76.0" y="128.0" />
           <SelectedNodes />
           <Categories />
           <SCOPE>All</SCOPE>
