@@ -5,8 +5,8 @@ import java.util.Random;
 
 import com.bms.adventure.characters.AbilitiesEnum;
 import com.bms.adventure.characters.Faction;
-import com.bms.adventure.characters.equipment.Armor;
-import com.bms.adventure.characters.equipment.Weapon;
+import com.bms.adventure.equipment.Armor;
+import com.bms.adventure.equipment.Weapon;
 
 public abstract class Race {	
 	

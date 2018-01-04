@@ -1,4 +1,4 @@
-package com.bms.adventure.characters.equipment;
+package com.bms.adventure.equipment;
 
 import java.util.HashMap;
 import java.util.Properties;

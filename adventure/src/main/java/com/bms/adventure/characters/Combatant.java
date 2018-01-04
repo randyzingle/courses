@@ -2,8 +2,8 @@ package com.bms.adventure.characters;
 
 import java.util.ArrayList;
 
-import com.bms.adventure.characters.equipment.Armor;
-import com.bms.adventure.characters.equipment.Weapon;
+import com.bms.adventure.equipment.Armor;
+import com.bms.adventure.equipment.Weapon;
 
 public interface Combatant extends Comparable<Combatant> {
 	

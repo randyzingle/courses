@@ -1,4 +1,4 @@
-package com.bms.adventure.characters.equipment;
+package com.bms.adventure.equipment;
 
 public interface Equipment {
 	public static final String ARMOR = "armor";

@@ -1,4 +1,4 @@
-package com.bms.adventure.characters.equipment;
+package com.bms.adventure.equipment;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

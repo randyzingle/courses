@@ -3,10 +3,10 @@ package com.bms.adventure.utils;
 import com.bms.adventure.characters.AbilitiesEnum;
 import com.bms.adventure.characters.CharacterClass;
 import com.bms.adventure.characters.Fighter;
-import com.bms.adventure.characters.equipment.Armor;
-import com.bms.adventure.characters.equipment.Weapon;
 import com.bms.adventure.characters.race.Race;
 import com.bms.adventure.characters.race.RaceEnum;
+import com.bms.adventure.equipment.Armor;
+import com.bms.adventure.equipment.Weapon;
 
 /**
  * CharacterClassInitializer is a mixture of CharacterClass and Race. 

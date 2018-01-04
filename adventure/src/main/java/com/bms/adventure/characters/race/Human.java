@@ -3,12 +3,12 @@ package com.bms.adventure.characters.race;
 import java.util.HashMap;
 
 import com.bms.adventure.characters.Faction;
-import com.bms.adventure.characters.equipment.Armor;
-import com.bms.adventure.characters.equipment.ArmorFactory;
-import com.bms.adventure.characters.equipment.ArmorLoader;
-import com.bms.adventure.characters.equipment.Weapon;
-import com.bms.adventure.characters.equipment.WeaponsFactory;
-import com.bms.adventure.characters.equipment.WeaponsLoader;
+import com.bms.adventure.equipment.Armor;
+import com.bms.adventure.equipment.ArmorFactory;
+import com.bms.adventure.equipment.ArmorLoader;
+import com.bms.adventure.equipment.Weapon;
+import com.bms.adventure.equipment.WeaponsFactory;
+import com.bms.adventure.equipment.WeaponsLoader;
 
 public class Human extends Race {
 

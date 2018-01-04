@@ -3,9 +3,9 @@ package com.bms.adventure.characters;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-import com.bms.adventure.characters.equipment.Armor;
-import com.bms.adventure.characters.equipment.Weapon;
 import com.bms.adventure.characters.race.Race;
+import com.bms.adventure.equipment.Armor;
+import com.bms.adventure.equipment.Weapon;
 import com.bms.adventure.utils.AbilityGenerator;
 import com.bms.adventure.utils.CharacterClassInitializer;
 import com.bms.adventure.utils.Constants;

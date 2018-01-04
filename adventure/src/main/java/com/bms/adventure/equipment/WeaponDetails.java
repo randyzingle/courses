@@ -1,4 +1,4 @@
-package com.bms.adventure.characters.equipment;
+package com.bms.adventure.equipment;
 
 /**
  * This is our Base Weapon description. We only need one of each as they are not individual weapons but
