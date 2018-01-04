@@ -14,8 +14,8 @@ public class Adventure {
 	public static void main(String[] args) {
 		System.out.println("Adventure");
 //		ArrayList<PlayerCharacter> pcs = makePlayerCharacter();
-//		fight();
-		makeAndSave();
+		fight();
+//		makeAndSave();
 	}
 	
 	private static void makeAndSave() {

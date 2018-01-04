@@ -8,3 +8,4 @@ mace, 12, 12, 1, 8, 20, asdf
 flail, 8, 5, 1, 8, 20, 2
 asdf, 8, asdf
 glave, 8, 10, 1, 10, 18, 2 
+trident, 9, 12, 1, 8, 19, 3

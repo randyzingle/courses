@@ -15,8 +15,8 @@ public class Elf extends Race {
 
 	// starting armor, weapons for elf
 	Armor startingArmor = ArmorFactory.getArmor(ArmorLoader.ELVIN_CHAIN);
-	Weapon startingWeapon = WeaponsFactory.getWeapon("glave", "magical", 5);
-//	Weapon startingWeapon = WeaponsFactory.getWeapon(WeaponsLoader.LONGSWORD);
+//	Weapon startingWeapon = WeaponsFactory.getWeapon("trident", "magical", -5);
+	Weapon startingWeapon = WeaponsFactory.getWeapon(WeaponsLoader.LONGSWORD);
 	
 	public Elf() {
 		racialAbilityModifiers = new HashMap<>();
