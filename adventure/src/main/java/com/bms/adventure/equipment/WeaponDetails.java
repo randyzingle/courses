@@ -75,8 +75,9 @@ public class WeaponDetails {
 	@Override
 	public String toString() {
 		String critString = critThreshold + "+";
-		String s = "%-12s: %4d GP, %dd%d damage, %5sx%d crit, %4.1f lbs";
-		return String.format(s, name, cost, damageNumberDice, damageNumberSides, critString, critMultiplier, weight);
+		String damageString = String.format("%dd%d", damageNumberDice, damageNumberSides);
+		String s = "%-12s: %4d GP, %-4s damage, %5sx%d crit, %4.1f lbs";
+		return String.format(s, name, cost, damageString, critString, critMultiplier, weight);
 	}
 	
 }
