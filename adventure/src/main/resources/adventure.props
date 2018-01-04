@@ -1,4 +1,5 @@
 # Configures the server at startup
 
+# we can load weapons and armor from code (static), the file system (file), or a database (database)
 weapon_source=file
 armor_source=static

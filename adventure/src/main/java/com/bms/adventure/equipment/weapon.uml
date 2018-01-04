@@ -3,50 +3,21 @@
   <ID>JAVA</ID>
   <OriginalElement />
   <nodes>
-    <node x="168.0" y="89.0">com.bms.adventure.equipment.Weapon</node>
-    <node x="133.70833333333331" y="168.0">com.bms.adventure.equipment.WeaponsFactory</node>
-    <node x="0.0" y="89.0">com.bms.adventure.equipment.WeaponsLoader</node>
-    <node x="94.5166666666667" y="-31.0">com.bms.adventure.equipment.WeaponDetails</node>
+    <node x="7.5" y="79.0">com.bms.adventure.equipment.Weapon</node>
+    <node x="159.0" y="0.0">com.bms.adventure.equipment.WeaponsFactory</node>
+    <node x="0.0" y="153.0">com.bms.adventure.equipment.WeaponsLoader</node>
+    <node x="0.0" y="0.0">com.bms.adventure.equipment.Equipment</node>
+    <node x="0.0" y="227.0">com.bms.adventure.equipment.WeaponDetails</node>
   </nodes>
   <notes />
   <edges>
-    <edge source="com.bms.adventure.equipment.WeaponsFactory" target="com.bms.adventure.equipment.Weapon">
-      <point x="-19.0" y="-14.5" />
-      <point x="190.70833333333331" y="143.0" />
-      <point x="192.75" y="143.0" />
-      <point x="-24.75" y="14.5" />
-    </edge>
-    <edge source="com.bms.adventure.equipment.WeaponsLoader" target="com.bms.adventure.equipment.WeaponDetails">
-      <point x="-49.333333333333314" y="-14.5" />
-      <point x="24.666666666666686" y="49.0" />
-      <point x="105.18333333333337" y="49.0" />
-      <point x="-58.33333333333333" y="14.5" />
-    </edge>
-    <edge source="com.bms.adventure.equipment.Weapon" target="com.bms.adventure.equipment.WeaponDetails">
-      <point x="-24.75" y="-14.5" />
-      <point x="192.75" y="69.0" />
-      <point x="175.18333333333334" y="69.0" />
-      <point x="11.666666666666657" y="14.5" />
-    </edge>
-    <edge source="com.bms.adventure.equipment.WeaponsFactory" target="com.bms.adventure.equipment.WeaponsLoader">
-      <point x="-57.0" y="-14.5" />
-      <point x="152.70833333333331" y="143.0" />
-      <point x="74.0" y="143.0" />
+    <edge source="com.bms.adventure.equipment.Weapon" target="com.bms.adventure.equipment.Equipment">
+      <point x="0.0" y="-14.5" />
       <point x="0.0" y="14.5" />
     </edge>
-    <edge source="com.bms.adventure.equipment.WeaponsFactory" target="com.bms.adventure.equipment.WeaponDetails">
-      <point x="57.0" y="-14.5" />
-      <point x="266.7083333333333" y="143.0" />
-      <point x="277.5" y="143.0" />
-      <point x="277.5" y="59.0" />
-      <point x="221.85000000000002" y="59.0" />
-      <point x="58.333333333333314" y="14.5" />
-    </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="1.0" x="139.5" y="74.0" />
-  <SelectedNodes>
-    <node>com.bms.adventure.equipment.WeaponDetails</node>
-  </SelectedNodes>
+  <settings layout="Hierarchic Group" zoom="1.0" x="139.0" y="93.5" />
+  <SelectedNodes />
   <Categories />
   <SCOPE>All</SCOPE>
   <VISIBILITY>private</VISIBILITY>

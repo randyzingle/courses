@@ -30,7 +30,7 @@ public class WeaponsLoader {
 		}
 	}
 	
-	private WeaponsLoader() {};
+	private WeaponsLoader() {}
 	
 	private static HashMap<String, WeaponDetails> weaponsMap;
 	
