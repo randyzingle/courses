@@ -10,7 +10,6 @@ public interface Combatant extends Comparable<Combatant> {
 	public static enum Status {able, disabled, dying, dead}
 	
 	public int getInitiative();
-	public void setInitiative(int init);
 	public int rollInitiative(); // just roll once at the beginning of combat
 	public int getArmorClass();
 	public int getCurrentHitPoints();

@@ -57,13 +57,16 @@ public class PlayerCharacter implements Combatant {
 		return pc;
 	}
 	
-	// Still need to implement this in the combat engine
+	// TODO move this into a Comparator in the Combat engine
 	@Override
 	public int compareTo(Combatant c) {
-		// Sort combatants by initiative order
-		if (c.getInitiative() > this.getInitiative()) return -1;
-		if (c.getInitiative() < this.getInitiative()) return 1;
-		return 0;
+		// Sort combatants by initiative order for use in a TreeSet (note which returns -1, want highest initiative first for descending order)
+		if (c.getInitiative() > this.getInitiative()) return 1;
+		if (c.getInitiative() < this.getInitiative()) return -1;
+		// we've tied, randomly select who wins initiative
+		double n = Math.random();
+		if(n < 0.5) return -1;
+		return 1;
 	}
 
 	private int calculateInitialHP() {
@@ -134,6 +137,7 @@ public class PlayerCharacter implements Combatant {
 		int initBonus = abilities.abilityModifiers[dex];
 		int init = Dice.rollDice(1, 20) + initBonus;
 		System.out.println("Initiative for " + this.name + ": " + init);
+		this.initiative = init;
 		return init;
 	}
 
@@ -197,11 +201,6 @@ public class PlayerCharacter implements Combatant {
 		return weapon;
 	}
 
-	@Override
-	public void setInitiative(int init) {
-		this.initiative = init;
-		
-	}
 	@Override
 	public String getName() {
 		return name;

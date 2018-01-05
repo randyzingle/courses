@@ -2,15 +2,13 @@ package com.bms.adventure.combat;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.TreeSet;
+import java.util.HashMap;
 
 import com.bms.adventure.characters.Combatant;
 import com.bms.adventure.characters.Combatant.Status;
+import com.bms.adventure.characters.Team;
 import com.bms.adventure.utils.BigPrint;
 import com.bms.adventure.utils.Dice;
-import com.bms.adventure.characters.Team;
 
 public class CombatEngine {
 	
@@ -26,7 +24,7 @@ public class CombatEngine {
 		}
 	}
  	
-	public void teamCombat(ArrayList<Team> combatTeams) {
+	public void teamCombat(HashMap<String, Team> combatTeams) {
 		
 	}
 	
@@ -34,8 +32,8 @@ public class CombatEngine {
 		System.out.println("begin combat...");
 		int round = 0;
 		// add combatants in order of initiative roll
-		c1.setInitiative(c1.rollInitiative());
-		c2.setInitiative(c2.rollInitiative());
+		c1.rollInitiative();
+		c2.rollInitiative();
 		Combatant attacker = null;
 		Combatant defender = null;
 		if (c1.getInitiative() < c2.getInitiative()) {
