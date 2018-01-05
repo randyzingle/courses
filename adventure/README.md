@@ -11,7 +11,7 @@ The two patterns we'll use are:
 We will start with weapons and will create the following classes:
 [weapons uml diagram](src/main/resources/diagrams/weapons-uml.png)
 
-![](https://github.com/randyzingle/courses/tree/equipment/adventure/src/main/resources/diagrams/weapons-uml.png)
+![weapons](src/main/resources/diagrams/weapons-uml.png)
 
 The stats for the weapons can be found in the Player's Handbook on pages 117, 118 of the [Players Handbook](src/main/resources/docs/PlayersHandbook.pdf)
 
