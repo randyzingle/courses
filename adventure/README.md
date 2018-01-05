@@ -9,6 +9,7 @@ The two patterns we'll use are:
 * **Factory Pattern** to create individual weapons
 
 We will start with weapons and will create the following classes:
+[weapons uml diagram](src/main/resources/diagrams/weapons-uml.png)
 
 ![](https://github.com/randyzingle/courses/tree/equipment/adventure/src/main/resources/diagrams/weapons-uml.png)
 
