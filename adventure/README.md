@@ -8,6 +8,8 @@ The two patterns we'll use are:
 * **Singleton** to load the weapon details
 * **Factory Pattern** to create individual weapons
 
+### Weapons
+
 We will start with weapons and will create the following classes:
 [weapons uml diagram](src/main/resources/diagrams/weapons-uml.png)
 
@@ -34,6 +36,9 @@ Is a Factory Pattern class. You ask it for a weapon by name (eg "longsword") and
 
 #### Weapon
 Is an instance of a WeaponDetails class. It contains a WeaponDetails and also adds a description and a magic bonus value. While there is only one WeaponDetails for each weapon type there are instances of a Weapon for each real weapon of that type. For example, if a store has 5 longswords there will be 1 WeaponDetails of type longsword and 5 Weapon(s) of type longsword.
+
+### Armor
+Now do the same thing for Armor that you did for weapons.
 
 ### Important Points
 Encapsulation is a key part of Object Oriented programming. Only the WeaponsLoader should know how the weapons are loaded, when they are loaded, where they are loaded from and how the data is cached (is it read from a file each time or stored in memory).
